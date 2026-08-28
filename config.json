@@ -1,0 +1,29 @@
+{
+  "matchThresholds": {
+    "autoApply": 85,
+    "telegramApproval": 70,
+    "silentSave": 60,
+    "skip": 0
+  },
+  "schedule": {
+    "scanInterval": "*/30 * * * *",
+    "morningDigest": "0 6 * * *"
+  },
+  "platforms": [
+    "remoteok",
+    "jobicy",
+    "remotive",
+    "weworkremotely",
+    "himalayas",
+    "wordpressjobs"
+  ],
+  "maxJobsPerScan": 300,
+  "maxApplicationsPerDay": {
+    "email": 15,
+    "webForm": 15
+  },
+  "deepseek": {
+    "model": "deepseek-chat",
+    "baseUrl": "https://api.deepseek.com"
+  }
+}

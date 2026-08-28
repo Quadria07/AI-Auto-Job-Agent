@@ -1,0 +1,225 @@
+{
+  "personal": {
+    "name": "Quadri Adebisi",
+    "fullName": "Adebisi Quadri Damilare",
+    "email": "quadriadebisi3@gmail.com",
+    "phone": "+234 903 218 8542",
+    "location": "Nigeria (Open to Remote Worldwide)",
+    "linkedin": "",
+    "github": "https://github.com/Quadria07",
+    "portfolio": "https://quadri-adebisi.vercel.app/"
+  },
+
+  "targetRoles": [
+    "WordPress Developer",
+    "Web Developer",
+    "Frontend Developer",
+    "Full Stack Developer",
+    "React Developer",
+    "Application Security Engineer",
+    "Web Security Consultant",
+    "Technical Instructor",
+    "ICT Instructor",
+    "Teaching Assistant",
+    "Plugin Developer",
+    "WordPress Plugin Developer",
+    "Contract Web Developer",
+    "Freelance Web Developer",
+    "Remote Web Developer"
+  ],
+
+  "targetLocations": ["Remote", "Worldwide", "Anywhere", "Nigeria"],
+  "jobTypes": ["remote", "contract", "freelance", "part-time"],
+  "minSalary": "",
+  "currency": "USD",
+
+  "skills": {
+    "security": [
+      "OWASP Top 10",
+      "Secure Authentication & Authorization",
+      "API Security",
+      "Vulnerability Assessment",
+      "Penetration Testing",
+      "Application Hardening",
+      "Input Validation",
+      "Logging & Monitoring",
+      "Threat Modeling",
+      "Burp Suite"
+    ],
+    "webDevelopment": [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "REST APIs",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Supabase",
+      "Vite"
+    ],
+    "wordpress": [
+      "WordPress Development",
+      "PHP",
+      "MySQL",
+      "WooCommerce",
+      "Custom Plugin Development",
+      "Theme Development",
+      "Elementor",
+      "WordPress Security",
+      "WordPress Performance Optimization",
+      "WordPress SEO"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Linux",
+      "Docker",
+      "Netlify",
+      "Vercel",
+      "CI/CD Pipelines",
+      "Paystack Payment Integration",
+      "Google Analytics",
+      "Site Audits & SEO",
+      "Python"
+    ],
+    "soft": [
+      "Team Collaboration",
+      "Critical Thinking",
+      "Teaching & Mentoring",
+      "Project Coordination",
+      "Problem Solving",
+      "Time Management"
+    ]
+  },
+
+  "experience": [
+    {
+      "role": "Web Developer",
+      "company": "The Fraternity & Co",
+      "type": "Full-time, On-site",
+      "duration": "Nov 2024 – Present",
+      "responsibilities": [
+        "Built and maintained production web applications with secure, reliable frontend architecture",
+        "Developed responsive interfaces using React, TypeScript, HTML, CSS, and JavaScript",
+        "Integrated security considerations addressing common risks such as improper input handling and insecure auth flows",
+        "Customized and maintained WordPress themes and plugins with secure configuration",
+        "Optimized performance, usability, and stability through clean code practices"
+      ],
+      "skills": ["React", "TypeScript", "WordPress", "Web Application Security", "REST APIs"]
+    },
+    {
+      "role": "ICT Instructor",
+      "company": "Btexloop Academy",
+      "type": "Full-time, Hybrid",
+      "duration": "Dec 2022 – Sep 2025",
+      "responsibilities": [
+        "Delivered hands-on training in web development and foundational cybersecurity",
+        "Designed practical projects involving web technologies, networking concepts, and connected systems",
+        "Introduced core security concepts: safe data handling, authentication logic, and responsible technology use",
+        "Supported learners through structured problem-solving, project reviews, and technical guidance"
+      ],
+      "skills": ["Teaching & Mentoring", "Web Development", "Cybersecurity Fundamentals"]
+    },
+    {
+      "role": "Technical Intern",
+      "company": "Ministry of Innovation, Science, Technology & Digital Economy",
+      "type": "Internship, On-site",
+      "duration": "Nov 2024 – Jun 2025",
+      "responsibilities": [
+        "Supported technical initiatives involving web systems, networking, and applied cybersecurity",
+        "Assisted in coordinating and mentoring SIWES/IT students",
+        "Contributed to training sessions covering web development, Python scripting, and introductory cybersecurity"
+      ],
+      "skills": ["Python", "IoT", "Networking", "Mentoring"]
+    }
+  ],
+
+  "education": [
+    {
+      "degree": "NID, Networking and System Security",
+      "institution": "Elerinmosa Institute of Technology",
+      "duration": "Jan 2023 – Sep 2024"
+    }
+  ],
+
+  "certifications": [
+    "Ethical Hacking Essential (EC-Council)",
+    "Python for Cybersecurity",
+    "Certified Cybersecurity Educator Professional"
+  ],
+
+  "projects": [
+    {
+      "name": "Kennixcare",
+      "description": "A professional website for an NDIS-registered disability and healthcare provider serving Western Australia. Built for clarity, accessibility, and seamless referral intake — supporting person-centred care delivery across the region.",
+      "url": "https://www.kennixcare.com.au"
+    },
+    {
+      "name": "Sport & News AI Publisher",
+      "description": "Automatically monitors sport & news sources (RSS/API), rewrites items into original articles using DeepSeek AI, and publishes them to WordPress with strict taxonomy & SEO support.",
+      "url": "https://quadri-adebisi.vercel.app/#contact"
+    },
+    {
+      "name": "ThinkRich Naija",
+      "description": "Nigeria's premier quiz and entertainment platform celebrating intelligence through TV shows, street quizzes, schools competitions, and a real-money mobile game app — rewarding everyday Nigerians with up to ₦2 million in prizes.",
+      "url": "https://thinkrichnaija.com"
+    },
+    {
+      "name": "HOSEE Fragrance",
+      "description": "A premium fragrance oil e-commerce platform supplying 100% undiluted scents to wholesalers, retailers, and entrepreneurs across Nigeria. Features product catalogues, wholesale inquiry flows, and a luxury editorial aesthetic.",
+      "url": "https://hosee.com.ng"
+    },
+    {
+      "name": "SafeMove",
+      "description": "A modern, high-performance landing website built to showcase an intelligent vehicle security ecosystem. Designed to effectively communicate complex hardware features—like edge-ready recording and SOS wearable integration—to prospective users and investors.",
+      "url": "https://safemove-security.web.app/"
+    },
+    {
+      "name": "Private Advisor",
+      "description": "A highly secure, anonymous vault providing confidential guidance for women. Features a zero-footprint submission flow with pseudonyms and automated, customized email notifications for privacy-centric communication.",
+      "url": "https://quadri-adebisi.vercel.app/#contact"
+    },
+    {
+      "name": "Empire Serenity Suites",
+      "description": "A luxury hospitality website built to showcase serviced apartments and support seamless bookings, with a focus on performance, usability, and secure user interactions.",
+      "url": "https://empireserenitysuitesltd.com/"
+    },
+    {
+      "name": "L1 District",
+      "description": "A modern landing and investment platform for a smart city initiative, built to communicate infrastructure, vision, and value to investors and stakeholders with a focus on performance, scalability, and secure data handling.",
+      "url": "https://l1district.com"
+    },
+    {
+      "name": "The Urban Journal",
+      "description": "A modern Nigerian digital media publication covering urban lifestyle, culture, business, and technology. Built for high traffic and fast content delivery, with custom taxonomy, SEO optimisation, and a clean editorial layout.",
+      "url": "https://theurbanjournal.com.ng"
+    },
+    {
+      "name": "ExamCraft AI",
+      "description": "An intelligent study platform that leverages AI to transform raw educational materials into structured exam simulations. Features automated PDF/Word parsing, performance analytics, and personalized feedback loops for students.",
+      "url": "https://examcraft-ai-cbt.netlify.app"
+    },
+    {
+      "name": "CV Builder Web App",
+      "description": "Enables users to create customizable CVs with real-time previews and secure PDF downloads, minimizing data exposure during document processing.",
+      "url": "https://cv-builder-pro-qa.vercel.app"
+    },
+    {
+      "name": "Naijahood",
+      "description": "Naijahood is a modern web platform designed to connect users with curated digital experiences and community-driven content, built with a focus on performance, usability, and scalable architecture.",
+      "url": "https://naijahood.com"
+    },
+    {
+      "name": "Security Header Checker",
+      "description": "A Chrome Extension that inspects the active browser tab for HTTPS enforcement and key security response headers (CSP, HSTS), built with Manifest V3 and a least-privilege architecture using only native browser APIs.",
+      "url": "https://github.com/Quadria07/Security-header-checker"
+    }
+  ],
+
+  "masterCV": "QUADRI ADEBISI\nWeb Developer and Application Security Engineer | React - WordPress - Node.js - PHP | Security-First Development\nquadriadebisi3@gmail.com | +234 903 218 8542 | quadri-adebisi.vercel.app | github.com/Quadria07 | Nigeria (Open to Remote Worldwide)\n\nPROFESSIONAL PROFILE\nWeb developer and application security engineer with hands-on experience building and deploying production-ready websites and applications for clients in Australia, the United Kingdom, Canada, Nigeria and beyond. Specialises in React, WordPress, Node.js and PHP - with a genuine background in application security that means every project ships with OWASP-aligned protections built in from the start, not added as an afterthought. Portfolio spans over 20 live deployed projects covering healthcare, e-commerce, hospitality, media, fintech and education. Comfortable working across the full development lifecycle from initial brief through to deployment, performance tuning and security hardening. Available immediately for remote freelance, contract or full-time roles worldwide.\n\nKEY ACHIEVEMENTS\n- Delivered over 20 live production projects across healthcare, e-commerce, hospitality, real estate, media publishing, education and fintech - serving clients in Australia, the United Kingdom, Canada, Nigeria and beyond - all completed remotely and on schedule.\n- Built a full NDIS referral intake system for Kennixcare, an Australian disability services provider, with secure multi-step form submission, file validation and backend hardening for sensitive healthcare data.\n- Developed a WordPress AI Publisher plugin that connects to DeepSeek AI via API, automatically rewrites RSS and news content into original articles, and publishes them to WordPress with taxonomy and SEO rules applied - running as a fully automated background process.\n- Built and launched a WooCommerce wholesale e-commerce platform with custom PHP plugin, product catalogue and inquiry flow - live and generating orders.\n- Applied OWASP-aligned security practices on every project - including input validation, secure authentication, CSRF protection and Content Security Policy headers - reducing client exposure to common web vulnerabilities.\n- Trained over 100 students in web development and cybersecurity fundamentals as an ICT Instructor at Btexloop Academy over a two-year period.\n\nTECHNICAL SKILLS\nFrontend: React, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Bootstrap, Vite\nBackend: Node.js, Express.js, PHP, REST API Development\nWordPress: Custom Plugin Development, Theme Development, WooCommerce, MySQL, Performance Optimisation, Elementor\nDatabase: MongoDB, MySQL, PostgreSQL, Supabase\nSecurity: OWASP Top 10, Vulnerability Assessment, Penetration Testing, API Security, Application Hardening, Burp Suite, Threat Modelling, Secure Authentication\nTools and Platforms: Git, GitHub, Linux, Docker, Vercel, Netlify, CI/CD, Paystack, Google Analytics, Python\n\nPROFESSIONAL EXPERIENCE\nWeb Developer | The Fraternity and Co | Nov 2024 - Present\n- Built and maintained production web applications with a security-first approach across the full frontend stack.\n- Developed responsive interfaces using React, TypeScript, HTML and CSS - tested across devices and browsers.\n- Applied OWASP security controls on every project including input validation, secure authentication flows and XSS prevention.\n- Customised and maintained WordPress themes and plugins with controlled access and secure configuration.\n- Optimised performance, page speed and usability through clean code and continuous testing.\n\nICT Instructor | Btexloop Academy | Dec 2022 - Sep 2025\n- Delivered practical training in web development and foundational cybersecurity to over 100 students over two years.\n- Designed project-based curriculum covering web technologies, networking concepts and security fundamentals.\n- Mentored students through real-world problem solving, code reviews and technical guidance.\n\nTechnical Intern | Ministry of Innovation, Science, Technology and Digital Economy | Nov 2024 - Jun 2025\n- Supported web systems, networking and applied cybersecurity work in a government technology environment.\n- Coordinated SIWES and IT student mentoring alongside contributing to training sessions in web development, Python and cybersecurity basics.\n\nSELECTED PROJECTS\n- Kennixcare (kennixcare.com.au): NDIS disability services website with secure referral intake, multi-step form and file validation for an Australian healthcare provider.\n- Sport and News AI Publisher: WordPress plugin that monitors RSS feeds, rewrites content using DeepSeek AI and auto-publishes to WordPress with full SEO and taxonomy support.\n- HOSEE Fragrance (hosee.com.ng): WooCommerce e-commerce platform with custom PHP plugin and product catalogue.\n- ExamCraft AI (examcraft-ai-cbt.netlify.app): AI study platform that converts uploaded PDFs and documents into structured exam simulations with performance analytics.\n- ThinkRich Naija (thinkrichnaija.com): Nigerian quiz and entertainment platform with real-money prize competitions.\n- Security Header Checker: Chrome Extension built with Manifest V3 that audits browser tabs for HTTPS and key security response headers.\n\nEDUCATION\nNID, Networking and System Security | Elerinmosa Institute of Technology | 2023 - 2024\n\nCERTIFICATIONS\n- Ethical Hacking Essential - EC-Council\n- Python for Cybersecurity\n- Certified Cybersecurity Educator Professional\n\nADDITIONAL INFORMATION\nAvailability: Immediately available for remote freelance, contract or full-time roles worldwide\nLanguages: English - Fluent (professional written and verbal)\nSecurity Approach: OWASP-aligned security built into every project from the start, not added at the end\nPortfolio: quadri-adebisi.vercel.app"
+}

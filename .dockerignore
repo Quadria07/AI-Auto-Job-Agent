@@ -1,0 +1,9 @@
+node_modules
+.env
+.git
+.gitignore
+applications/*
+*.pdf
+*.png
+test-*.js
+generate_filled_screenshot.js
