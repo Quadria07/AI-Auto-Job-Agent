@@ -1,6 +1,6 @@
 {
   "matchThresholds": {
-    "autoApply": 95,
+    "autoApply": 85,
     "telegramApproval": 70,
     "silentSave": 60,
     "skip": 0
@@ -19,8 +19,8 @@
   ],
   "maxJobsPerScan": 300,
   "maxApplicationsPerDay": {
-    "email": 15,
-    "webForm": 15
+    "email": 3,
+    "webForm": 2
   },
   "deepseek": {
     "model": "deepseek-chat",

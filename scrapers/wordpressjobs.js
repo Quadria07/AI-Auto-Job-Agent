@@ -26,9 +26,30 @@ export async function scrapeWordPressJobs() {
     return jobList.map(item => {
       const title = item.title || '';
       const description = item.description || item['content:encoded'] || '';
-
-      // Extract location from job_listing:job_location if available
       const location = item['job_listing:job_location'] || 'Remote';
+
+      // Extract email addresses from description text (e.g. "send your CV to jobs@company.com")
+      const emailMatches = description.match(/[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/g);
+      const applyEmail = emailMatches
+        ? emailMatches.find(e => !e.includes('wordpress') && !e.includes('example'))
+        : null;
+
+      // Extract the first external URL from the description text that looks like an apply link
+      const urlMatches = description.match(/https?:\/\/[^\s"<>]+/g);
+      const externalApplyUrl = urlMatches
+        ? urlMatches.find(u => !u.includes('jobs.wordpress.net') && !u.includes('wordpress.org'))
+        : null;
+
+      // Priority: email > external URL > job listing page
+      let applyUrl = item.link || '';
+      let applyMethod = 'manual';
+      if (applyEmail) {
+        applyUrl = `mailto:${applyEmail}`;
+        applyMethod = 'email';
+      } else if (externalApplyUrl) {
+        applyUrl = externalApplyUrl;
+        applyMethod = 'webForm';
+      }
 
       return {
         id: `wpjobs-${Buffer.from(item.link || title).toString('base64').slice(0, 20)}`,
@@ -39,7 +60,9 @@ export async function scrapeWordPressJobs() {
         description,
         tags: ['WordPress', 'PHP'],
         salary: item['job_listing:salary'] || '',
-        applyUrl: item.link || '',
+        applyUrl,
+        applyMethod,
+        listingUrl: item.link || '',
         postedAt: item.pubDate ? new Date(item.pubDate).toISOString() : new Date().toISOString(),
         scrapedAt: new Date().toISOString(),
       };

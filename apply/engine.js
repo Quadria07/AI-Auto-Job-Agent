@@ -67,7 +67,9 @@ export async function applyToJob(job) {
   console.log(chalk.blue(`\nApplying to: ${job.title} @ ${job.company}`));
 
   const applyUrl = job.applyUrl || '';
-  const method = isEmailApplyUrl(applyUrl) ? 'email' : 'webForm';
+
+  // Use scraper-provided method hint, then fall back to URL detection
+  const method = job.applyMethod || (isEmailApplyUrl(applyUrl) ? 'email' : 'webForm');
 
   const withinLimit = await checkDailyLimit(method);
   if (!withinLimit) {
@@ -90,17 +92,17 @@ export async function applyToJob(job) {
     await generateCvPdf(cv.text, pdfPath);
 
     let applied = false;
-    const canDirectApply = DIRECT_APPLY_PATTERNS.some(p => applyUrl.includes(p));
 
     if (method === 'email') {
       const emailAddress = extractEmail(applyUrl);
       console.log(chalk.gray(`  Sending email to ${emailAddress}...`));
       applied = await sendEmailApplication(job, cv.text, coverLetter?.text || '', emailAddress, pdfPath);
-    } else if (canDirectApply && isValidHttpUrl(applyUrl)) {
+    } else if (method === 'manual' || !isValidHttpUrl(applyUrl)) {
+      console.log(chalk.yellow(`  CV saved. Manual apply required: ${applyUrl}`));
+    } else {
+      // Try webForm for any valid http/https URL (no ATS whitelist restriction)
       console.log(chalk.gray('  Filling web form...'));
       applied = await attemptAutoApply(job, cv.text, coverLetter?.text || '', pdfPath, appDir);
-    } else {
-      console.log(chalk.yellow(`  CV and PDF saved. Manual apply required: ${applyUrl}`));
     }
 
     await recordApplication(
@@ -138,17 +140,17 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
   try {
     const launchOpts = {
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled'],
     };
     if (process.env.PUPPETEER_EXECUTABLE_PATH) {
       launchOpts.executablePath = process.env.PUPPETEER_EXECUTABLE_PATH;
     }
 
     browser = await puppeteer.launch(launchOpts);
-
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36');
-    
+
+    // Step 1: Navigate to the job listing URL
     try {
       await page.goto(job.applyUrl, { waitUntil: 'networkidle2', timeout: 30000 });
     } catch (navErr) {
@@ -156,13 +158,70 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
       return false;
     }
 
+    const listingUrl = page.url();
+    console.log(chalk.gray(`  Landed on: ${listingUrl}`));
     await page.screenshot({ path: path.join(appDir, 'apply-before.png') });
 
+    // Step 2: Check if this is a job listing page (not a form).
+    // Look for an "Apply" button/link and follow it to the actual application form.
+    const APPLY_LINK_SELECTORS = [
+      'a[href*="apply"]',
+      'a.apply-button',
+      'a.job-apply-btn',
+      '.application-btn a',
+      'a[data-button-text*="Apply" i]',
+      'a[title*="Apply" i]',
+      '#apply-button',
+      '.entry-apply a',
+    ];
+
+    let navigatedToForm = false;
+    for (const sel of APPLY_LINK_SELECTORS) {
+      try {
+        const applyLink = await page.$eval(sel, el => el.href || el.getAttribute('href') || '');
+        if (applyLink && applyLink.startsWith('http') && applyLink !== listingUrl) {
+          console.log(chalk.gray(`  Following apply link: ${applyLink}`));
+          await page.goto(applyLink, { waitUntil: 'networkidle2', timeout: 25000 });
+          navigatedToForm = true;
+          break;
+        }
+      } catch { /* not found, try next */ }
+    }
+
+    const formUrl = page.url();
+    if (navigatedToForm) {
+      console.log(chalk.gray(`  Application form URL: ${formUrl}`));
+    }
+
+    // Step 3: Check if it's a mailto link on the listing page (email apply)
+    if (!navigatedToForm) {
+      try {
+        const mailtoHref = await page.$eval(
+          'a[href^="mailto:"]',
+          el => el.href
+        );
+        if (mailtoHref) {
+          const emailAddr = extractEmail(mailtoHref);
+          console.log(chalk.gray(`  Detected email apply: ${emailAddr}`));
+          // Switch to email apply
+          const { sendEmailApplication } = await import('./email.js');
+          const applied = await sendEmailApplication(job, cvText, coverLetterText, emailAddr, pdfPath);
+          return applied;
+        }
+      } catch { /* no mailto found */ }
+    }
+
+    // Step 4: Try filling the form on whatever page we're on
     const filled = await fillApplicationForm(page, cvText, coverLetterText);
     await uploadPdfToForm(page, pdfPath);
 
     if (filled) {
+      console.log(chalk.green(`  Form filled successfully on: ${page.url()}`));
       await page.screenshot({ path: path.join(appDir, 'apply-filled.png') });
+    } else {
+      console.log(chalk.yellow(`  No fillable form fields found at: ${page.url()}`));
+      console.log(chalk.yellow(`  CV & cover letter saved — complete application manually.`));
+      await page.screenshot({ path: path.join(appDir, 'apply-no-form.png') });
     }
 
     return filled;
