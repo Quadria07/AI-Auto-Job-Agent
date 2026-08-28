@@ -11,11 +11,14 @@ import { sendApprovalRequest, sendAutoApplyNotification } from './notify/telegra
 import { sendMorningDigest } from './notify/telegram.js';
 import { applyToJob } from './apply/engine.js';
 
+import { logEvent } from './logger.js';
+
 export async function processPendingJobs() {
   const pendingJobs = await getPendingJobs();
   if (pendingJobs.length === 0) return;
 
   console.log(chalk.cyan(`\nEvaluating ${pendingJobs.length} new jobs...`));
+  logEvent('INFO', 'SCORE', `Evaluating ${pendingJobs.length} new jobs...`);
 
   for (const job of pendingJobs) {
     try {
@@ -34,10 +37,18 @@ export async function processPendingJobs() {
 
       await updateJob(job.id, { matchScore: score, matchReason: matchResult.reason, status });
 
+      if (score >= 70) {
+        logEvent('SUCCESS', 'SCORE', `High Match (${score}%): ${job.title} @ ${job.company}`, {
+          title: job.title, company: job.company, score, status, applyUrl: job.applyUrl
+        });
+      }
+
       if (status === 'queued_for_auto_apply') {
+        logEvent('INFO', 'APPLY', `Auto-applying to ${job.title} @ ${job.company}`);
         const applied = await applyToJob(job);
         await sendAutoApplyNotification({ ...job, matchScore: score }, applied);
       } else if (status === 'queued_for_approval') {
+        logEvent('INFO', 'TELEGRAM', `Sent Telegram approval request for ${job.title} @ ${job.company} (${score}%)`);
         await sendApprovalRequest({ ...job, matchScore: score, matchReason: matchResult.reason });
       }
 
@@ -45,6 +56,7 @@ export async function processPendingJobs() {
       await new Promise(r => setTimeout(r, 1000));
     } catch (err) {
       console.error(chalk.red(`  Failed to process job ${job.id}:`, err.message));
+      logEvent('ERROR', 'SCORE', `Failed to score job ${job.id}`, { error: err.message });
       await updateJob(job.id, { status: 'scoring_failed' });
     }
   }
