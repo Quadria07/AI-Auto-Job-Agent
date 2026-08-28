@@ -55,6 +55,19 @@ async function callDeepSeek(messages, maxTokens = 300) {
 
 export async function scoreJobMatch(job) {
   const profile = getProfile();
+  const jobTitle = sanitiseText(job.title, 100);
+
+  // Fast pre-filter for non-technical roles to save DeepSeek API calls & speed up execution
+  const NON_TECH_TITLE_PATTERNS = [
+    /\bgardener\b/i, /\bcleaner\b/i, /\bbutcher\b/i, /\bmail sorter\b/i, /\bkitchen porter\b/i,
+    /\bramp attendant\b/i, /\bbaker\b/i, /\bbarista\b/i, /\bwaiter\b/i, /\bwaitress\b/i,
+    /\bcashier\b/i, /\bplumber\b/i, /\bdriver\b/i, /\breceptionist\b/i, /\bhousekeeper\b/i,
+    /\bcook\b/i, /\bcourier\b/i, /\btrimmer\b/i, /\bequipment maintenance\b/i
+  ];
+
+  if (NON_TECH_TITLE_PATTERNS.some(pattern => pattern.test(jobTitle))) {
+    return { score: 0, reason: 'Non-technical role filtered locally', keyMatches: [], gaps: [] };
+  }
 
   const skillsSummary = [
     ...profile.skills.security,
