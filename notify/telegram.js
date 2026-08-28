@@ -116,16 +116,18 @@ _Tap Approve to auto-apply, Skip to ignore_
 
 export async function sendAutoApplyNotification(job, success) {
   const bot = getBot();
-  const statusLabel = success ? '[APPLIED]' : '[FAILED]';
-  const statusText = success ? 'Applied automatically.' : 'Auto-apply failed — apply manually.';
+  const statusLabel = success ? '[APPLIED]' : '[CV PREPARED]';
+  const statusText = success
+    ? 'Applied automatically via Email / Web Form.'
+    : 'Tailored CV & Cover Letter prepared. Open link to complete application.';
 
   const message = `
 ${statusLabel} *${safe(job.title)}* — ${job.matchScore}% Match
 
-Company: ${safe(job.company)}
+Company: ${safe(job.company || 'Direct Employer')}
 Source: ${safe(job.source)}
 Status: ${statusText}
-[View Job](${job.applyUrl})
+[Open Job Posting](${job.applyUrl})
 `.trim();
 
   try {
