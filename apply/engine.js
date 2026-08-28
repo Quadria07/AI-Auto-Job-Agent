@@ -150,68 +150,79 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36');
 
-    // Step 1: Navigate to the job listing URL
+    // Step 1: Navigate to the URL
     try {
       await page.goto(job.applyUrl, { waitUntil: 'networkidle2', timeout: 30000 });
     } catch (navErr) {
-      console.warn(`[AutoApply] Navigation warning for ${job.applyUrl}:`, navErr.message);
+      console.warn(`[AutoApply] Navigation warning:`, navErr.message);
       return false;
     }
 
-    const listingUrl = page.url();
-    console.log(chalk.gray(`  Landed on: ${listingUrl}`));
+    const landedUrl = page.url();
+    console.log(chalk.gray(`  Landed on: ${landedUrl}`));
     await page.screenshot({ path: path.join(appDir, 'apply-before.png') });
 
-    // Step 2: Check if this is a job listing page (not a form).
-    // Look for an "Apply" button/link and follow it to the actual application form.
-    const APPLY_LINK_SELECTORS = [
-      'a[href*="apply"]',
-      'a.apply-button',
-      'a.job-apply-btn',
-      '.application-btn a',
-      'a[data-button-text*="Apply" i]',
-      'a[title*="Apply" i]',
-      '#apply-button',
-      '.entry-apply a',
-    ];
+    // Step 2: If this is a WordPress Jobs listing page, extract real apply info from page
+    if (landedUrl.includes('jobs.wordpress.net')) {
+      // Extract all mailto links from the page
+      const mailtoLinks = await page.$$eval('a[href^="mailto:"]', links => links.map(l => l.href));
+      if (mailtoLinks.length > 0) {
+        const emailAddr = extractEmail(mailtoLinks[0]);
+        console.log(chalk.cyan(`  Found email on listing page: ${emailAddr}`));
+        const applied = await sendEmailApplication(job, cvText, coverLetterText, emailAddr, pdfPath);
+        return applied;
+      }
 
-    let navigatedToForm = false;
-    for (const sel of APPLY_LINK_SELECTORS) {
-      try {
-        const applyLink = await page.$eval(sel, el => el.href || el.getAttribute('href') || '');
-        if (applyLink && applyLink.startsWith('http') && applyLink !== listingUrl) {
-          console.log(chalk.gray(`  Following apply link: ${applyLink}`));
+      // Extract email from page body text
+      const bodyText = await page.evaluate(() => document.body.innerText);
+      const emailMatch = bodyText.match(/[a-zA-Z0-9._%+\-]+@(?!wordpress|example|sentry|w3)[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/);
+      if (emailMatch) {
+        const emailAddr = emailMatch[0];
+        console.log(chalk.cyan(`  Found email in page text: ${emailAddr}`));
+        const applied = await sendEmailApplication(job, cvText, coverLetterText, emailAddr, pdfPath);
+        return applied;
+      }
+
+      // Extract external apply links (not wordpress.net/wordpress.org)
+      const externalLinks = await page.$$eval('a[href]', links =>
+        links
+          .map(l => ({ href: l.href, text: l.innerText.toLowerCase().trim() }))
+          .filter(l =>
+            l.href.startsWith('http') &&
+            !l.href.includes('jobs.wordpress.net') &&
+            !l.href.includes('wordpress.org') &&
+            !l.href.includes('profiles.wordpress') &&
+            (l.text.includes('apply') || l.text.includes('application') || l.text.includes('submit'))
+          )
+      );
+
+      if (externalLinks.length > 0) {
+        const applyLink = externalLinks[0].href;
+        console.log(chalk.cyan(`  Following external apply link: ${applyLink}`));
+        try {
           await page.goto(applyLink, { waitUntil: 'networkidle2', timeout: 25000 });
-          navigatedToForm = true;
-          break;
-        }
-      } catch { /* not found, try next */ }
+          console.log(chalk.gray(`  Navigated to: ${page.url()}`));
+        } catch { /* ignore navigation errors */ }
+      } else {
+        console.log(chalk.yellow(`  No email or apply link found on listing page. Files saved for manual apply.`));
+        return false;
+      }
     }
 
-    const formUrl = page.url();
-    if (navigatedToForm) {
-      console.log(chalk.gray(`  Application form URL: ${formUrl}`));
-    }
-
-    // Step 3: Check if it's a mailto link on the listing page (email apply)
-    if (!navigatedToForm) {
+    // Step 3: On non-listing pages, check for standard mailto links
+    if (!landedUrl.includes('jobs.wordpress.net')) {
       try {
-        const mailtoHref = await page.$eval(
-          'a[href^="mailto:"]',
-          el => el.href
-        );
+        const mailtoHref = await page.$eval('a[href^="mailto:"]', el => el.href);
         if (mailtoHref) {
           const emailAddr = extractEmail(mailtoHref);
-          console.log(chalk.gray(`  Detected email apply: ${emailAddr}`));
-          // Switch to email apply
-          const { sendEmailApplication } = await import('./email.js');
+          console.log(chalk.cyan(`  Detected mailto on page: ${emailAddr}`));
           const applied = await sendEmailApplication(job, cvText, coverLetterText, emailAddr, pdfPath);
           return applied;
         }
       } catch { /* no mailto found */ }
     }
 
-    // Step 4: Try filling the form on whatever page we're on
+    // Step 4: Try filling the form on whatever page we're now on
     const filled = await fillApplicationForm(page, cvText, coverLetterText);
     await uploadPdfToForm(page, pdfPath);
 
@@ -219,8 +230,7 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
       console.log(chalk.green(`  Form filled successfully on: ${page.url()}`));
       await page.screenshot({ path: path.join(appDir, 'apply-filled.png') });
     } else {
-      console.log(chalk.yellow(`  No fillable form fields found at: ${page.url()}`));
-      console.log(chalk.yellow(`  CV & cover letter saved — complete application manually.`));
+      console.log(chalk.yellow(`  No fillable form found at: ${page.url()} — files saved for manual apply.`));
       await page.screenshot({ path: path.join(appDir, 'apply-no-form.png') });
     }
 
@@ -232,6 +242,8 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
     if (browser) await browser.close();
   }
 }
+
+
 
 async function uploadPdfToForm(page, pdfPath) {
   const selectors = [
