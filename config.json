@@ -1,6 +1,6 @@
 {
   "matchThresholds": {
-    "autoApply": 85,
+    "autoApply": 95,
     "telegramApproval": 70,
     "silentSave": 60,
     "skip": 0

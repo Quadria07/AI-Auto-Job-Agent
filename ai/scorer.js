@@ -77,7 +77,6 @@ export async function scoreJobMatch(job) {
   ].join(', ');
 
   // Sanitise all external data before injecting into prompt
-  const jobTitle = sanitiseText(job.title, 100);
   const jobCompany = sanitiseText(job.company, 100);
   const jobLocation = sanitiseText(job.location, 100);
   const jobDescription = sanitiseText(job.description, 1500);

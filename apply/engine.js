@@ -148,7 +148,13 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
 
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36');
-    await page.goto(job.applyUrl, { waitUntil: 'networkidle2', timeout: 30000 });
+    
+    try {
+      await page.goto(job.applyUrl, { waitUntil: 'networkidle2', timeout: 30000 });
+    } catch (navErr) {
+      console.warn(`[AutoApply] Navigation warning for ${job.applyUrl}:`, navErr.message);
+      return false;
+    }
 
     await page.screenshot({ path: path.join(appDir, 'apply-before.png') });
 
@@ -157,8 +163,6 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
 
     if (filled) {
       await page.screenshot({ path: path.join(appDir, 'apply-filled.png') });
-      // Auto-submit is disabled by default. Enable only after manual verification.
-      // await page.click('button[type="submit"], input[type="submit"]');
     }
 
     return filled;
