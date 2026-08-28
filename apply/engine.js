@@ -67,8 +67,6 @@ export async function applyToJob(job) {
   console.log(chalk.blue(`\nApplying to: ${job.title} @ ${job.company}`));
 
   const applyUrl = job.applyUrl || '';
-
-  // Use scraper-provided method hint, then fall back to URL detection
   const method = job.applyMethod || (isEmailApplyUrl(applyUrl) ? 'email' : 'webForm');
 
   const withinLimit = await checkDailyLimit(method);
@@ -78,37 +76,33 @@ export async function applyToJob(job) {
   }
 
   try {
-    console.log(chalk.gray('  Tailoring CV...'));
-    const cv = await tailorCV(job);
-    if (!cv) throw new Error('CV tailoring failed');
-
-    console.log(chalk.gray('  Writing cover letter...'));
-    const coverLetter = await generateCoverLetter(job, cv.text);
-
-    console.log(chalk.gray('  Generating PDF...'));
-    const safeId = job.id.replace(/[^a-z0-9-]/gi, '-').slice(0, 50);
-    const appDir = await ensureApplicationsDir(safeId);
-    const pdfPath = path.join(appDir, 'Quadri_Adebisi_CV.pdf');
-    await generateCvPdf(cv.text, pdfPath);
-
     let applied = false;
-
+    let finalCvPath = '';
+    let finalCoverLetterPath = '';
+    
     if (method === 'email') {
       const emailAddress = extractEmail(applyUrl);
+      console.log(chalk.gray(`  Preparing materials for email application...`));
+      const mats = await prepareApplicationMaterials(job);
+      finalCvPath = mats.cv.path;
+      finalCoverLetterPath = mats.coverLetter?.path || '';
+      
       console.log(chalk.gray(`  Sending email to ${emailAddress}...`));
-      applied = await sendEmailApplication(job, cv.text, coverLetter?.text || '', emailAddress, pdfPath);
-    } else if (method === 'manual' || !isValidHttpUrl(applyUrl)) {
-      console.log(chalk.yellow(`  CV saved. Manual apply required: ${applyUrl}`));
+      applied = await sendEmailApplication(job, mats.cv.text, mats.coverLetter?.text || '', emailAddress, mats.pdfPath);
+    } else if (!isValidHttpUrl(applyUrl)) {
+      console.log(chalk.yellow(`  No valid apply URL. Skipping CV prep.`));
     } else {
-      // Try webForm for any valid http/https URL (no ATS whitelist restriction)
-      console.log(chalk.gray('  Filling web form...'));
-      applied = await attemptAutoApply(job, cv.text, coverLetter?.text || '', pdfPath, appDir);
+      console.log(chalk.gray('  Checking web form...'));
+      const result = await attemptAutoApply(job);
+      applied = result.applied;
+      finalCvPath = result.cvPath || '';
+      finalCoverLetterPath = result.coverLetterPath || '';
     }
 
     await recordApplication(
       { ...job, autoApplied: applied },
-      cv.path,
-      coverLetter?.path || '',
+      finalCvPath,
+      finalCoverLetterPath,
       method
     );
 
@@ -117,14 +111,14 @@ export async function applyToJob(job) {
       applyMethod: method,
       applied,
       appliedAt: applied ? new Date().toISOString() : null,
-      cvTailored: true,
-      pdfGenerated: true,
-      coverLetterGenerated: !!coverLetter,
+      cvTailored: !!finalCvPath,
+      pdfGenerated: !!finalCvPath,
+      coverLetterGenerated: !!finalCoverLetterPath,
     });
 
     console.log(applied
       ? chalk.green(`  Applied (${method}) successfully.`)
-      : chalk.yellow(`  Not auto-applied. Files saved.`)
+      : chalk.yellow(`  Not auto-applied. Files saved (if generated).`)
     );
 
     return applied;
@@ -135,9 +129,31 @@ export async function applyToJob(job) {
   }
 }
 
-async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
+async function prepareApplicationMaterials(job) {
+  console.log(chalk.gray('  Tailoring CV...'));
+  const cv = await tailorCV(job);
+  if (!cv) throw new Error('CV tailoring failed');
+
+  console.log(chalk.gray('  Writing cover letter...'));
+  const coverLetter = await generateCoverLetter(job, cv.text);
+
+  console.log(chalk.gray('  Generating PDF...'));
+  const safeId = job.id.replace(/[^a-z0-9-]/gi, '-').slice(0, 50);
+  const appDir = await ensureApplicationsDir(safeId);
+  const pdfPath = path.join(appDir, 'Quadri_Adebisi_CV.pdf');
+  await generateCvPdf(cv.text, pdfPath);
+
+  return { cv, coverLetter, pdfPath, appDir };
+}
+
+async function attemptAutoApply(job) {
   let browser = null;
+  const result = { applied: false, cvPath: '', coverLetterPath: '' };
+  
   try {
+    const safeId = job.id.replace(/[^a-z0-9-]/gi, '-').slice(0, 50);
+    const appDir = await ensureApplicationsDir(safeId);
+    
     const launchOpts = {
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled'],
@@ -150,40 +166,41 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
     const page = await browser.newPage();
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36');
 
-    // Step 1: Navigate to the URL
     try {
       await page.goto(job.applyUrl, { waitUntil: 'networkidle2', timeout: 30000 });
     } catch (navErr) {
       console.warn(`[AutoApply] Navigation warning:`, navErr.message);
-      return false;
+      return result;
     }
 
     const landedUrl = page.url();
     console.log(chalk.gray(`  Landed on: ${landedUrl}`));
     await page.screenshot({ path: path.join(appDir, 'apply-before.png') });
 
-    // Step 2: If this is a WordPress Jobs listing page, extract real apply info from page
     if (landedUrl.includes('jobs.wordpress.net')) {
-      // Extract all mailto links from the page
       const mailtoLinks = await page.$$eval('a[href^="mailto:"]', links => links.map(l => l.href));
       if (mailtoLinks.length > 0) {
         const emailAddr = extractEmail(mailtoLinks[0]);
         console.log(chalk.cyan(`  Found email on listing page: ${emailAddr}`));
-        const applied = await sendEmailApplication(job, cvText, coverLetterText, emailAddr, pdfPath);
-        return applied;
+        const mats = await prepareApplicationMaterials(job);
+        result.cvPath = mats.cv.path;
+        result.coverLetterPath = mats.coverLetter?.path || '';
+        result.applied = await sendEmailApplication(job, mats.cv.text, mats.coverLetter?.text || '', emailAddr, mats.pdfPath);
+        return result;
       }
 
-      // Extract email from page body text
       const bodyText = await page.evaluate(() => document.body.innerText);
       const emailMatch = bodyText.match(/[a-zA-Z0-9._%+\-]+@(?!wordpress|example|sentry|w3)[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/);
       if (emailMatch) {
         const emailAddr = emailMatch[0];
         console.log(chalk.cyan(`  Found email in page text: ${emailAddr}`));
-        const applied = await sendEmailApplication(job, cvText, coverLetterText, emailAddr, pdfPath);
-        return applied;
+        const mats = await prepareApplicationMaterials(job);
+        result.cvPath = mats.cv.path;
+        result.coverLetterPath = mats.coverLetter?.path || '';
+        result.applied = await sendEmailApplication(job, mats.cv.text, mats.coverLetter?.text || '', emailAddr, mats.pdfPath);
+        return result;
       }
 
-      // Extract external apply links (not wordpress.net/wordpress.org)
       const externalLinks = await page.$$eval('a[href]', links =>
         links
           .map(l => ({ href: l.href, text: l.innerText.toLowerCase().trim() }))
@@ -202,45 +219,89 @@ async function attemptAutoApply(job, cvText, coverLetterText, pdfPath, appDir) {
         try {
           await page.goto(applyLink, { waitUntil: 'networkidle2', timeout: 25000 });
           console.log(chalk.gray(`  Navigated to: ${page.url()}`));
-        } catch { /* ignore navigation errors */ }
+        } catch { }
       } else {
-        console.log(chalk.yellow(`  No email or apply link found on listing page. Files saved for manual apply.`));
-        return false;
+        console.log(chalk.yellow(`  No email or apply link found on listing page. Skipping.`));
+        return result;
       }
     }
 
-    // Step 3: On non-listing pages, check for standard mailto links
     if (!landedUrl.includes('jobs.wordpress.net')) {
+      // First check for mailto link
       try {
         const mailtoHref = await page.$eval('a[href^="mailto:"]', el => el.href);
         if (mailtoHref) {
           const emailAddr = extractEmail(mailtoHref);
           console.log(chalk.cyan(`  Detected mailto on page: ${emailAddr}`));
-          const applied = await sendEmailApplication(job, cvText, coverLetterText, emailAddr, pdfPath);
-          return applied;
+          const mats = await prepareApplicationMaterials(job);
+          result.cvPath = mats.cv.path;
+          result.coverLetterPath = mats.coverLetter?.path || '';
+          result.applied = await sendEmailApplication(job, mats.cv.text, mats.coverLetter?.text || '', emailAddr, mats.pdfPath);
+          return result;
         }
-      } catch { /* no mailto found */ }
+      } catch { }
+
+      // Look for an "Apply" button/link and follow it to the actual application form.
+      const APPLY_LINK_SELECTORS = [
+        'a[href*="apply"]', 'a.apply-button', 'a.job-apply-btn',
+        '.application-btn a', 'a[data-button-text*="Apply" i]',
+        'a[title*="Apply" i]', '#apply-button', '.entry-apply a'
+      ];
+      for (const sel of APPLY_LINK_SELECTORS) {
+        try {
+          const applyLink = await page.$eval(sel, el => el.href || el.getAttribute('href') || '');
+          if (applyLink && applyLink.startsWith('http') && applyLink !== landedUrl) {
+            console.log(chalk.gray(`  Following apply link: ${applyLink}`));
+            await page.goto(applyLink, { waitUntil: 'networkidle2', timeout: 25000 });
+            break;
+          }
+        } catch { }
+      }
     }
 
-    // Step 4: Try filling the form on whatever page we're now on
-    const filled = await fillApplicationForm(page, cvText, coverLetterText);
-    await uploadPdfToForm(page, pdfPath);
+    const hasForm = await hasFillableForm(page);
+    if (!hasForm) {
+      console.log(chalk.yellow(`  No fillable form found at: ${page.url()} — skipping CV prep.`));
+      return result;
+    }
+
+    const mats = await prepareApplicationMaterials(job);
+    result.cvPath = mats.cv.path;
+    result.coverLetterPath = mats.coverLetter?.path || '';
+
+    const filled = await fillApplicationForm(page, mats.cv.text, mats.coverLetter?.text || '');
+    await uploadPdfToForm(page, mats.pdfPath);
 
     if (filled) {
       console.log(chalk.green(`  Form filled successfully on: ${page.url()}`));
       await page.screenshot({ path: path.join(appDir, 'apply-filled.png') });
     } else {
-      console.log(chalk.yellow(`  No fillable form found at: ${page.url()} — files saved for manual apply.`));
-      await page.screenshot({ path: path.join(appDir, 'apply-no-form.png') });
+      console.log(chalk.yellow(`  Failed to fill form at: ${page.url()} — manual apply required.`));
+      await page.screenshot({ path: path.join(appDir, 'apply-failed.png') });
     }
 
-    return filled;
+    result.applied = filled;
+    return result;
   } catch (err) {
     console.error('[AutoApply] Form fill failed:', err.message);
-    return false;
+    return result;
   } finally {
     if (browser) await browser.close();
   }
+}
+
+async function hasFillableForm(page) {
+  const allSelectors = [
+    'input[name*="name"]', 'input[id*="name"]', 'input[placeholder*="name" i]',
+    'input[type="email"]', 'input[name*="email"]',
+    'input[type="file"]'
+  ];
+  for (const sel of allSelectors) {
+    try {
+      if (await page.$(sel)) return true;
+    } catch {}
+  }
+  return false;
 }
 
 

@@ -46,7 +46,9 @@ export async function processPendingJobs() {
       if (status === 'queued_for_auto_apply') {
         logEvent('INFO', 'APPLY', `Auto-applying to ${job.title} @ ${job.company}`);
         const applied = await applyToJob(job);
-        await sendAutoApplyNotification({ ...job, matchScore: score }, applied);
+        if (applied) {
+          await sendAutoApplyNotification({ ...job, matchScore: score }, applied);
+        }
       } else if (status === 'queued_for_approval') {
         logEvent('INFO', 'TELEGRAM', `Sent Telegram approval request for ${job.title} @ ${job.company} (${score}%)`);
         await sendApprovalRequest({ ...job, matchScore: score, matchReason: matchResult.reason });
