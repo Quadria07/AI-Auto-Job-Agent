@@ -55,6 +55,7 @@ export const config = {
   schedule: settings.schedule,
   platforms: settings.platforms,
   maxJobsPerScan: settings.maxJobsPerScan,
+  maxApplicationsPerHour: settings.maxApplicationsPerHour || 5,
   maxApplicationsPerDay: settings.maxApplicationsPerDay,
   deepseek: {
     model: process.env.DEEPSEEK_MODEL || settings.deepseek?.model || 'deepseek-chat',

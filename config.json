@@ -1,12 +1,10 @@
 {
   "matchThresholds": {
-    "autoApply": 85,
-    "telegramApproval": 70,
-    "silentSave": 60,
-    "skip": 0
+    "autoApply": 70,
+    "silentSave": 0
   },
   "schedule": {
-    "scanInterval": "*/30 * * * *",
+    "scanInterval": "0 */2 * * *",
     "morningDigest": "0 6 * * *"
   },
   "platforms": [
@@ -17,10 +15,11 @@
     "himalayas",
     "wordpressjobs"
   ],
-  "maxJobsPerScan": 300,
+  "maxJobsPerScan": 500,
+  "maxApplicationsPerHour": 20,
   "maxApplicationsPerDay": {
-    "email": 3,
-    "webForm": 2
+    "email": 100,
+    "webForm": 60
   },
   "deepseek": {
     "model": "deepseek-chat",

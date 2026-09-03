@@ -53,11 +53,52 @@ async function callDeepSeek(messages, maxTokens = 300) {
   return JSON.parse(cleanContent);
 }
 
+function checkLocationEligibility(job) {
+  const combined = `${job.title} ${job.location || ''} ${job.description || ''} ${(job.tags || []).join(' ')}`.toLowerCase();
+
+  // 1. Check for strict regional remote exclusions (US/EU/UK only)
+  const STRICT_EXCLUSIONS = [
+    /\bus only\b/i, /\bus citizens\b/i, /\bmust reside in us\b/i, /\bmust reside in the us\b/i,
+    /\bmust be located in the us\b/i, /\buk only\b/i, /\beu only\b/i,
+    /\beu citizens\b/i, /\bnorth america only\b/i, /\bcanada only\b/i, /\baustralia only\b/i
+  ];
+  if (STRICT_EXCLUSIONS.some(pattern => pattern.test(combined))) {
+    return { eligible: false, reason: 'Restricted regional remote job (US/EU/UK only)' };
+  }
+
+  // 2. Check if job is Remote
+  const isRemote = /\bremote\b/i.test(combined) ||
+                   /\bwork from home\b/i.test(combined) ||
+                   /\banywhere\b/i.test(combined) ||
+                   /\bworldwide\b/i.test(combined) ||
+                   /\bglobal\b/i.test(combined) ||
+                   /\btelecommute\b/i.test(combined) ||
+                   (job.location && /remote|anywhere|worldwide|global/i.test(job.location));
+
+  // 3. Check if job is strictly located in Osogbo / Osun State
+  const isOsogboLocal = /\bosogbo\b/i.test(combined) ||
+                        /\bòsogbo\b/i.test(combined) ||
+                        /\bosun\b/i.test(combined);
+
+  // Remote jobs are valid for candidate working from Osogbo
+  if (isRemote) {
+    return { eligible: true };
+  }
+
+  // Non-remote / on-site jobs MUST be in Osogbo, Osun State
+  if (isOsogboLocal) {
+    return { eligible: true };
+  }
+
+  // Reject on-site/physical roles in Lagos, Abuja, Port Harcourt, or outside Osogbo/Osun State
+  return { eligible: false, reason: 'On-site/physical role located outside candidate city (Òsogbo, Osun State)' };
+}
+
 export async function scoreJobMatch(job) {
   const profile = getProfile();
   const jobTitle = sanitiseText(job.title, 100);
 
-  // Fast pre-filter for non-technical roles to save DeepSeek API calls & speed up execution
+  // Fast pre-filter for non-technical roles
   const NON_TECH_TITLE_PATTERNS = [
     /\bgardener\b/i, /\bcleaner\b/i, /\bbutcher\b/i, /\bmail sorter\b/i, /\bkitchen porter\b/i,
     /\bramp attendant\b/i, /\bbaker\b/i, /\bbarista\b/i, /\bwaiter\b/i, /\bwaitress\b/i,
@@ -67,6 +108,12 @@ export async function scoreJobMatch(job) {
 
   if (NON_TECH_TITLE_PATTERNS.some(pattern => pattern.test(jobTitle))) {
     return { score: 0, reason: 'Non-technical role filtered locally', keyMatches: [], gaps: [] };
+  }
+
+  // Check Location & Work Type eligibility (Remote or Òsogbo Osun State only)
+  const locCheck = checkLocationEligibility(job);
+  if (!locCheck.eligible) {
+    return { score: 0, reason: locCheck.reason, keyMatches: [], gaps: ['Ineligible location/work mode'] };
   }
 
   const skillsSummary = [
@@ -92,7 +139,14 @@ Experience: ${profile.experience.map(e => `${e.role} at ${e.company} (${e.durati
 Portfolio: ${profile.personal.portfolio}
 Location: ${profile.personal.location}
 Projects: Over 20 live deployed projects across healthcare, e-commerce, hospitality, media, fintech and education
-Clients: Australia, United Kingdom, Canada, Nigeria and beyond
+
+CRITICAL LOCATION & ELIGIBILITY RULES:
+- Candidate lives in Òsogbo, Osun State, Nigeria.
+- Candidate is ONLY eligible for:
+  1. FULLY REMOTE jobs (Worldwide / Global / Africa / Nigeria).
+  2. On-Site / Hybrid jobs strictly located in Òsogbo / Osun State, Nigeria.
+- On-site or physical jobs in Lagos, Abuja, or outside Òsogbo/Osun State MUST receive a score of 0.
+- Any job requiring physical on-site presence or in-person meetings outside Òsogbo/Osun State MUST receive a score of 0.
 
 JOB TO EVALUATE:
 Title: ${jobTitle}

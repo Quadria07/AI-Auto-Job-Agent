@@ -5,11 +5,14 @@
 import nodemailer from 'nodemailer';
 import puppeteer from 'puppeteer';
 import { config } from '../config.js';
+import { mkdirSync } from 'fs';
+import path from 'path';
 
 // Converts plain-text CV into a structured, ATS-safe PDF.
 // Design: single column, accent border on section headings, Inter font.
 // Text is fully selectable and copyable - no image text.
 export async function generateCvPdf(cvText, outPath) {
+  mkdirSync(path.dirname(outPath), { recursive: true });
   const html = buildCvHtml(cvText);
 
   const launchOpts = {

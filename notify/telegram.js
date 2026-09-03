@@ -8,10 +8,11 @@ import { updateJob, getTodayStats } from '../data/store.js';
 
 let _bot = null;
 
-export function getBot() {
+export function getBot(options = {}) {
   if (!_bot) {
-    _bot = new TelegramBot(config.telegramBotToken, { polling: true });
-    setupCallbackHandlers();
+    const usePolling = options.polling !== undefined ? options.polling : false;
+    _bot = new TelegramBot(config.telegramBotToken, { polling: usePolling });
+    if (usePolling) setupCallbackHandlers();
   }
   return _bot;
 }
@@ -25,51 +26,85 @@ function setupCallbackHandlers() {
   const bot = _bot;
 
   bot.on('callback_query', async (query) => {
-    const { data, message } = query;
+    try {
+      const { data, message } = query;
 
-    // Reject if not from the owner's chat
-    if (!isAuthorised(message.chat.id)) {
-      await bot.answerCallbackQuery(query.id, { text: 'Unauthorised.' });
-      return;
-    }
-
-    if (data.startsWith('approve:')) {
-      const jobId = sanitiseId(data.replace('approve:', ''));
-      if (!jobId) return;
-
-      await updateJob(jobId, { status: 'approved', approvedAt: new Date().toISOString() });
-      await bot.answerCallbackQuery(query.id, { text: 'Approved. Applying now...' });
-      await bot.editMessageReplyMarkup(
-        { inline_keyboard: [[{ text: '[ Applying... ]', callback_data: 'noop' }]] },
-        { chat_id: message.chat.id, message_id: message.message_id }
-      );
-
-      const { applyToJob } = await import('../apply/engine.js');
-      const { readJobs } = await import('../data/store.js');
-      const jobs = await readJobs();
-      const job = jobs.find(j => j.id === jobId);
-
-      if (job) {
-        const success = await applyToJob(job);
-        const statusText = success ? '[ Applied ]' : '[ Failed — Apply Manually ]';
-        await bot.editMessageReplyMarkup(
-          { inline_keyboard: [[{ text: statusText, callback_data: 'noop' }]] },
-          { chat_id: message.chat.id, message_id: message.message_id }
-        );
-        await sendAutoApplyNotification({ ...job, matchScore: job.matchScore || 0 }, success);
+      // Reject if not from the owner's chat
+      if (!isAuthorised(message.chat.id)) {
+        try { await bot.answerCallbackQuery(query.id, { text: 'Unauthorised.' }); } catch {}
+        return;
       }
-    }
 
-    if (data.startsWith('skip:')) {
-      const jobId = sanitiseId(data.replace('skip:', ''));
-      if (!jobId) return;
+      if (data.startsWith('approve:')) {
+        const rawId = data.replace('approve:', '');
+        const jobId = sanitiseId(rawId);
+        if (!jobId) return;
 
-      await updateJob(jobId, { status: 'skipped' });
-      await bot.answerCallbackQuery(query.id, { text: 'Job skipped.' });
-      await bot.editMessageReplyMarkup(
-        { inline_keyboard: [[{ text: '[ Skipped ]', callback_data: 'noop' }]] },
-        { chat_id: message.chat.id, message_id: message.message_id }
-      );
+        await updateJob(jobId, { status: 'approved', approvedAt: new Date().toISOString() });
+        try { await bot.answerCallbackQuery(query.id, { text: 'Approved. Applying now...' }); } catch {}
+        try {
+          await bot.editMessageReplyMarkup(
+            { inline_keyboard: [[{ text: '⏳ Applying...', callback_data: 'noop' }]] },
+            { chat_id: message.chat.id, message_id: message.message_id }
+          );
+        } catch {}
+
+        const { applyToJob } = await import('../apply/engine.js');
+        const { readJobs } = await import('../data/store.js');
+        const jobs = await readJobs();
+        const job = jobs.find(j => j.id === jobId || j.id.includes(rawId) || rawId.includes(j.id));
+
+        if (job) {
+          const success = await applyToJob(job, true); // ignoreLimits=true — user manually approved
+
+          if (success) {
+            // Applied successfully
+            await updateJob(jobId, { status: 'applied', applied: true, appliedAt: new Date().toISOString() });
+            try {
+              await bot.editMessageReplyMarkup(
+                { inline_keyboard: [[{ text: '✅ Applied Successfully', callback_data: 'noop' }]] },
+                { chat_id: message.chat.id, message_id: message.message_id }
+              );
+            } catch {}
+            await sendAutoApplyNotification({ ...job, matchScore: job.matchScore || 0 }, true);
+          } else {
+            // Could not auto-apply — give user the job link to apply manually
+            await updateJob(jobId, { status: 'manual_apply_required' });
+            const linkButton = (job.applyUrl && (job.applyUrl.startsWith('http://') || job.applyUrl.startsWith('https://')))
+              ? { text: '🔗 Open Job & Apply Manually', url: job.applyUrl }
+              : { text: '⚠️ No direct apply link available', callback_data: 'noop' };
+            try {
+              await bot.editMessageReplyMarkup(
+                { inline_keyboard: [[linkButton]] },
+                { chat_id: message.chat.id, message_id: message.message_id }
+              );
+            } catch {}
+            try {
+              await bot.sendMessage(
+                message.chat.id,
+                `⚠️ *Could not auto-apply* to *${safe(job.title)}*\n\nThis job requires manual application on an external portal\. Tap the button above to open it\.`,
+                { parse_mode: 'Markdown' }
+              );
+            } catch {}
+          }
+        }
+      }
+
+      if (data.startsWith('skip:')) {
+        const jobId = sanitiseId(data.replace('skip:', ''));
+        if (!jobId) return;
+
+        await updateJob(jobId, { status: 'skipped' });
+        try { await bot.answerCallbackQuery(query.id, { text: 'Job skipped.' }); } catch {}
+        try {
+          await bot.editMessageReplyMarkup(
+            { inline_keyboard: [[{ text: '[ Skipped ]', callback_data: 'noop' }]] },
+            { chat_id: message.chat.id, message_id: message.message_id }
+          );
+        } catch {}
+      }
+    } catch (err) {
+      console.error('[Telegram Callback Error Handler]:', err.message);
     }
   });
 }
@@ -114,24 +149,29 @@ _Tap Approve to auto-apply, Skip to ignore_
   }
 }
 
-export async function sendAutoApplyNotification(job, success) {
+export async function sendAutoApplyNotification(job, success = true) {
   const bot = getBot();
-  const statusLabel = success ? '[APPLIED]' : '[CV PREPARED]';
-  const statusText = success
-    ? 'Applied automatically via Email / Web Form.'
-    : 'Tailored CV & Cover Letter prepared. Open link to complete application.';
 
   const message = `
-${statusLabel} *${safe(job.title)}* — ${job.matchScore}% Match
+[APPLIED] *${safe(job.title)}* — ${job.matchScore}% Match
 
 Company: ${safe(job.company || 'Direct Employer')}
 Source: ${safe(job.source)}
-Status: ${statusText}
-[Open Job Posting](${job.applyUrl})
+Status: Applied automatically via Email / ATS Web Form.
+[View Job Posting](${job.applyUrl})
 `.trim();
 
+  const opts = {
+    parse_mode: 'Markdown',
+  };
+  if (job.applyUrl && (job.applyUrl.startsWith('http://') || job.applyUrl.startsWith('https://'))) {
+    opts.reply_markup = {
+      inline_keyboard: [[{ text: '🔗 View Job Posting', url: job.applyUrl }]]
+    };
+  }
+
   try {
-    await bot.sendMessage(config.telegramChatId, message, { parse_mode: 'Markdown' });
+    await bot.sendMessage(config.telegramChatId, message, opts);
   } catch (err) {
     console.error('[Telegram] sendAutoApplyNotification failed:', err.message);
   }

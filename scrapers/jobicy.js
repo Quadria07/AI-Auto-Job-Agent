@@ -2,6 +2,7 @@
 // Jobicy free REST API — no auth, filterable by tag
 
 import axios from 'axios';
+import crypto from 'crypto';
 
 const JOBICY_API = 'https://jobicy.com/api/v2/remote-jobs';
 
@@ -18,8 +19,7 @@ export async function scrapeJobicy() {
   try {
     const response = await axios.get(JOBICY_API, {
       params: {
-        count: 50,
-        geo: 'worldwide'
+        count: 20
       },
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -30,7 +30,9 @@ export async function scrapeJobicy() {
     const jobs = response.data?.jobs || [];
 
     for (const job of jobs) {
-      const jobId = `jobicy-${job.id}`;
+      const rawId = job.id || job.url || job.jobTitle;
+      const hashId = crypto.createHash('md5').update(String(rawId)).digest('hex').slice(0, 12);
+      const jobId = `jobicy-${hashId}`;
       if (seen.has(jobId)) continue;
       seen.add(jobId);
 

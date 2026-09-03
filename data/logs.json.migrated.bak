@@ -1,0 +1,2292 @@
+[
+  {
+    "id": "log-1788438830847-jwk43",
+    "timestamp": "2026-09-03T12:33:50.847Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788438830842-9agdn",
+    "timestamp": "2026-09-03T12:33:50.842Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1788438828803-q9l6z",
+    "timestamp": "2026-09-03T12:33:48.803Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 332 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788438801547-6277n",
+    "timestamp": "2026-09-03T12:33:21.547Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1788438801536-fdf2x",
+    "timestamp": "2026-09-03T12:33:21.536Z",
+    "level": "INFO",
+    "category": "SCAN",
+    "message": "One-time job scan started",
+    "details": {}
+  },
+  {
+    "id": "log-1788438801526-770tj",
+    "timestamp": "2026-09-03T12:33:21.526Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1788438801494-obj78",
+    "timestamp": "2026-09-03T12:33:21.473Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1787954400978-y3qqv",
+    "timestamp": "2026-08-28T22:00:00.978Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787952600689-2vvn9",
+    "timestamp": "2026-08-28T21:30:00.689Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787934639456-o9ch1",
+    "timestamp": "2026-08-28T16:30:39.456Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787934639454-pavx7",
+    "timestamp": "2026-08-28T16:30:39.454Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787934636953-qweko",
+    "timestamp": "2026-08-28T16:30:36.953Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787934636949-bv16g",
+    "timestamp": "2026-08-28T16:30:36.949Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787934634631-dgq3k",
+    "timestamp": "2026-08-28T16:30:34.631Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787934634627-7isdv",
+    "timestamp": "2026-08-28T16:30:34.627Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787934632174-a5gjt",
+    "timestamp": "2026-08-28T16:30:32.174Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787934632170-7ww0e",
+    "timestamp": "2026-08-28T16:30:32.170Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787934629695-ht61f",
+    "timestamp": "2026-08-28T16:30:29.695Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787934629692-j9fb8",
+    "timestamp": "2026-08-28T16:30:29.692Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787934627015-wv7gz",
+    "timestamp": "2026-08-28T16:30:27.015Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787934627012-9fw5z",
+    "timestamp": "2026-08-28T16:30:27.012Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787934624192-kbdu6",
+    "timestamp": "2026-08-28T16:30:24.192Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787934624186-2wdt0",
+    "timestamp": "2026-08-28T16:30:24.186Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787934622397-xwc3y",
+    "timestamp": "2026-08-28T16:30:22.397Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787932875979-u6r8l",
+    "timestamp": "2026-08-28T16:01:15.979Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787932875974-w81kc",
+    "timestamp": "2026-08-28T16:01:15.974Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787932872283-23jaw",
+    "timestamp": "2026-08-28T16:01:12.283Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787932872280-it0vl",
+    "timestamp": "2026-08-28T16:01:12.280Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787932868634-vr0cy",
+    "timestamp": "2026-08-28T16:01:08.634Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787932868631-ifuo4",
+    "timestamp": "2026-08-28T16:01:08.631Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787932865206-k5k71",
+    "timestamp": "2026-08-28T16:01:05.206Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787932865203-pml4y",
+    "timestamp": "2026-08-28T16:01:05.203Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787932861860-g2yua",
+    "timestamp": "2026-08-28T16:01:01.860Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787932861858-7bubp",
+    "timestamp": "2026-08-28T16:01:01.858Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787932857628-98mev",
+    "timestamp": "2026-08-28T16:00:57.628Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Specialist and WordPress Manager @  (82%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787932857622-70vhg",
+    "timestamp": "2026-08-28T16:00:57.622Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (82%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 82,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787932823488-6bfd2",
+    "timestamp": "2026-08-28T16:00:23.488Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787931045631-7jj8s",
+    "timestamp": "2026-08-28T15:30:45.631Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787931045627-8sdvj",
+    "timestamp": "2026-08-28T15:30:45.627Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787931043196-hg8p5",
+    "timestamp": "2026-08-28T15:30:43.196Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787931043192-52iq5",
+    "timestamp": "2026-08-28T15:30:43.192Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787931040406-evlra",
+    "timestamp": "2026-08-28T15:30:40.406Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787931040403-i0bl1",
+    "timestamp": "2026-08-28T15:30:40.403Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787931037787-41ozg",
+    "timestamp": "2026-08-28T15:30:37.787Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787931037784-9bcwc",
+    "timestamp": "2026-08-28T15:30:37.784Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787931034939-557zo",
+    "timestamp": "2026-08-28T15:30:34.939Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787931034937-vbroi",
+    "timestamp": "2026-08-28T15:30:34.937Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787931031887-9a9kx",
+    "timestamp": "2026-08-28T15:30:31.887Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Specialist and WordPress Manager @  (78%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787931031885-jqj1f",
+    "timestamp": "2026-08-28T15:30:31.885Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (78%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 78,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787931029366-dhngk",
+    "timestamp": "2026-08-28T15:30:29.366Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787931029362-y1z9m",
+    "timestamp": "2026-08-28T15:30:29.362Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787931027572-sfxb8",
+    "timestamp": "2026-08-28T15:30:27.571Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 8 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787929481697-tkksd",
+    "timestamp": "2026-08-28T15:04:41.697Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787929481691-p6saz",
+    "timestamp": "2026-08-28T15:04:41.691Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787929478837-5asuz",
+    "timestamp": "2026-08-28T15:04:38.837Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787929478835-0tba1",
+    "timestamp": "2026-08-28T15:04:38.835Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787929475782-c9ymg",
+    "timestamp": "2026-08-28T15:04:35.782Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787929475776-nqy7o",
+    "timestamp": "2026-08-28T15:04:35.776Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787929473049-tpxe4",
+    "timestamp": "2026-08-28T15:04:33.049Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787929473042-m6n8t",
+    "timestamp": "2026-08-28T15:04:33.042Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787929470088-o7mgx",
+    "timestamp": "2026-08-28T15:04:30.088Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Enfold CSS help neeed @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787929470085-2gvvb",
+    "timestamp": "2026-08-28T15:04:30.085Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787929467639-yxb5u",
+    "timestamp": "2026-08-28T15:04:27.639Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787929467637-31ytw",
+    "timestamp": "2026-08-28T15:04:27.637Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787929463704-3sv8s",
+    "timestamp": "2026-08-28T15:04:23.704Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior WordPress Developer @  (82%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787929463697-vbdzo",
+    "timestamp": "2026-08-28T15:04:23.697Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (82%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 82,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787929461013-fhr8n",
+    "timestamp": "2026-08-28T15:04:21.013Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787929461008-1p8x3",
+    "timestamp": "2026-08-28T15:04:21.008Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {
+      "title": "Full-Stack WordPress Developer (USA Pacific)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/full-stack-wordpress-developer-usa-pacific/"
+    }
+  },
+  {
+    "id": "log-1787929452677-ohy19",
+    "timestamp": "2026-08-28T15:04:12.677Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787929452673-hfiov",
+    "timestamp": "2026-08-28T15:04:12.673Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/zoftify-travel-software-development/jobs/wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1787929248617-bhzz9",
+    "timestamp": "2026-08-28T15:00:48.617Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 91 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787929227720-5h8nm",
+    "timestamp": "2026-08-28T15:00:27.720Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1787929227716-1g7sz",
+    "timestamp": "2026-08-28T15:00:27.716Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1787929227710-nw9xy",
+    "timestamp": "2026-08-28T15:00:27.710Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1787929227697-xrpg1",
+    "timestamp": "2026-08-28T15:00:27.690Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1787927445279-t7xj8",
+    "timestamp": "2026-08-28T14:30:45.279Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927445275-839mm",
+    "timestamp": "2026-08-28T14:30:45.275Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787927441741-27ymf",
+    "timestamp": "2026-08-28T14:30:41.741Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927441737-hgon5",
+    "timestamp": "2026-08-28T14:30:41.737Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787927438350-t3bkq",
+    "timestamp": "2026-08-28T14:30:38.350Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927438347-a2w8b",
+    "timestamp": "2026-08-28T14:30:38.347Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (90%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 90,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787927434583-qc6wp",
+    "timestamp": "2026-08-28T14:30:34.583Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927434579-m6uxu",
+    "timestamp": "2026-08-28T14:30:34.579Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787927431371-pf5gb",
+    "timestamp": "2026-08-28T14:30:31.371Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Enfold CSS help neeed @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787927431369-jz8lk",
+    "timestamp": "2026-08-28T14:30:31.369Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787927428005-69bh3",
+    "timestamp": "2026-08-28T14:30:28.005Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Specialist and WordPress Manager @  (82%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787927428002-kw53s",
+    "timestamp": "2026-08-28T14:30:28.002Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (82%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 82,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787927424006-1y6ka",
+    "timestamp": "2026-08-28T14:30:24.006Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927424002-hmwmm",
+    "timestamp": "2026-08-28T14:30:24.002Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787927421797-zso1n",
+    "timestamp": "2026-08-28T14:30:21.797Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787927272238-aykc9",
+    "timestamp": "2026-08-28T14:27:52.238Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927272236-e6y9v",
+    "timestamp": "2026-08-28T14:27:52.236Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787927269069-qyxvt",
+    "timestamp": "2026-08-28T14:27:49.069Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927269066-4k60b",
+    "timestamp": "2026-08-28T14:27:49.066Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787927266189-907zz",
+    "timestamp": "2026-08-28T14:27:46.189Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927266185-utbgm",
+    "timestamp": "2026-08-28T14:27:46.185Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787927262995-s8fn3",
+    "timestamp": "2026-08-28T14:27:42.995Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927262992-l9knl",
+    "timestamp": "2026-08-28T14:27:42.992Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787927260169-lj6i9",
+    "timestamp": "2026-08-28T14:27:40.169Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927260166-pyhbi",
+    "timestamp": "2026-08-28T14:27:40.166Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787927257242-m7mnt",
+    "timestamp": "2026-08-28T14:27:37.242Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927257237-x6nov",
+    "timestamp": "2026-08-28T14:27:37.237Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787927211009-g9dt8",
+    "timestamp": "2026-08-28T14:26:51.009Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927211005-t3l0w",
+    "timestamp": "2026-08-28T14:26:51.005Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787927185073-p7ni8",
+    "timestamp": "2026-08-28T14:26:25.073Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927185070-flk4h",
+    "timestamp": "2026-08-28T14:26:25.070Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {
+      "title": "Full-Stack WordPress Developer (USA Pacific)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/full-stack-wordpress-developer-usa-pacific/"
+    }
+  },
+  {
+    "id": "log-1787927160058-byovf",
+    "timestamp": "2026-08-28T14:26:00.058Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787927160054-08t1g",
+    "timestamp": "2026-08-28T14:26:00.054Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/zoftify-travel-software-development/jobs/wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1787926958457-84jyd",
+    "timestamp": "2026-08-28T14:22:38.457Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 92 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787926937317-tkzy3",
+    "timestamp": "2026-08-28T14:22:17.317Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1787926937312-9zref",
+    "timestamp": "2026-08-28T14:22:17.312Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1787926937307-5ofbv",
+    "timestamp": "2026-08-28T14:22:17.307Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1787926937295-nycrh",
+    "timestamp": "2026-08-28T14:22:17.295Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1787926923134-um7eu",
+    "timestamp": "2026-08-28T14:22:03.134Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926923130-9xk7h",
+    "timestamp": "2026-08-28T14:22:03.130Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787926907061-0p2i8",
+    "timestamp": "2026-08-28T14:21:47.061Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926907058-emeyq",
+    "timestamp": "2026-08-28T14:21:47.058Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787926892383-j9l8b",
+    "timestamp": "2026-08-28T14:21:32.383Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926892380-p3h2k",
+    "timestamp": "2026-08-28T14:21:32.380Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787926876446-byavj",
+    "timestamp": "2026-08-28T14:21:16.446Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926876442-cvm3u",
+    "timestamp": "2026-08-28T14:21:16.442Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787926861598-vg1rr",
+    "timestamp": "2026-08-28T14:21:01.598Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926861595-c89h8",
+    "timestamp": "2026-08-28T14:21:01.595Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787926844001-lls05",
+    "timestamp": "2026-08-28T14:20:44.001Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926843998-b69ry",
+    "timestamp": "2026-08-28T14:20:43.998Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787926829131-w3fkh",
+    "timestamp": "2026-08-28T14:20:29.131Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926829127-12ev6",
+    "timestamp": "2026-08-28T14:20:29.127Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787926815480-60kvm",
+    "timestamp": "2026-08-28T14:20:15.480Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926815478-0jmpv",
+    "timestamp": "2026-08-28T14:20:15.478Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {
+      "title": "Full-Stack WordPress Developer (USA Pacific)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/full-stack-wordpress-developer-usa-pacific/"
+    }
+  },
+  {
+    "id": "log-1787926795048-2bux4",
+    "timestamp": "2026-08-28T14:19:55.048Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926795043-sp9y0",
+    "timestamp": "2026-08-28T14:19:55.043Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/zoftify-travel-software-development/jobs/wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1787926590836-err2t",
+    "timestamp": "2026-08-28T14:16:30.836Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 92 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787926567724-lah7c",
+    "timestamp": "2026-08-28T14:16:07.724Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1787926567718-b8lqx",
+    "timestamp": "2026-08-28T14:16:07.718Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1787926567711-39kpi",
+    "timestamp": "2026-08-28T14:16:07.711Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1787926567695-scea1",
+    "timestamp": "2026-08-28T14:16:07.687Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1787926051599-k01bw",
+    "timestamp": "2026-08-28T14:07:31.599Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926051597-2pga6",
+    "timestamp": "2026-08-28T14:07:31.597Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787926037095-kbw7b",
+    "timestamp": "2026-08-28T14:07:17.095Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926037094-5283n",
+    "timestamp": "2026-08-28T14:07:17.094Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787926022983-77rl7",
+    "timestamp": "2026-08-28T14:07:02.983Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926022981-gw7k4",
+    "timestamp": "2026-08-28T14:07:02.981Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787926008727-r7vq9",
+    "timestamp": "2026-08-28T14:06:48.727Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787926008721-v9dn8",
+    "timestamp": "2026-08-28T14:06:48.721Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787926006114-v1tiz",
+    "timestamp": "2026-08-28T14:06:46.114Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Enfold CSS help neeed @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787926006107-7p8pt",
+    "timestamp": "2026-08-28T14:06:46.106Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787925991161-tivm8",
+    "timestamp": "2026-08-28T14:06:31.161Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925991159-6sevf",
+    "timestamp": "2026-08-28T14:06:31.159Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787925976197-384q3",
+    "timestamp": "2026-08-28T14:06:16.197Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925976195-voyk3",
+    "timestamp": "2026-08-28T14:06:16.195Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787925962446-ai0eq",
+    "timestamp": "2026-08-28T14:06:02.445Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925962441-8k8vm",
+    "timestamp": "2026-08-28T14:06:02.441Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {
+      "title": "Full-Stack WordPress Developer (USA Pacific)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/full-stack-wordpress-developer-usa-pacific/"
+    }
+  },
+  {
+    "id": "log-1787925939120-i25qd",
+    "timestamp": "2026-08-28T14:05:39.120Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925939115-jlc05",
+    "timestamp": "2026-08-28T14:05:39.115Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/zoftify-travel-software-development/jobs/wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1787925736368-4ykde",
+    "timestamp": "2026-08-28T14:02:16.368Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 92 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787925715963-3whhf",
+    "timestamp": "2026-08-28T14:01:55.963Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1787925715959-r5eay",
+    "timestamp": "2026-08-28T14:01:55.959Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1787925715951-qmm96",
+    "timestamp": "2026-08-28T14:01:55.951Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1787925715935-8a3em",
+    "timestamp": "2026-08-28T14:01:55.928Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1787925679303-rqmiq",
+    "timestamp": "2026-08-28T14:01:19.303Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925679301-v01pj",
+    "timestamp": "2026-08-28T14:01:19.301Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787925666881-0c8aj",
+    "timestamp": "2026-08-28T14:01:06.881Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925666880-8p2ub",
+    "timestamp": "2026-08-28T14:01:06.880Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787925657396-dru2o",
+    "timestamp": "2026-08-28T14:00:57.396Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925657394-81lkc",
+    "timestamp": "2026-08-28T14:00:57.394Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787925646281-v3nxz",
+    "timestamp": "2026-08-28T14:00:46.281Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925646279-ste7q",
+    "timestamp": "2026-08-28T14:00:46.279Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787925632719-nokfc",
+    "timestamp": "2026-08-28T14:00:32.719Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925632717-u9imp",
+    "timestamp": "2026-08-28T14:00:32.717Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787925624369-usgsy",
+    "timestamp": "2026-08-28T14:00:24.369Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925624367-mkyn5",
+    "timestamp": "2026-08-28T14:00:24.367Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787925622373-55zcz",
+    "timestamp": "2026-08-28T14:00:22.373Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787925584876-3m56k",
+    "timestamp": "2026-08-28T13:59:44.876Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925584873-kyu1q",
+    "timestamp": "2026-08-28T13:59:44.873Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787925563007-4zwri",
+    "timestamp": "2026-08-28T13:59:23.007Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925563004-hl21l",
+    "timestamp": "2026-08-28T13:59:23.004Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787925535978-y35dy",
+    "timestamp": "2026-08-28T13:58:55.978Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925535976-svg8e",
+    "timestamp": "2026-08-28T13:58:55.976Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787925533750-suq4h",
+    "timestamp": "2026-08-28T13:58:53.750Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787925509827-14wca",
+    "timestamp": "2026-08-28T13:58:29.827Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1787925509819-gdpv9",
+    "timestamp": "2026-08-28T13:58:29.819Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1787925509814-xndrm",
+    "timestamp": "2026-08-28T13:58:29.814Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1787925509802-v5ik8",
+    "timestamp": "2026-08-28T13:58:29.796Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1787925174744-5byna",
+    "timestamp": "2026-08-28T13:52:54.744Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925174734-h6k5x",
+    "timestamp": "2026-08-28T13:52:54.734Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787925145743-76xr1",
+    "timestamp": "2026-08-28T13:52:25.743Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925145737-l13nx",
+    "timestamp": "2026-08-28T13:52:25.737Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (90%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 90,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787925116040-1lfks",
+    "timestamp": "2026-08-28T13:51:56.040Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925116038-n17kp",
+    "timestamp": "2026-08-28T13:51:56.038Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787925095012-kdvkn",
+    "timestamp": "2026-08-28T13:51:35.012Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925095009-03n5e",
+    "timestamp": "2026-08-28T13:51:35.009Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787925071442-83hp7",
+    "timestamp": "2026-08-28T13:51:11.441Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925071434-crirg",
+    "timestamp": "2026-08-28T13:51:11.434Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787925041445-tkarz",
+    "timestamp": "2026-08-28T13:50:41.445Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787925041358-bi498",
+    "timestamp": "2026-08-28T13:50:41.358Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787924993396-v3tr7",
+    "timestamp": "2026-08-28T13:49:53.393Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787924993373-15rf5",
+    "timestamp": "2026-08-28T13:49:53.373Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787924991009-b2ady",
+    "timestamp": "2026-08-28T13:49:51.009Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787924966764-se924",
+    "timestamp": "2026-08-28T13:49:26.764Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1787924966758-auxsf",
+    "timestamp": "2026-08-28T13:49:26.758Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1787924966753-s8zwn",
+    "timestamp": "2026-08-28T13:49:26.753Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1787924966738-dw34r",
+    "timestamp": "2026-08-28T13:49:26.730Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1787924628288-flehm",
+    "timestamp": "2026-08-28T13:43:48.288Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787924628246-veo5c",
+    "timestamp": "2026-08-28T13:43:48.246Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1787924617558-mn2j6",
+    "timestamp": "2026-08-28T13:43:37.558Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for 3D Modeling Service Website @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787924617339-gw3my",
+    "timestamp": "2026-08-28T13:43:37.339Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1787924570430-0h49g",
+    "timestamp": "2026-08-28T13:42:50.430Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1787924570429-3f2cn",
+    "timestamp": "2026-08-28T13:42:50.429Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1787924567291-7eb3d",
+    "timestamp": "2026-08-28T13:42:47.291Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for WordPress Developer – Website Maintenance & Improvements @  (92%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787924567287-wjiwo",
+    "timestamp": "2026-08-28T13:42:47.287Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1787924564362-cj0sq",
+    "timestamp": "2026-08-28T13:42:44.362Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Enfold CSS help neeed @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787924564216-n7tnq",
+    "timestamp": "2026-08-28T13:42:44.216Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1787924560490-mua16",
+    "timestamp": "2026-08-28T13:42:40.490Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Specialist and WordPress Manager @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787924560489-0x5am",
+    "timestamp": "2026-08-28T13:42:40.489Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1787924556650-ikcri",
+    "timestamp": "2026-08-28T13:42:36.650Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior WordPress Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1787924556648-cl0if",
+    "timestamp": "2026-08-28T13:42:36.648Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1787924554906-3ez09",
+    "timestamp": "2026-08-28T13:42:34.906Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 7 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1787924533230-062mn",
+    "timestamp": "2026-08-28T13:42:13.230Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Web Dashboard initialized on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1787924533223-lqg1d",
+    "timestamp": "2026-08-28T13:42:13.223Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1787924533215-ax2q2",
+    "timestamp": "2026-08-28T13:42:13.215Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1787924533195-vm3wk",
+    "timestamp": "2026-08-28T13:42:13.184Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  }
+]

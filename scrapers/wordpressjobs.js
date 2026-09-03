@@ -4,6 +4,7 @@
 
 import axios from 'axios';
 import { parseStringPromise } from 'xml2js';
+import crypto from 'crypto';
 
 const WP_JOBS_RSS = 'https://jobs.wordpress.net/feed/';
 
@@ -51,8 +52,10 @@ export async function scrapeWordPressJobs() {
         applyMethod = 'webForm';
       }
 
+      const linkUrl = item.link || title;
+      const hashId = crypto.createHash('md5').update(linkUrl).digest('hex').slice(0, 12);
       return {
-        id: `wpjobs-${Buffer.from(item.link || title).toString('base64').slice(0, 20)}`,
+        id: `wpjobs-${hashId}`,
         source: 'WordPress Jobs (Official)',
         title,
         company: item['job_listing:company'] || '',

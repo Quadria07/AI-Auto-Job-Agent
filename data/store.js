@@ -1,34 +1,135 @@
 // data/store.js
-// Simple JSON file-based storage for jobs and applications
+// Daily partitioned JSON file storage system for jobs and applications
 
-import { readFile, writeFile, mkdir } from 'fs/promises';
+import { readFile, writeFile, mkdir, readdir, rename } from 'fs/promises';
 import { existsSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = __dirname;
-const JOBS_FILE = path.join(DATA_DIR, 'jobs.json');
-const APPLIED_FILE = path.join(DATA_DIR, 'applied.json');
 
-async function ensureFile(filepath, defaultContent = '[]') {
-  if (!existsSync(filepath)) {
-    await writeFile(filepath, defaultContent, 'utf8');
+const JOBS_DIR = path.join(DATA_DIR, 'jobs');
+const APPLIED_DIR = path.join(DATA_DIR, 'applied');
+const LEGACY_JOBS_FILE = path.join(DATA_DIR, 'jobs.json');
+const LEGACY_APPLIED_FILE = path.join(DATA_DIR, 'applied.json');
+
+function getDateString(dateInput) {
+  const d = dateInput ? new Date(dateInput) : new Date();
+  if (isNaN(d.getTime())) return new Date().toISOString().split('T')[0];
+  return d.toISOString().split('T')[0];
+}
+
+async function ensureDirs() {
+  if (!existsSync(JOBS_DIR)) await mkdir(JOBS_DIR, { recursive: true });
+  if (!existsSync(APPLIED_DIR)) await mkdir(APPLIED_DIR, { recursive: true });
+}
+
+// Automatic legacy migration
+async function migrateLegacyFiles() {
+  await ensureDirs();
+
+  // Migrate jobs.json if present
+  if (existsSync(LEGACY_JOBS_FILE)) {
+    try {
+      const content = await readFile(LEGACY_JOBS_FILE, 'utf8');
+      const jobs = JSON.parse(content || '[]');
+      if (Array.isArray(jobs) && jobs.length > 0) {
+        const grouped = {};
+        for (const job of jobs) {
+          const dateStr = getDateString(job.scrapedAt);
+          if (!grouped[dateStr]) grouped[dateStr] = [];
+          grouped[dateStr].push(job);
+        }
+        for (const [dateStr, dateJobs] of Object.entries(grouped)) {
+          const filePath = path.join(JOBS_DIR, `jobs-${dateStr}.json`);
+          let existing = [];
+          if (existsSync(filePath)) {
+            try { existing = JSON.parse(await readFile(filePath, 'utf8')); } catch { }
+          }
+          const mergedMap = new Map(existing.map(j => [j.id, j]));
+          dateJobs.forEach(j => mergedMap.set(j.id, j));
+          await writeFile(filePath, JSON.stringify(Array.from(mergedMap.values()), null, 2), 'utf8');
+        }
+      }
+      await rename(LEGACY_JOBS_FILE, `${LEGACY_JOBS_FILE}.migrated.bak`);
+      console.log(`[Store] Migrated legacy jobs.json into daily files in ${JOBS_DIR}`);
+    } catch (err) {
+      console.error('[Store] Migration error for jobs.json:', err.message);
+    }
+  }
+
+  // Migrate applied.json if present
+  if (existsSync(LEGACY_APPLIED_FILE)) {
+    try {
+      const content = await readFile(LEGACY_APPLIED_FILE, 'utf8');
+      const applied = JSON.parse(content || '[]');
+      if (Array.isArray(applied) && applied.length > 0) {
+        const grouped = {};
+        for (const item of applied) {
+          const dateStr = getDateString(item.appliedAt);
+          if (!grouped[dateStr]) grouped[dateStr] = [];
+          grouped[dateStr].push(item);
+        }
+        for (const [dateStr, dateItems] of Object.entries(grouped)) {
+          const filePath = path.join(APPLIED_DIR, `applied-${dateStr}.json`);
+          let existing = [];
+          if (existsSync(filePath)) {
+            try { existing = JSON.parse(await readFile(filePath, 'utf8')); } catch { }
+          }
+          const mergedMap = new Map(existing.map(a => [a.jobId || a.applyUrl, a]));
+          dateItems.forEach(a => mergedMap.set(a.jobId || a.applyUrl, a));
+          await writeFile(filePath, JSON.stringify(Array.from(mergedMap.values()), null, 2), 'utf8');
+        }
+      }
+      await rename(LEGACY_APPLIED_FILE, `${LEGACY_APPLIED_FILE}.migrated.bak`);
+      console.log(`[Store] Migrated legacy applied.json into daily files in ${APPLIED_DIR}`);
+    } catch (err) {
+      console.error('[Store] Migration error for applied.json:', err.message);
+    }
   }
 }
 
+// Run migration check once on module import
+migrateLegacyFiles().catch(err => console.error('[Store] Migration initialization failed:', err));
+
 export async function readJobs() {
-  await ensureFile(JOBS_FILE);
+  await ensureDirs();
+  const allJobs = [];
   try {
-    const content = await readFile(JOBS_FILE, 'utf8');
-    return JSON.parse(content);
-  } catch {
-    return [];
+    const files = await readdir(JOBS_DIR);
+    const jsonFiles = files.filter(f => f.startsWith('jobs-') && f.endsWith('.json')).sort().reverse();
+    
+    for (const file of jsonFiles) {
+      try {
+        const content = await readFile(path.join(JOBS_DIR, file), 'utf8');
+        const jobs = JSON.parse(content || '[]');
+        allJobs.push(...jobs);
+      } catch { }
+    }
+  } catch { }
+
+  // Deduplicate by ID just in case
+  const map = new Map();
+  for (const job of allJobs) {
+    if (!map.has(job.id)) map.set(job.id, job);
   }
+  return Array.from(map.values());
 }
 
 export async function saveJobs(jobs) {
-  await writeFile(JOBS_FILE, JSON.stringify(jobs, null, 2), 'utf8');
+  await ensureDirs();
+  const grouped = {};
+  for (const job of jobs) {
+    const dateStr = getDateString(job.scrapedAt);
+    if (!grouped[dateStr]) grouped[dateStr] = [];
+    grouped[dateStr].push(job);
+  }
+
+  for (const [dateStr, dateJobs] of Object.entries(grouped)) {
+    const filePath = path.join(JOBS_DIR, `jobs-${dateStr}.json`);
+    await writeFile(filePath, JSON.stringify(dateJobs, null, 2), 'utf8');
+  }
 }
 
 export async function updateJob(jobId, updates) {
@@ -44,7 +145,13 @@ export async function updateJob(jobId, updates) {
 
 export async function getPendingJobs() {
   const jobs = await readJobs();
-  return jobs.filter(j => j.status === 'pending_score');
+  const pending = jobs.filter(j => j.status === 'pending_score');
+  // Sort descending by postedAt/scrapedAt so real-time newest jobs are processed first
+  return pending.sort((a, b) => {
+    const timeA = new Date(a.postedAt || a.scrapedAt || 0).getTime();
+    const timeB = new Date(b.postedAt || b.scrapedAt || 0).getTime();
+    return timeB - timeA;
+  });
 }
 
 export async function getApprovedJobs() {
@@ -53,18 +160,47 @@ export async function getApprovedJobs() {
 }
 
 export async function readApplied() {
-  await ensureFile(APPLIED_FILE);
+  await ensureDirs();
+  const allApplied = [];
   try {
-    const content = await readFile(APPLIED_FILE, 'utf8');
-    return JSON.parse(content);
-  } catch {
-    return [];
+    const files = await readdir(APPLIED_DIR);
+    const jsonFiles = files.filter(f => f.startsWith('applied-') && f.endsWith('.json')).sort().reverse();
+
+    for (const file of jsonFiles) {
+      try {
+        const content = await readFile(path.join(APPLIED_DIR, file), 'utf8');
+        const items = JSON.parse(content || '[]');
+        allApplied.push(...items);
+      } catch { }
+    }
+  } catch { }
+
+  // Deduplicate
+  const seen = new Set();
+  const result = [];
+  for (const item of allApplied) {
+    const key = item.jobId || item.applyUrl || `${item.title}|${item.company}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      result.push(item);
+    }
   }
+  return result;
 }
 
 export async function recordApplication(job, tailoredCvPath, coverLetterPath, applyMethod = 'webForm') {
-  const applied = await readApplied();
-  applied.push({
+  await ensureDirs();
+  const todayStr = getDateString();
+  const filePath = path.join(APPLIED_DIR, `applied-${todayStr}.json`);
+
+  let applied = [];
+  if (existsSync(filePath)) {
+    try {
+      applied = JSON.parse(await readFile(filePath, 'utf8'));
+    } catch { }
+  }
+
+  const record = {
     jobId: job.id,
     title: job.title,
     company: job.company,
@@ -76,8 +212,10 @@ export async function recordApplication(job, tailoredCvPath, coverLetterPath, ap
     autoApplied: job.autoApplied || false,
     tailoredCvPath,
     coverLetterPath,
-  });
-  await writeFile(APPLIED_FILE, JSON.stringify(applied, null, 2), 'utf8');
+  };
+
+  applied.push(record);
+  await writeFile(filePath, JSON.stringify(applied, null, 2), 'utf8');
 }
 
 export async function ensureApplicationsDir(jobId) {
@@ -88,13 +226,22 @@ export async function ensureApplicationsDir(jobId) {
   return appsDir;
 }
 
+export async function getHourlyApplyCount() {
+  const applied = await readApplied();
+  const oneHourAgo = Date.now() - 60 * 60 * 1000;
+  return applied.filter(a =>
+    a.appliedAt && !isNaN(new Date(a.appliedAt).getTime()) &&
+    new Date(a.appliedAt).getTime() >= oneHourAgo
+  ).length;
+}
+
 export async function getTodayApplyCount(method) {
   const applied = await readApplied();
   const today = new Date().toDateString();
   return applied.filter(a =>
+    a.appliedAt && !isNaN(new Date(a.appliedAt).getTime()) &&
     new Date(a.appliedAt).toDateString() === today &&
-    a.applyMethod === method &&
-    a.autoApplied === true
+    (!method || a.applyMethod === method)
   ).length;
 }
 
@@ -103,19 +250,26 @@ export async function getTodayStats() {
   const jobs = await readJobs();
   const today = new Date().toDateString();
 
-  const todayApplied = applied.filter(a => new Date(a.appliedAt).toDateString() === today);
+  const todayApplied = applied.filter(a => a.appliedAt && !isNaN(new Date(a.appliedAt).getTime()) && new Date(a.appliedAt).toDateString() === today);
   const queued = jobs.filter(j => j.status === 'queued_for_approval');
-  const highMatch = jobs.filter(j => j.matchScore >= 70 && new Date(j.scrapedAt).toDateString() === today);
+  
+  const todayJobs = jobs.filter(j => j.scrapedAt && !isNaN(new Date(j.scrapedAt).getTime()) && new Date(j.scrapedAt).toDateString() === today);
+  const totalScannedCount = todayJobs.length > 0 ? todayJobs.length : jobs.length;
+
+  const todayHighMatches = jobs.filter(j => j.matchScore >= 70 && j.scrapedAt && !isNaN(new Date(j.scrapedAt).getTime()) && new Date(j.scrapedAt).toDateString() === today);
+  const allHighMatches = jobs.filter(j => j.matchScore >= 70);
+  const highMatchList = todayHighMatches.length > 0 ? todayHighMatches : allHighMatches;
+
   const emailCount = await getTodayApplyCount('email');
   const webFormCount = await getTodayApplyCount('webForm');
 
   return {
-    totalScanned: jobs.filter(j => new Date(j.scrapedAt).toDateString() === today).length,
+    totalScanned: totalScannedCount,
     autoApplied: todayApplied.filter(a => a.autoApplied).length,
     emailApplied: emailCount,
     webFormApplied: webFormCount,
     queued: queued.length,
-    highMatch: highMatch.length,
-    topMatches: highMatch.sort((a, b) => b.matchScore - a.matchScore).slice(0, 5),
+    highMatch: highMatchList.length,
+    topMatches: highMatchList.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0)).slice(0, 5),
   };
 }

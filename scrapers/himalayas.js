@@ -2,6 +2,7 @@
 // Himalayas.app free public JSON API — no auth needed, great for remote jobs
 
 import axios from 'axios';
+import crypto from 'crypto';
 
 const HIMALAYAS_API = 'https://himalayas.app/jobs/api';
 const HIMALAYAS_SEARCH = 'https://himalayas.app/jobs/api/search';
@@ -37,7 +38,9 @@ export async function scrapeHimalayas() {
       const jobs = response.data?.jobs || [];
 
       for (const job of jobs) {
-        const jobId = `himalayas-${job.id || job.slug}`;
+        const uniqueKey = job.id || job.slug || job.applicationLink || `${job.title}-${job.company?.name}`;
+        const hashId = crypto.createHash('md5').update(String(uniqueKey)).digest('hex').slice(0, 12);
+        const jobId = `himalayas-${hashId}`;
         if (seen.has(jobId)) continue;
         seen.add(jobId);
 

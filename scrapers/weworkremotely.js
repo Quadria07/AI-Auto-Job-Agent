@@ -3,6 +3,7 @@
 
 import axios from 'axios';
 import { parseStringPromise } from 'xml2js';
+import crypto from 'crypto';
 
 const RSS_FEEDS = [
   {
@@ -65,7 +66,8 @@ export async function scrapeWeWorkRemotely() {
           jobTitle = parts[1]?.trim() || title;
         }
 
-        const jobId = `wwr-${Buffer.from(item.link || title).toString('base64').slice(0, 20)}`;
+        const hashId = crypto.createHash('md5').update(item.link || title).digest('hex').slice(0, 12);
+        const jobId = `wwr-${hashId}`;
         if (seen.has(jobId)) continue;
         seen.add(jobId);
 

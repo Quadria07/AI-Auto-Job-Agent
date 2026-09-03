@@ -25,22 +25,40 @@ export async function runAllScrapers(enabledPlatforms = null) {
 
   const existingJobs = await readJobs();
   const existingIds = new Set(existingJobs.map(j => j.id));
+  const existingUrls = new Set(existingJobs.map(j => (j.applyUrl || '').toLowerCase().trim()).filter(Boolean));
+  const existingKeys = new Set(existingJobs.map(j => `${(j.title || '').toLowerCase().trim()}|${(j.company || '').toLowerCase().trim()}`));
 
   let totalFound = 0;
   let newJobs = [];
 
   for (const scraper of SCRAPERS) {
-    if (enabledPlatforms && !enabledPlatforms.includes(scraper.name.toLowerCase().replace(/\s/g, ''))) {
-      continue;
+    if (enabledPlatforms && Array.isArray(enabledPlatforms) && enabledPlatforms.length > 0) {
+      const normalizedEnabled = enabledPlatforms.map(p => String(p).toLowerCase().replace(/[^a-z0-9]/g, ''));
+      const currentName = scraper.name.toLowerCase().replace(/[^a-z0-9]/g, '');
+      if (!normalizedEnabled.includes(currentName)) {
+        continue;
+      }
     }
 
     process.stdout.write(chalk.gray(`  • ${scraper.name}... `));
     try {
       const jobs = await scraper.fn();
-      const fresh = jobs.filter(j => !existingIds.has(j.id));
+      const fresh = jobs.filter(j => {
+        const normUrl = (j.applyUrl || '').toLowerCase().trim();
+        const normKey = `${(j.title || '').toLowerCase().trim()}|${(j.company || '').toLowerCase().trim()}`;
+        if (existingIds.has(j.id)) return false;
+        if (normUrl && existingUrls.has(normUrl)) return false;
+        if (j.title && j.company && existingKeys.has(normKey)) return false;
+        return true;
+      });
+
       totalFound += jobs.length;
       newJobs.push(...fresh);
-      fresh.forEach(j => existingIds.add(j.id));
+      fresh.forEach(j => {
+        existingIds.add(j.id);
+        if (j.applyUrl) existingUrls.add(j.applyUrl.toLowerCase().trim());
+        if (j.title && j.company) existingKeys.add(`${j.title.toLowerCase().trim()}|${j.company.toLowerCase().trim()}`);
+      });
       console.log(chalk.green(`${jobs.length} found, ${fresh.length} new`));
     } catch (err) {
       console.log(chalk.red(`failed (${err.message})`));

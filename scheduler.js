@@ -5,11 +5,11 @@ import cron from 'node-cron';
 import chalk from 'chalk';
 import { config } from './config.js';
 import { runAllScrapers } from './scrapers/index.js';
-import { getPendingJobs, updateJob } from './data/store.js';
+import { getPendingJobs, updateJob, getHourlyApplyCount } from './data/store.js';
 import { scoreJobMatch } from './ai/scorer.js';
 import { sendApprovalRequest, sendAutoApplyNotification } from './notify/telegram.js';
 import { sendMorningDigest } from './notify/telegram.js';
-import { applyToJob } from './apply/engine.js';
+import { applyToJob, canAutoApplyJob } from './apply/engine.js';
 
 import { logEvent } from './logger.js';
 
@@ -26,36 +26,52 @@ export async function processPendingJobs() {
       const score = matchResult.score;
       console.log(chalk.gray(`  ${job.title} @ ${job.company} — ${score}%`));
 
-      let status = 'skipped';
-      if (score >= config.matchThresholds.autoApply) {
-        status = 'queued_for_auto_apply';
-      } else if (score >= config.matchThresholds.telegramApproval) {
-        status = 'queued_for_approval';
-      } else if (score >= config.matchThresholds.silentSave) {
-        status = 'silently_saved';
+      // Below 70% — skip silently, no Telegram, no nothing
+      if (score < config.matchThresholds.autoApply) {
+        await updateJob(job.id, { matchScore: score, matchReason: matchResult.reason, status: 'skipped' });
+        await new Promise(r => setTimeout(r, 1000));
+        continue;
       }
 
-      await updateJob(job.id, { matchScore: score, matchReason: matchResult.reason, status });
-
-      if (score >= 70) {
-        logEvent('SUCCESS', 'SCORE', `High Match (${score}%): ${job.title} @ ${job.company}`, {
-          title: job.title, company: job.company, score, status, applyUrl: job.applyUrl
-        });
+      // 70%+ — check hourly rate limit
+      const hourlyCount = await getHourlyApplyCount();
+      if (hourlyCount >= config.maxApplicationsPerHour) {
+        console.log(chalk.yellow(`  [Rate Limit] Hourly limit reached (${hourlyCount}/${config.maxApplicationsPerHour}). Re-queuing ${job.title}.`));
+        // Leave as pending_score so next hour it will be picked up again
+        await updateJob(job.id, { matchScore: score, matchReason: matchResult.reason, status: 'pending_score' });
+        await new Promise(r => setTimeout(r, 500));
+        continue;
       }
 
-      if (status === 'queued_for_auto_apply') {
-        logEvent('INFO', 'APPLY', `Auto-applying to ${job.title} @ ${job.company}`);
-        const applied = await applyToJob(job);
-        if (applied) {
-          await sendAutoApplyNotification({ ...job, matchScore: score }, applied);
-        }
-      } else if (status === 'queued_for_approval') {
-        logEvent('INFO', 'TELEGRAM', `Sent Telegram approval request for ${job.title} @ ${job.company} (${score}%)`);
-        await sendApprovalRequest({ ...job, matchScore: score, matchReason: matchResult.reason });
+      await updateJob(job.id, { matchScore: score, matchReason: matchResult.reason, status: 'queued_for_auto_apply' });
+
+      logEvent('SUCCESS', 'SCORE', `Match (${score}%): ${job.title} @ ${job.company}`, {
+        title: job.title, company: job.company, score, applyUrl: job.applyUrl
+      });
+
+      // Check if agent can actually apply before trying
+      if (!canAutoApplyJob(job)) {
+        console.log(chalk.yellow(`  ${job.title}: no direct apply method. Skipped silently.`));
+        logEvent('INFO', 'APPLY', `No direct apply method for ${job.title}. Skipped.`);
+        await updateJob(job.id, { status: 'skipped_no_auto_apply' });
+        await new Promise(r => setTimeout(r, 1000));
+        continue;
       }
 
-      // Brief pause between DeepSeek calls to respect rate limits
-      await new Promise(r => setTimeout(r, 1000));
+      logEvent('INFO', 'APPLY', `Auto-applying to ${job.title} @ ${job.company} (${score}%)`);
+      const applied = await applyToJob(job);
+
+      if (applied) {
+        logEvent('SUCCESS', 'APPLY', `Applied to ${job.title} @ ${job.company} (${score}%)`);
+        await sendAutoApplyNotification({ ...job, matchScore: score }, true);
+      } else {
+        console.log(chalk.yellow(`  Auto-apply failed for ${job.title}. Skipped silently.`));
+        logEvent('WARN', 'APPLY', `Auto-apply failed for ${job.title} @ ${job.company}.`);
+        await updateJob(job.id, { status: 'skipped_no_auto_apply' });
+      }
+
+      // Brief pause to respect DeepSeek & SMTP rate limits
+      await new Promise(r => setTimeout(r, 1500));
     } catch (err) {
       console.error(chalk.red(`  Failed to process job ${job.id}:`, err.message));
       logEvent('ERROR', 'SCORE', `Failed to score job ${job.id}`, { error: err.message });

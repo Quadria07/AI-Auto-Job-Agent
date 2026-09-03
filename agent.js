@@ -18,7 +18,7 @@ async function main() {
   // Start HTTP Web Dashboard for /logs
   startDashboardServer();
 
-  getBot();
+  getBot({ polling: true });
   console.log(chalk.green('Telegram bot ready.'));
   logEvent('INFO', 'TELEGRAM', 'Telegram Bot connected');
 

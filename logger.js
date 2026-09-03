@@ -1,6 +1,6 @@
 // logger.js
 // Structured logging system for AI Auto Job Agent.
-// Writes logs to console, logs/agent.log (raw text), and data/logs.json (structured JSON for dashboard).
+// Writes logs to console, logs/agent.log (raw text), and data/logs/logs-YYYY-MM-DD.json (daily JSON for dashboard).
 
 import fs from 'fs';
 import path from 'path';
@@ -9,14 +9,48 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const LOG_DIR = path.join(__dirname, 'logs');
 const LOG_FILE = path.join(LOG_DIR, 'agent.log');
-const JSON_LOG_FILE = path.join(__dirname, 'data', 'logs.json');
+const JSON_LOGS_DIR = path.join(__dirname, 'data', 'logs');
+const LEGACY_JSON_LOG_FILE = path.join(__dirname, 'data', 'logs.json');
 
 // Ensure log directories exist
 if (!fs.existsSync(LOG_DIR)) fs.mkdirSync(LOG_DIR, { recursive: true });
-if (!fs.existsSync(path.join(__dirname, 'data'))) fs.mkdirSync(path.join(__dirname, 'data'), { recursive: true });
-if (!fs.existsSync(JSON_LOG_FILE)) fs.writeFileSync(JSON_LOG_FILE, '[]', 'utf8');
+if (!fs.existsSync(JSON_LOGS_DIR)) fs.mkdirSync(JSON_LOGS_DIR, { recursive: true });
 
-const MAX_JSON_LOGS = 500;
+function getTodayLogFile() {
+  const dateStr = new Date().toISOString().split('T')[0];
+  return path.join(JSON_LOGS_DIR, `logs-${dateStr}.json`);
+}
+
+// Migrate legacy data/logs.json into daily files if present
+try {
+  if (fs.existsSync(LEGACY_JSON_LOG_FILE)) {
+    const content = fs.readFileSync(LEGACY_JSON_LOG_FILE, 'utf8');
+    const logs = JSON.parse(content || '[]');
+    if (Array.isArray(logs) && logs.length > 0) {
+      const grouped = {};
+      for (const log of logs) {
+        const dateStr = (log.timestamp || new Date().toISOString()).split('T')[0];
+        if (!grouped[dateStr]) grouped[dateStr] = [];
+        grouped[dateStr].push(log);
+      }
+      for (const [dateStr, dateLogs] of Object.entries(grouped)) {
+        const targetFile = path.join(JSON_LOGS_DIR, `logs-${dateStr}.json`);
+        let existing = [];
+        if (fs.existsSync(targetFile)) {
+          try { existing = JSON.parse(fs.readFileSync(targetFile, 'utf8')); } catch { }
+        }
+        const merged = [...dateLogs, ...existing];
+        fs.writeFileSync(targetFile, JSON.stringify(merged, null, 2), 'utf8');
+      }
+    }
+    fs.renameSync(LEGACY_JSON_LOG_FILE, `${LEGACY_JSON_LOG_FILE}.migrated.bak`);
+    console.log(`[Logger] Migrated legacy logs.json into daily files in ${JSON_LOGS_DIR}`);
+  }
+} catch (err) {
+  console.error('[Logger] Failed legacy logs migration:', err.message);
+}
+
+const MAX_JSON_LOGS_PER_DAY = 500;
 
 export function logEvent(level, category, message, details = {}) {
   const timestamp = new Date().toISOString();
@@ -41,18 +75,19 @@ export function logEvent(level, category, message, details = {}) {
   const textLine = `${timestamp} [${level.padEnd(7)}] [${category.padEnd(8)}] ${message} ${Object.keys(details).length ? JSON.stringify(details) : ''}\n`;
   fs.appendFileSync(LOG_FILE, textLine, 'utf8');
 
-  // 3. Update JSON log file for web dashboard
+  // 3. Update daily JSON log file for web dashboard
   try {
+    const todayLogFile = getTodayLogFile();
     let logs = [];
-    if (fs.existsSync(JSON_LOG_FILE)) {
-      const content = fs.readFileSync(JSON_LOG_FILE, 'utf8');
+    if (fs.existsSync(todayLogFile)) {
+      const content = fs.readFileSync(todayLogFile, 'utf8');
       logs = JSON.parse(content || '[]');
     }
     logs.unshift(logEntry);
-    if (logs.length > MAX_JSON_LOGS) logs = logs.slice(0, MAX_JSON_LOGS);
-    fs.writeFileSync(JSON_LOG_FILE, JSON.stringify(logs, null, 2), 'utf8');
+    if (logs.length > MAX_JSON_LOGS_PER_DAY) logs = logs.slice(0, MAX_JSON_LOGS_PER_DAY);
+    fs.writeFileSync(todayLogFile, JSON.stringify(logs, null, 2), 'utf8');
   } catch (err) {
-    console.error('[Logger] Failed to write JSON log:', err.message);
+    console.error('[Logger] Failed to write daily JSON log:', err.message);
   }
 
   return logEntry;
@@ -60,21 +95,36 @@ export function logEvent(level, category, message, details = {}) {
 
 export function getLogs(limit = 100, category = null) {
   try {
-    if (!fs.existsSync(JSON_LOG_FILE)) return [];
-    const content = fs.readFileSync(JSON_LOG_FILE, 'utf8');
-    let logs = JSON.parse(content || '[]');
-    if (category) {
-      logs = logs.filter(l => l.category.toLowerCase() === category.toLowerCase());
+    const files = fs.readdirSync(JSON_LOGS_DIR)
+      .filter(f => f.startsWith('logs-') && f.endsWith('.json'))
+      .sort()
+      .reverse();
+
+    let allLogs = [];
+    for (const file of files) {
+      if (allLogs.length >= limit * 2) break;
+      const content = fs.readFileSync(path.join(JSON_LOGS_DIR, file), 'utf8');
+      const logs = JSON.parse(content || '[]');
+      allLogs.push(...logs);
     }
-    return logs.slice(0, limit);
+
+    if (category) {
+      allLogs = allLogs.filter(l => l.category.toLowerCase() === category.toLowerCase());
+    }
+    return allLogs.slice(0, limit);
   } catch (err) {
-    console.error('[Logger] Failed to read logs:', err.message);
+    console.error('[Logger] Failed to read daily logs:', err.message);
     return [];
   }
 }
 
 export function clearLogs() {
-  fs.writeFileSync(JSON_LOG_FILE, '[]', 'utf8');
+  try {
+    const files = fs.readdirSync(JSON_LOGS_DIR).filter(f => f.startsWith('logs-') && f.endsWith('.json'));
+    for (const f of files) {
+      fs.writeFileSync(path.join(JSON_LOGS_DIR, f), '[]', 'utf8');
+    }
+  } catch { }
   fs.writeFileSync(LOG_FILE, '', 'utf8');
   logEvent('INFO', 'SYSTEM', 'Logs cleared by user request');
 }

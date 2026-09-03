@@ -1,0 +1,5348 @@
+[
+  {
+    "id": "log-1788444282218-txicp",
+    "timestamp": "2026-09-03T14:04:42.218Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for PHP Developer @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444282179-6a8dx",
+    "timestamp": "2026-09-03T14:04:42.179Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): PHP Developer @ ",
+    "details": {
+      "title": "PHP Developer",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/alttrix-cloud/jobs/php-developer"
+    }
+  },
+  {
+    "id": "log-1788444276339-8znap",
+    "timestamp": "2026-09-03T14:04:36.339Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: PHP Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444269972-2lruu",
+    "timestamp": "2026-09-03T14:04:29.972Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): PHP Developer @ ",
+    "details": {
+      "title": "PHP Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/alttrix-cloud/jobs/php-developer"
+    }
+  },
+  {
+    "id": "log-1788444209821-t5gy8",
+    "timestamp": "2026-09-03T14:03:29.821Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @  (100%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444209815-hbtea",
+    "timestamp": "2026-09-03T14:03:29.815Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @ ",
+    "details": {
+      "title": "React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level)",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/pradeepit-consulting-services-pvt-ltd/jobs/react-js-ui-developer-remote-4-to-9-years-b2-or-b1-level-1214137335"
+    }
+  },
+  {
+    "id": "log-1788444193022-knfue",
+    "timestamp": "2026-09-03T14:03:13.022Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for React.js Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444193018-lrix0",
+    "timestamp": "2026-09-03T14:03:13.018Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): React.js Developer @ ",
+    "details": {
+      "title": "React.js Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/nexora/jobs/react-js-developer"
+    }
+  },
+  {
+    "id": "log-1788444186779-24xzc",
+    "timestamp": "2026-09-03T14:03:06.779Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444186755-yf20x",
+    "timestamp": "2026-09-03T14:03:06.755Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @ ",
+    "details": {
+      "title": "React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/pradeepit-consulting-services-pvt-ltd/jobs/react-js-ui-developer-remote-4-to-9-years-b2-or-b1-level-1214137335"
+    }
+  },
+  {
+    "id": "log-1788444179464-jd2mo",
+    "timestamp": "2026-09-03T14:02:59.464Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Senior React Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444179438-m91sq",
+    "timestamp": "2026-09-03T14:02:59.438Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Senior React Developer @ ",
+    "details": {
+      "title": "Senior React Developer",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/boosthire/jobs/senior-react-developer"
+    }
+  },
+  {
+    "id": "log-1788444176493-ms659",
+    "timestamp": "2026-09-03T14:02:56.493Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: React.js Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444176467-4pm5s",
+    "timestamp": "2026-09-03T14:02:56.467Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): React.js Developer @ ",
+    "details": {
+      "title": "React.js Developer",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/nexora/jobs/react-js-developer"
+    }
+  },
+  {
+    "id": "log-1788444155286-pg5j9",
+    "timestamp": "2026-09-03T14:02:35.286Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Fresher - Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444155282-ya2r4",
+    "timestamp": "2026-09-03T14:02:35.282Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Fresher - Web Developer @ ",
+    "details": {
+      "title": "Fresher - Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/busigence-technologies/jobs/fresher-web-developer"
+    }
+  },
+  {
+    "id": "log-1788444147158-iaa2u",
+    "timestamp": "2026-09-03T14:02:27.158Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Fresher - Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444147154-jh4yl",
+    "timestamp": "2026-09-03T14:02:27.154Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Fresher - Web Developer @ ",
+    "details": {
+      "title": "Fresher - Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/busigence-technologies/jobs/fresher-web-developer"
+    }
+  },
+  {
+    "id": "log-1788444138056-6xnih",
+    "timestamp": "2026-09-03T14:02:18.056Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for WordPress Web Developer (Elementor) - Freelance, Remote @  (100%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444138050-i7t4i",
+    "timestamp": "2026-09-03T14:02:18.050Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): WordPress Web Developer (Elementor) - Freelance, Remote @ ",
+    "details": {
+      "title": "WordPress Web Developer (Elementor) - Freelance, Remote",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/getmagic/jobs/wordpress-web-developer-elementor-freelance-remote"
+    }
+  },
+  {
+    "id": "log-1788444137865-hrw89",
+    "timestamp": "2026-09-03T14:02:17.865Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Fresher - Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444137836-0e8ri",
+    "timestamp": "2026-09-03T14:02:17.836Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Fresher - Web Developer @ ",
+    "details": {
+      "title": "Fresher - Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/busigence-technologies/jobs/fresher-web-developer"
+    }
+  },
+  {
+    "id": "log-1788444136674-5w9dz",
+    "timestamp": "2026-09-03T14:02:16.674Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for WordPress Web Developer (Elementor) - Freelance, Remote @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444136669-7927e",
+    "timestamp": "2026-09-03T14:02:16.669Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Web Developer (Elementor) - Freelance, Remote @ ",
+    "details": {
+      "title": "WordPress Web Developer (Elementor) - Freelance, Remote",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/getmagic/jobs/wordpress-web-developer-elementor-freelance-remote"
+    }
+  },
+  {
+    "id": "log-1788444111982-gtjsb",
+    "timestamp": "2026-09-03T14:01:51.982Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444111978-ll9vc",
+    "timestamp": "2026-09-03T14:01:51.978Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/stoppie/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444110849-yp10h",
+    "timestamp": "2026-09-03T14:01:50.849Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444110805-gjrvf",
+    "timestamp": "2026-09-03T14:01:50.805Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/stoppie/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444109647-jcwzv",
+    "timestamp": "2026-09-03T14:01:49.647Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444109643-9n2sv",
+    "timestamp": "2026-09-03T14:01:49.643Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/stoppie/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444100950-1lsbk",
+    "timestamp": "2026-09-03T14:01:40.950Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer -Remote or Singapore @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444100947-h3uaw",
+    "timestamp": "2026-09-03T14:01:40.947Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer -Remote or Singapore @ ",
+    "details": {
+      "title": "Web Developer -Remote or Singapore",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/wiselywise/jobs/web-developer-remote-or-singapore"
+    }
+  },
+  {
+    "id": "log-1788444100414-5spls",
+    "timestamp": "2026-09-03T14:01:40.414Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Web Developer -Remote or Singapore",
+    "details": {}
+  },
+  {
+    "id": "log-1788444100371-l3z6i",
+    "timestamp": "2026-09-03T14:01:40.371Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer -Remote or Singapore @ ",
+    "details": {
+      "title": "Web Developer -Remote or Singapore",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/wiselywise/jobs/web-developer-remote-or-singapore"
+    }
+  },
+  {
+    "id": "log-1788444098948-09a5m",
+    "timestamp": "2026-09-03T14:01:38.948Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer -Remote or Singapore @  (100%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444098943-wn4dv",
+    "timestamp": "2026-09-03T14:01:38.943Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): Web Developer -Remote or Singapore @ ",
+    "details": {
+      "title": "Web Developer -Remote or Singapore",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/wiselywise/jobs/web-developer-remote-or-singapore"
+    }
+  },
+  {
+    "id": "log-1788444097936-04cua",
+    "timestamp": "2026-09-03T14:01:37.936Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444097930-vsvs1",
+    "timestamp": "2026-09-03T14:01:37.930Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/worldpantry-com/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444096358-mxc4e",
+    "timestamp": "2026-09-03T14:01:36.358Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (100%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444096355-isbpr",
+    "timestamp": "2026-09-03T14:01:36.355Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/worldpantry-com/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444095431-4qt83",
+    "timestamp": "2026-09-03T14:01:35.431Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444095388-l4wxj",
+    "timestamp": "2026-09-03T14:01:35.388Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/bookyourdata/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444095024-fkw6k",
+    "timestamp": "2026-09-03T14:01:35.024Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444095021-8cl5g",
+    "timestamp": "2026-09-03T14:01:35.021Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/bookyourdata/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444093703-vd3k4",
+    "timestamp": "2026-09-03T14:01:33.703Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444093699-khsga",
+    "timestamp": "2026-09-03T14:01:33.699Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/bookyourdata/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444087356-qn70y",
+    "timestamp": "2026-09-03T14:01:27.356Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444087258-nyei1",
+    "timestamp": "2026-09-03T14:01:27.258Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/sil-international/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444086068-v0xke",
+    "timestamp": "2026-09-03T14:01:26.068Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444086065-jk936",
+    "timestamp": "2026-09-03T14:01:26.065Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/sil-international/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444085749-6vguq",
+    "timestamp": "2026-09-03T14:01:25.749Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444085745-vmxtk",
+    "timestamp": "2026-09-03T14:01:25.745Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/sil-international/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788444083007-kg3cq",
+    "timestamp": "2026-09-03T14:01:23.007Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444083003-ni8bl",
+    "timestamp": "2026-09-03T14:01:23.003Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/canonical/jobs/web-developer-2076681150"
+    }
+  },
+  {
+    "id": "log-1788444082698-vcos8",
+    "timestamp": "2026-09-03T14:01:22.698Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444082693-iksdy",
+    "timestamp": "2026-09-03T14:01:22.693Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/canonical/jobs/web-developer-2076681150"
+    }
+  },
+  {
+    "id": "log-1788444069309-a7ypy",
+    "timestamp": "2026-09-03T14:01:09.309Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Frontend Software Engineer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444069258-t0sgb",
+    "timestamp": "2026-09-03T14:01:09.258Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Frontend Software Engineer @ ",
+    "details": {
+      "title": "Frontend Software Engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/micro1/jobs/frontend-software-engineer-3853610194"
+    }
+  },
+  {
+    "id": "log-1788444068279-wxf1j",
+    "timestamp": "2026-09-03T14:01:08.279Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Frontend Software Engineer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444068276-hkjkf",
+    "timestamp": "2026-09-03T14:01:08.276Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Frontend Software Engineer @ ",
+    "details": {
+      "title": "Frontend Software Engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/micro1/jobs/frontend-software-engineer-3853610194"
+    }
+  },
+  {
+    "id": "log-1788444067395-c1m9l",
+    "timestamp": "2026-09-03T14:01:07.395Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Frontend Software Engineer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444067391-18hzk",
+    "timestamp": "2026-09-03T14:01:07.391Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Frontend Software Engineer @ ",
+    "details": {
+      "title": "Frontend Software Engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/micro1/jobs/frontend-software-engineer-3853610194"
+    }
+  },
+  {
+    "id": "log-1788444052562-k9469",
+    "timestamp": "2026-09-03T14:00:52.562Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Frontend Developer @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444052558-1nxse",
+    "timestamp": "2026-09-03T14:00:52.558Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Frontend Developer @ ",
+    "details": {
+      "title": "Frontend Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/mena-alliances/jobs/frontend-developer"
+    }
+  },
+  {
+    "id": "log-1788444047257-za3un",
+    "timestamp": "2026-09-03T14:00:47.257Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Senior Front-End Developer - React.js",
+    "details": {}
+  },
+  {
+    "id": "log-1788444047206-o53r0",
+    "timestamp": "2026-09-03T14:00:47.206Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior Front-End Developer - React.js @ ",
+    "details": {
+      "title": "Senior Front-End Developer - React.js",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/appmysite/jobs/senior-front-end-developer-react-js"
+    }
+  },
+  {
+    "id": "log-1788444045798-gu5ng",
+    "timestamp": "2026-09-03T14:00:45.798Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior Front-End Developer - React.js @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444045794-0sss1",
+    "timestamp": "2026-09-03T14:00:45.794Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior Front-End Developer - React.js @ ",
+    "details": {
+      "title": "Senior Front-End Developer - React.js",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/appmysite/jobs/senior-front-end-developer-react-js"
+    }
+  },
+  {
+    "id": "log-1788444045215-4c6yw",
+    "timestamp": "2026-09-03T14:00:45.215Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior Front-End Developer - React.js @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444045210-welrh",
+    "timestamp": "2026-09-03T14:00:45.210Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior Front-End Developer - React.js @ ",
+    "details": {
+      "title": "Senior Front-End Developer - React.js",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/appmysite/jobs/senior-front-end-developer-react-js"
+    }
+  },
+  {
+    "id": "log-1788444039430-5xxd3",
+    "timestamp": "2026-09-03T14:00:39.430Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Full Stack Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444039368-jxg73",
+    "timestamp": "2026-09-03T14:00:39.368Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Full Stack Developer @ ",
+    "details": {
+      "title": "Full Stack Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/kis-solutions/jobs/full-stack-developer"
+    }
+  },
+  {
+    "id": "log-1788444037949-caqsa",
+    "timestamp": "2026-09-03T14:00:37.949Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Full Stack Developer @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444037944-zvxns",
+    "timestamp": "2026-09-03T14:00:37.944Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Full Stack Developer @ ",
+    "details": {
+      "title": "Full Stack Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/kis-solutions/jobs/full-stack-developer"
+    }
+  },
+  {
+    "id": "log-1788444036950-1mi7f",
+    "timestamp": "2026-09-03T14:00:36.950Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Full Stack Developer @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444036946-2d29v",
+    "timestamp": "2026-09-03T14:00:36.946Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Full Stack Developer @ ",
+    "details": {
+      "title": "Full Stack Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/kis-solutions/jobs/full-stack-developer"
+    }
+  },
+  {
+    "id": "log-1788444025559-c154e",
+    "timestamp": "2026-09-03T14:00:25.559Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Full Stack Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788444025475-80c72",
+    "timestamp": "2026-09-03T14:00:25.475Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full Stack Developer @ ",
+    "details": {
+      "title": "Full Stack Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/one-hr-hub/jobs/full-stack-developer"
+    }
+  },
+  {
+    "id": "log-1788444024360-1rotu",
+    "timestamp": "2026-09-03T14:00:24.360Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Full Stack Developer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788444024351-ah5yw",
+    "timestamp": "2026-09-03T14:00:24.351Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full Stack Developer @ ",
+    "details": {
+      "title": "Full Stack Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/one-hr-hub/jobs/full-stack-developer"
+    }
+  },
+  {
+    "id": "log-1788444023888-1pkci",
+    "timestamp": "2026-09-03T14:00:23.888Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 265 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788444022016-k9k9m",
+    "timestamp": "2026-09-03T14:00:22.016Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 265 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788443989303-ihflr",
+    "timestamp": "2026-09-03T13:59:49.303Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 259 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788443967549-7y0wi",
+    "timestamp": "2026-09-03T13:59:27.549Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1788443967543-s631z",
+    "timestamp": "2026-09-03T13:59:27.543Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1788443967536-zs0l9",
+    "timestamp": "2026-09-03T13:59:27.536Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1788443967525-ehlzv",
+    "timestamp": "2026-09-03T13:59:27.524Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1788443927331-vvtop",
+    "timestamp": "2026-09-03T13:58:47.331Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 272 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788443897931-3xe7i",
+    "timestamp": "2026-09-03T13:58:17.931Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1788443897926-gvis8",
+    "timestamp": "2026-09-03T13:58:17.926Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1788443897919-axnxn",
+    "timestamp": "2026-09-03T13:58:17.919Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1788443897907-8v8e2",
+    "timestamp": "2026-09-03T13:58:17.906Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1788443828065-ogqdt",
+    "timestamp": "2026-09-03T13:57:08.065Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert — no direct apply method: Remote Senior Fullstack JavaScript Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443828062-54rxs",
+    "timestamp": "2026-09-03T13:57:08.062Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Remote Senior Fullstack JavaScript Developer @ ",
+    "details": {
+      "title": "Remote Senior Fullstack JavaScript Developer",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/scopic/jobs/remote-senior-fullstack-javascript-developer"
+    }
+  },
+  {
+    "id": "log-1788443825687-npdr4",
+    "timestamp": "2026-09-03T13:57:05.687Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert — no direct apply method: Sr. JavaScript Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443825682-zpajj",
+    "timestamp": "2026-09-03T13:57:05.682Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Sr. JavaScript Developer @ ",
+    "details": {
+      "title": "Sr. JavaScript Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/rapinno-tech/jobs/sr-javascript-developer"
+    }
+  },
+  {
+    "id": "log-1788443811253-tif2a",
+    "timestamp": "2026-09-03T13:56:51.253Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert — no direct apply method: Lead Instructor: GenAI (Copilot)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443811247-s3u29",
+    "timestamp": "2026-09-03T13:56:51.247Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Lead Instructor: GenAI (Copilot) @ ",
+    "details": {
+      "title": "Lead Instructor: GenAI (Copilot)",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/correlation-one/jobs/lead-instructor-genai-copilot"
+    }
+  },
+  {
+    "id": "log-1788443776933-pc6di",
+    "timestamp": "2026-09-03T13:56:16.933Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert — no direct apply method: IT Instructor - Online",
+    "details": {}
+  },
+  {
+    "id": "log-1788443776928-cydd5",
+    "timestamp": "2026-09-03T13:56:16.928Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): IT Instructor - Online @ ",
+    "details": {
+      "title": "IT Instructor - Online",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/cbt-nuggets/jobs/it-instructor-online"
+    }
+  },
+  {
+    "id": "log-1788443745555-68tna",
+    "timestamp": "2026-09-03T13:55:45.555Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert — no direct apply method: Wordpress Plugin & API Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443745550-cfxaa",
+    "timestamp": "2026-09-03T13:55:45.550Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wordpress Plugin & API Developer @ ",
+    "details": {
+      "title": "Wordpress Plugin & API Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/appmysite/jobs/wordpress-plugin-api-developer"
+    }
+  },
+  {
+    "id": "log-1788443741262-5hz8b",
+    "timestamp": "2026-09-03T13:55:41.262Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 336 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788443718277-ruuiz",
+    "timestamp": "2026-09-03T13:55:18.277Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1788443718269-azlh5",
+    "timestamp": "2026-09-03T13:55:18.269Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1788443718258-zokbh",
+    "timestamp": "2026-09-03T13:55:18.258Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1788443718242-7b5uz",
+    "timestamp": "2026-09-03T13:55:18.235Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1788443716561-ss5h2",
+    "timestamp": "2026-09-03T13:55:16.561Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: A.Team: Senior Independent Software Developer ($90-$170/hr)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443708882-cc3kr",
+    "timestamp": "2026-09-03T13:55:08.882Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): A.Team: Senior Independent Software Developer ($90-$170/hr) @ ",
+    "details": {
+      "title": "A.Team: Senior Independent Software Developer ($90-$170/hr)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-software-developer-90-170-hr"
+    }
+  },
+  {
+    "id": "log-1788443705211-3cbif",
+    "timestamp": "2026-09-03T13:55:05.211Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Sticker Mule: Software engineer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443700921-ac0c0",
+    "timestamp": "2026-09-03T13:55:00.921Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Sticker Mule: Software engineer @ ",
+    "details": {
+      "title": "Sticker Mule: Software engineer",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3"
+    }
+  },
+  {
+    "id": "log-1788443698221-m9bzb",
+    "timestamp": "2026-09-03T13:54:58.221Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Wonderdog: Full-Stack Product Engineer - Agentic First",
+    "details": {}
+  },
+  {
+    "id": "log-1788443686764-zadqu",
+    "timestamp": "2026-09-03T13:54:46.764Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wonderdog: Full-Stack Product Engineer - Agentic First @ ",
+    "details": {
+      "title": "Wonderdog: Full-Stack Product Engineer - Agentic First",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/wonderdog-full-stack-product-engineer-agentic-first"
+    }
+  },
+  {
+    "id": "log-1788443684272-i2mh0",
+    "timestamp": "2026-09-03T13:54:44.272Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications",
+    "details": {}
+  },
+  {
+    "id": "log-1788443679485-41w1b",
+    "timestamp": "2026-09-03T13:54:39.485Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications @ ",
+    "details": {
+      "title": "LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/lmg-staffing-solutions-ai-assisted-software-engineer-web-applications"
+    }
+  },
+  {
+    "id": "log-1788443674289-ghfph",
+    "timestamp": "2026-09-03T13:54:34.289Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Charles Technology Africa: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443664305-4j4f3",
+    "timestamp": "2026-09-03T13:54:24.305Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): Charles Technology Africa: Web Developer @ ",
+    "details": {
+      "title": "Charles Technology Africa: Web Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/charles-technology-africa-web-developer"
+    }
+  },
+  {
+    "id": "log-1788443649481-fozio",
+    "timestamp": "2026-09-03T13:54:09.481Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Gusto, Inc.: Staff Software Engineer, Time and Scheduling",
+    "details": {}
+  },
+  {
+    "id": "log-1788443640957-4bfqs",
+    "timestamp": "2026-09-03T13:54:00.957Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Gusto, Inc.: Staff Software Engineer, Time and Scheduling @ ",
+    "details": {
+      "title": "Gusto, Inc.: Staff Software Engineer, Time and Scheduling",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/gusto-inc-staff-software-engineer-time-and-scheduling"
+    }
+  },
+  {
+    "id": "log-1788443630970-dhcw4",
+    "timestamp": "2026-09-03T13:53:50.970Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443630943-papln",
+    "timestamp": "2026-09-03T13:53:50.943Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1788443628158-pe1lw",
+    "timestamp": "2026-09-03T13:53:48.158Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443628133-88q4y",
+    "timestamp": "2026-09-03T13:53:48.133Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1788443622506-l08ev",
+    "timestamp": "2026-09-03T13:53:42.506Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Proxify AB: Senior Fullstack Developer (React.js / Node.js)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443604262-jx6f0",
+    "timestamp": "2026-09-03T13:53:24.262Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Proxify AB: Senior Fullstack Developer (React.js / Node.js) @ ",
+    "details": {
+      "title": "Proxify AB: Senior Fullstack Developer (React.js / Node.js)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-3"
+    }
+  },
+  {
+    "id": "log-1788443599216-d3vqt",
+    "timestamp": "2026-09-03T13:53:19.216Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Hightouch: Application Security Lead",
+    "details": {}
+  },
+  {
+    "id": "log-1788443594540-c8rqn",
+    "timestamp": "2026-09-03T13:53:14.540Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Hightouch: Application Security Lead @ ",
+    "details": {
+      "title": "Hightouch: Application Security Lead",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/hightouch-application-security-lead"
+    }
+  },
+  {
+    "id": "log-1788443588908-cp4ji",
+    "timestamp": "2026-09-03T13:53:08.908Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Vercel: Member of the Technical Staff, Internal Agent",
+    "details": {}
+  },
+  {
+    "id": "log-1788443561446-tjk9u",
+    "timestamp": "2026-09-03T13:52:41.446Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Vercel: Member of the Technical Staff, Internal Agent @ ",
+    "details": {
+      "title": "Vercel: Member of the Technical Staff, Internal Agent",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/vercel-member-of-the-technical-staff-internal-agent"
+    }
+  },
+  {
+    "id": "log-1788443522860-2trqa",
+    "timestamp": "2026-09-03T13:52:02.860Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443518197-8d63r",
+    "timestamp": "2026-09-03T13:51:58.197Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net) @ ",
+    "details": {
+      "title": "Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/ci-t-job-26953-senior-full-stack-developer-react-net"
+    }
+  },
+  {
+    "id": "log-1788443515782-j5ygc",
+    "timestamp": "2026-09-03T13:51:55.782Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Huzzle: Full-Stack Developer (Python, React, AI)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443512367-3xamm",
+    "timestamp": "2026-09-03T13:51:52.367Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Huzzle: Full-Stack Developer (Python, React, AI) @ ",
+    "details": {
+      "title": "Huzzle: Full-Stack Developer (Python, React, AI)",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/huzzle-full-stack-developer-python-react-ai"
+    }
+  },
+  {
+    "id": "log-1788443502707-lhs9v",
+    "timestamp": "2026-09-03T13:51:42.707Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ...",
+    "details": {}
+  },
+  {
+    "id": "log-1788443498552-x6fn0",
+    "timestamp": "2026-09-03T13:51:38.552Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ... @ ",
+    "details": {
+      "title": "Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ...",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/alphorm-formateur-it-independant-cybersecurite-ia-cloud-devops-et-reseaux"
+    }
+  },
+  {
+    "id": "log-1788443493604-e16gl",
+    "timestamp": "2026-09-03T13:51:33.604Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Cosuno: Principal Full Stack Developer (TypeScript)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443475890-w2fjh",
+    "timestamp": "2026-09-03T13:51:15.890Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Cosuno: Principal Full Stack Developer (TypeScript) @ ",
+    "details": {
+      "title": "Cosuno: Principal Full Stack Developer (TypeScript)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/cosuno-principal-full-stack-developer-typescript"
+    }
+  },
+  {
+    "id": "log-1788443460396-czh7g",
+    "timestamp": "2026-09-03T13:51:00.396Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Cosuno: Senior Full Stack Developer (TypeScript)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443432275-gmb84",
+    "timestamp": "2026-09-03T13:50:32.275Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Cosuno: Senior Full Stack Developer (TypeScript) @ ",
+    "details": {
+      "title": "Cosuno: Senior Full Stack Developer (TypeScript)",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/cosuno-senior-full-stack-developer-typescript"
+    }
+  },
+  {
+    "id": "log-1788443371255-7k1gc",
+    "timestamp": "2026-09-03T13:49:31.255Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Valsoft Corporation: AI-Native Full Stack Product Engineer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443353865-kfrzd",
+    "timestamp": "2026-09-03T13:49:13.865Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Valsoft Corporation: AI-Native Full Stack Product Engineer @ ",
+    "details": {
+      "title": "Valsoft Corporation: AI-Native Full Stack Product Engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/valsoft-corporation-ai-native-full-stack-product-engineer"
+    }
+  },
+  {
+    "id": "log-1788443343813-tdg7e",
+    "timestamp": "2026-09-03T13:49:03.813Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Newrich Network: Senior Full Stack Developer - PHP Laravel",
+    "details": {}
+  },
+  {
+    "id": "log-1788443337776-2vbuz",
+    "timestamp": "2026-09-03T13:48:57.776Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (80%): Newrich Network: Senior Full Stack Developer - PHP Laravel @ ",
+    "details": {
+      "title": "Newrich Network: Senior Full Stack Developer - PHP Laravel",
+      "company": "",
+      "score": 80,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/newrich-network-senior-full-stack-developer-php-laravel"
+    }
+  },
+  {
+    "id": "log-1788443310881-p2p0l",
+    "timestamp": "2026-09-03T13:48:30.881Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Tiugo Technologies: Principal Product Engineer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443301497-1i315",
+    "timestamp": "2026-09-03T13:48:21.497Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Tiugo Technologies: Principal Product Engineer @ ",
+    "details": {
+      "title": "Tiugo Technologies: Principal Product Engineer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/tiugo-technologies-principal-product-engineer"
+    }
+  },
+  {
+    "id": "log-1788443284388-5u078",
+    "timestamp": "2026-09-03T13:48:04.388Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: 3D Modeling Service Website",
+    "details": {}
+  },
+  {
+    "id": "log-1788443284348-ck55s",
+    "timestamp": "2026-09-03T13:48:04.348Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1788443282095-7hmgc",
+    "timestamp": "2026-09-03T13:48:02.095Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: 3D Modeling Service Website",
+    "details": {}
+  },
+  {
+    "id": "log-1788443282058-2zsxp",
+    "timestamp": "2026-09-03T13:48:02.058Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (90%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 90,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1788443279666-7q3zz",
+    "timestamp": "2026-09-03T13:47:59.666Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443279637-k6q02",
+    "timestamp": "2026-09-03T13:47:59.637Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1788443277271-yvrd8",
+    "timestamp": "2026-09-03T13:47:57.271Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443277248-hdi6o",
+    "timestamp": "2026-09-03T13:47:57.248Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1788443274887-qqwny",
+    "timestamp": "2026-09-03T13:47:54.887Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer – Website Maintenance & Improvements",
+    "details": {}
+  },
+  {
+    "id": "log-1788443274847-1ymx6",
+    "timestamp": "2026-09-03T13:47:54.847Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1788443272593-k64c5",
+    "timestamp": "2026-09-03T13:47:52.593Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer – Website Maintenance & Improvements",
+    "details": {}
+  },
+  {
+    "id": "log-1788443272568-7t1jc",
+    "timestamp": "2026-09-03T13:47:52.568Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1788443270268-eix4n",
+    "timestamp": "2026-09-03T13:47:50.268Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Enfold CSS help neeed",
+    "details": {}
+  },
+  {
+    "id": "log-1788443270239-wb77d",
+    "timestamp": "2026-09-03T13:47:50.239Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1788443267389-y6n3b",
+    "timestamp": "2026-09-03T13:47:47.389Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Enfold CSS help neeed",
+    "details": {}
+  },
+  {
+    "id": "log-1788443267365-l142y",
+    "timestamp": "2026-09-03T13:47:47.365Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1788443262874-4tnip",
+    "timestamp": "2026-09-03T13:47:42.874Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443262841-z16am",
+    "timestamp": "2026-09-03T13:47:42.840Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia) @ ",
+    "details": {
+      "title": "OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia"
+    }
+  },
+  {
+    "id": "log-1788443255587-ixzre",
+    "timestamp": "2026-09-03T13:47:35.586Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Lemon.io: Senior React Full-stack Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443255563-v1my4",
+    "timestamp": "2026-09-03T13:47:35.563Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Lemon.io: Senior React Full-stack Developer @ ",
+    "details": {
+      "title": "Lemon.io: Senior React Full-stack Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-6"
+    }
+  },
+  {
+    "id": "log-1788443247951-rkz1n",
+    "timestamp": "2026-09-03T13:47:27.951Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Web Specialist and WordPress Manager",
+    "details": {}
+  },
+  {
+    "id": "log-1788443247924-cnr42",
+    "timestamp": "2026-09-03T13:47:27.924Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1788443245596-gnld7",
+    "timestamp": "2026-09-03T13:47:25.596Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Web Specialist and WordPress Manager",
+    "details": {}
+  },
+  {
+    "id": "log-1788443245556-cz808",
+    "timestamp": "2026-09-03T13:47:25.556Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1788443243182-z9leu",
+    "timestamp": "2026-09-03T13:47:23.182Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Senior WordPress Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443243156-vf4g7",
+    "timestamp": "2026-09-03T13:47:23.156Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1788443240751-19owo",
+    "timestamp": "2026-09-03T13:47:20.751Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Full-Stack WordPress Developer (USA Pacific)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443240722-5qspu",
+    "timestamp": "2026-09-03T13:47:20.722Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {
+      "title": "Full-Stack WordPress Developer (USA Pacific)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/full-stack-wordpress-developer-usa-pacific/"
+    }
+  },
+  {
+    "id": "log-1788443232846-c5245",
+    "timestamp": "2026-09-03T13:47:12.846Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Donât see your role Apply here",
+    "details": {}
+  },
+  {
+    "id": "log-1788443224844-ogc8n",
+    "timestamp": "2026-09-03T13:47:04.844Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Donât see your role Apply here @ Atreides",
+    "details": {
+      "title": "Donât see your role Apply here",
+      "company": "Atreides",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-dont-see-your-role-apply-here-atreides-1137186"
+    }
+  },
+  {
+    "id": "log-1788443214263-hmh43",
+    "timestamp": "2026-09-03T13:46:54.263Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Toggl: Senior Full Stack",
+    "details": {}
+  },
+  {
+    "id": "log-1788443214238-wvf81",
+    "timestamp": "2026-09-03T13:46:54.238Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Toggl: Senior Full Stack @ ",
+    "details": {
+      "title": "Toggl: Senior Full Stack",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/toggl-senior-full-stack"
+    }
+  },
+  {
+    "id": "log-1788443209561-s2o3u",
+    "timestamp": "2026-09-03T13:46:49.561Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443209536-68ro3",
+    "timestamp": "2026-09-03T13:46:49.536Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-891/"
+    }
+  },
+  {
+    "id": "log-1788443169555-7b5kb",
+    "timestamp": "2026-09-03T13:46:09.555Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for A.Team: Senior Independent Software Developer ($90-$170/hr) @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443169552-o6gnr",
+    "timestamp": "2026-09-03T13:46:09.552Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): A.Team: Senior Independent Software Developer ($90-$170/hr) @ ",
+    "details": {
+      "title": "A.Team: Senior Independent Software Developer ($90-$170/hr)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-software-developer-90-170-hr"
+    }
+  },
+  {
+    "id": "log-1788443166785-5xa2k",
+    "timestamp": "2026-09-03T13:46:06.785Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for A.Team: Senior Independent Software Developer ($90-$170/hr) @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443166780-cvrm2",
+    "timestamp": "2026-09-03T13:46:06.780Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): A.Team: Senior Independent Software Developer ($90-$170/hr) @ ",
+    "details": {
+      "title": "A.Team: Senior Independent Software Developer ($90-$170/hr)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-software-developer-90-170-hr"
+    }
+  },
+  {
+    "id": "log-1788443166241-v6o56",
+    "timestamp": "2026-09-03T13:46:06.241Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Sticker Mule: Software engineer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443166238-jsg8f",
+    "timestamp": "2026-09-03T13:46:06.238Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Sticker Mule: Software engineer @ ",
+    "details": {
+      "title": "Sticker Mule: Software engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3"
+    }
+  },
+  {
+    "id": "log-1788443163699-e65d1",
+    "timestamp": "2026-09-03T13:46:03.699Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Sticker Mule: Software engineer @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443163696-wd0py",
+    "timestamp": "2026-09-03T13:46:03.696Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Sticker Mule: Software engineer @ ",
+    "details": {
+      "title": "Sticker Mule: Software engineer",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/sticker-mule-software-engineer-3"
+    }
+  },
+  {
+    "id": "log-1788443163678-znszl",
+    "timestamp": "2026-09-03T13:46:03.678Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Wonderdog: Full-Stack Product Engineer - Agentic First @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443163674-hpirp",
+    "timestamp": "2026-09-03T13:46:03.674Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wonderdog: Full-Stack Product Engineer - Agentic First @ ",
+    "details": {
+      "title": "Wonderdog: Full-Stack Product Engineer - Agentic First",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/wonderdog-full-stack-product-engineer-agentic-first"
+    }
+  },
+  {
+    "id": "log-1788443161215-kq5s6",
+    "timestamp": "2026-09-03T13:46:01.215Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443161211-ytrxo",
+    "timestamp": "2026-09-03T13:46:01.211Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications @ ",
+    "details": {
+      "title": "LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/lmg-staffing-solutions-ai-assisted-software-engineer-web-applications"
+    }
+  },
+  {
+    "id": "log-1788443161143-9b35h",
+    "timestamp": "2026-09-03T13:46:01.143Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Wonderdog: Full-Stack Product Engineer - Agentic First @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443161140-p9hph",
+    "timestamp": "2026-09-03T13:46:01.140Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wonderdog: Full-Stack Product Engineer - Agentic First @ ",
+    "details": {
+      "title": "Wonderdog: Full-Stack Product Engineer - Agentic First",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/wonderdog-full-stack-product-engineer-agentic-first"
+    }
+  },
+  {
+    "id": "log-1788443158483-k9moe",
+    "timestamp": "2026-09-03T13:45:58.483Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443158478-2tz9k",
+    "timestamp": "2026-09-03T13:45:58.478Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications @ ",
+    "details": {
+      "title": "LMG Staffing Solutions: AI-Assisted Software Engineer, Web Applications",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/lmg-staffing-solutions-ai-assisted-software-engineer-web-applications"
+    }
+  },
+  {
+    "id": "log-1788443156114-3pjqy",
+    "timestamp": "2026-09-03T13:45:56.114Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Charles Technology Africa: Web Developer @  (95%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443156111-w2cnt",
+    "timestamp": "2026-09-03T13:45:56.111Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): Charles Technology Africa: Web Developer @ ",
+    "details": {
+      "title": "Charles Technology Africa: Web Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/charles-technology-africa-web-developer"
+    }
+  },
+  {
+    "id": "log-1788443153607-y3kpo",
+    "timestamp": "2026-09-03T13:45:53.607Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Charles Technology Africa: Web Developer @  (95%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443153603-f2hfe",
+    "timestamp": "2026-09-03T13:45:53.603Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): Charles Technology Africa: Web Developer @ ",
+    "details": {
+      "title": "Charles Technology Africa: Web Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/charles-technology-africa-web-developer"
+    }
+  },
+  {
+    "id": "log-1788443142891-h521j",
+    "timestamp": "2026-09-03T13:45:42.891Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Expression of Interest Canât see a role thatâs right for you",
+    "details": {}
+  },
+  {
+    "id": "log-1788443142868-kntxm",
+    "timestamp": "2026-09-03T13:45:42.868Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Expression of Interest Canât see a role thatâs right for you @ C2 Group",
+    "details": {
+      "title": "Expression of Interest Canât see a role thatâs right for you",
+      "company": "C2 Group",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-expression-of-interest-cant-see-a-role-thats-right-for-you-c2-group-1137251"
+    }
+  },
+  {
+    "id": "log-1788443140092-9vnjt",
+    "timestamp": "2026-09-03T13:45:40.092Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Gusto, Inc.: Staff Software Engineer, Time and Scheduling @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443140088-zevwn",
+    "timestamp": "2026-09-03T13:45:40.088Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Gusto, Inc.: Staff Software Engineer, Time and Scheduling @ ",
+    "details": {
+      "title": "Gusto, Inc.: Staff Software Engineer, Time and Scheduling",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/gusto-inc-staff-software-engineer-time-and-scheduling"
+    }
+  },
+  {
+    "id": "log-1788443137108-4aqnk",
+    "timestamp": "2026-09-03T13:45:37.108Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Gusto, Inc.: Staff Software Engineer, Time and Scheduling @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443137105-cffdq",
+    "timestamp": "2026-09-03T13:45:37.105Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Gusto, Inc.: Staff Software Engineer, Time and Scheduling @ ",
+    "details": {
+      "title": "Gusto, Inc.: Staff Software Engineer, Time and Scheduling",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/gusto-inc-staff-software-engineer-time-and-scheduling"
+    }
+  },
+  {
+    "id": "log-1788443134386-gxag9",
+    "timestamp": "2026-09-03T13:45:34.386Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Toptal: Senior Software Engineer for AI-Powered Banking Platform @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443134382-05vhu",
+    "timestamp": "2026-09-03T13:45:34.382Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Toptal: Senior Software Engineer for AI-Powered Banking Platform @ ",
+    "details": {
+      "title": "Toptal: Senior Software Engineer for AI-Powered Banking Platform",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/toptal-senior-software-engineer-for-ai-powered-banking-platform"
+    }
+  },
+  {
+    "id": "log-1788443129434-80or3",
+    "timestamp": "2026-09-03T13:45:29.434Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for WordPress Developer @  (95%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443129430-hbm13",
+    "timestamp": "2026-09-03T13:45:29.430Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1788443126922-tbnqr",
+    "timestamp": "2026-09-03T13:45:26.922Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for WordPress Developer @  (95%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443126918-2njwe",
+    "timestamp": "2026-09-03T13:45:26.918Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1788443126693-mqqt7",
+    "timestamp": "2026-09-03T13:45:26.693Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for WordPress Developer @  (95%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443126691-gd9fj",
+    "timestamp": "2026-09-03T13:45:26.691Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1788443124222-phqv3",
+    "timestamp": "2026-09-03T13:45:24.222Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for WordPress Developer @  (95%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443124219-6aqzp",
+    "timestamp": "2026-09-03T13:45:24.219Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-889/"
+    }
+  },
+  {
+    "id": "log-1788443121728-o9319",
+    "timestamp": "2026-09-03T13:45:21.728Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Proxify AB: Senior Fullstack Developer (React.js / Node.js) @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443121724-4iyxm",
+    "timestamp": "2026-09-03T13:45:21.724Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Proxify AB: Senior Fullstack Developer (React.js / Node.js) @ ",
+    "details": {
+      "title": "Proxify AB: Senior Fullstack Developer (React.js / Node.js)",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-3"
+    }
+  },
+  {
+    "id": "log-1788443119213-kbb9o",
+    "timestamp": "2026-09-03T13:45:19.213Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Proxify AB: Senior Fullstack Developer (React.js / Node.js) @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443119209-xewic",
+    "timestamp": "2026-09-03T13:45:19.209Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Proxify AB: Senior Fullstack Developer (React.js / Node.js) @ ",
+    "details": {
+      "title": "Proxify AB: Senior Fullstack Developer (React.js / Node.js)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-fullstack-developer-react-js-node-js-3"
+    }
+  },
+  {
+    "id": "log-1788443113646-ybegg",
+    "timestamp": "2026-09-03T13:45:13.646Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Hightouch: Application Security Lead @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443113643-0021p",
+    "timestamp": "2026-09-03T13:45:13.643Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Hightouch: Application Security Lead @ ",
+    "details": {
+      "title": "Hightouch: Application Security Lead",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/hightouch-application-security-lead"
+    }
+  },
+  {
+    "id": "log-1788443108107-v2bxa",
+    "timestamp": "2026-09-03T13:45:08.107Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Vercel: Member of the Technical Staff, Internal Agent @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443108104-zzk7n",
+    "timestamp": "2026-09-03T13:45:08.104Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Vercel: Member of the Technical Staff, Internal Agent @ ",
+    "details": {
+      "title": "Vercel: Member of the Technical Staff, Internal Agent",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/vercel-member-of-the-technical-staff-internal-agent"
+    }
+  },
+  {
+    "id": "log-1788443097915-t98dg",
+    "timestamp": "2026-09-03T13:44:57.915Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Edfinity: Senior Software Engineer, remote @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443097912-9w3do",
+    "timestamp": "2026-09-03T13:44:57.912Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Edfinity: Senior Software Engineer, remote @ ",
+    "details": {
+      "title": "Edfinity: Senior Software Engineer, remote",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/edfinity-senior-software-engineer-remote"
+    }
+  },
+  {
+    "id": "log-1788443072142-r3t4m",
+    "timestamp": "2026-09-03T13:44:32.142Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net) @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443072137-40ss8",
+    "timestamp": "2026-09-03T13:44:32.137Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net) @ ",
+    "details": {
+      "title": "Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/ci-t-job-26953-senior-full-stack-developer-react-net"
+    }
+  },
+  {
+    "id": "log-1788443069585-kp8ry",
+    "timestamp": "2026-09-03T13:44:29.585Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Huzzle: Full-Stack Developer (Python, React, AI) @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443069582-ctjhx",
+    "timestamp": "2026-09-03T13:44:29.582Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Huzzle: Full-Stack Developer (Python, React, AI) @ ",
+    "details": {
+      "title": "Huzzle: Full-Stack Developer (Python, React, AI)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/huzzle-full-stack-developer-python-react-ai"
+    }
+  },
+  {
+    "id": "log-1788443068051-4gypz",
+    "timestamp": "2026-09-03T13:44:28.051Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net) @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443068047-kmoud",
+    "timestamp": "2026-09-03T13:44:28.047Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net) @ ",
+    "details": {
+      "title": "Ci&t: [Job -26953] Senior Full Stack Developer (React/.Net)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/ci-t-job-26953-senior-full-stack-developer-react-net"
+    }
+  },
+  {
+    "id": "log-1788443066946-u189v",
+    "timestamp": "2026-09-03T13:44:26.945Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Huzzle: Full-Stack Developer (Python, React, AI) @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443066943-x79yn",
+    "timestamp": "2026-09-03T13:44:26.942Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Huzzle: Full-Stack Developer (Python, React, AI) @ ",
+    "details": {
+      "title": "Huzzle: Full-Stack Developer (Python, React, AI)",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/huzzle-full-stack-developer-python-react-ai-1"
+    }
+  },
+  {
+    "id": "log-1788443065365-18fp7",
+    "timestamp": "2026-09-03T13:44:25.365Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Huzzle: Full-Stack Developer (Python, React, AI) @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443065362-b1ycq",
+    "timestamp": "2026-09-03T13:44:25.362Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Huzzle: Full-Stack Developer (Python, React, AI) @ ",
+    "details": {
+      "title": "Huzzle: Full-Stack Developer (Python, React, AI)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/huzzle-full-stack-developer-python-react-ai"
+    }
+  },
+  {
+    "id": "log-1788443062851-21mdt",
+    "timestamp": "2026-09-03T13:44:22.851Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Huzzle: Full-Stack Developer (Python, React, AI) @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443062848-hefwu",
+    "timestamp": "2026-09-03T13:44:22.848Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Huzzle: Full-Stack Developer (Python, React, AI) @ ",
+    "details": {
+      "title": "Huzzle: Full-Stack Developer (Python, React, AI)",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/huzzle-full-stack-developer-python-react-ai-1"
+    }
+  },
+  {
+    "id": "log-1788443059441-8qt10",
+    "timestamp": "2026-09-03T13:44:19.441Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ... @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443059438-qre83",
+    "timestamp": "2026-09-03T13:44:19.438Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ... @ ",
+    "details": {
+      "title": "Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ...",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/alphorm-formateur-it-independant-cybersecurite-ia-cloud-devops-et-reseaux"
+    }
+  },
+  {
+    "id": "log-1788443055181-hpgg8",
+    "timestamp": "2026-09-03T13:44:15.181Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ... @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443055178-rysbk",
+    "timestamp": "2026-09-03T13:44:15.178Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ... @ ",
+    "details": {
+      "title": "Alphorm: Formateur IT Indépendant  Cybersécurité, IA, Cloud, DevOps et Réseaux ...",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/alphorm-formateur-it-independant-cybersecurite-ia-cloud-devops-et-reseaux"
+    }
+  },
+  {
+    "id": "log-1788443051471-053uy",
+    "timestamp": "2026-09-03T13:44:11.471Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: 1125 - 359ACQ | WordPress Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443051449-8adgf",
+    "timestamp": "2026-09-03T13:44:11.449Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 1125 - 359ACQ | WordPress Developer @ ",
+    "details": {
+      "title": "1125 - 359ACQ | WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/talentcross/jobs/1125-359acq-wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1788443047672-sp89r",
+    "timestamp": "2026-09-03T13:44:07.672Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Cosuno: Senior Full Stack Developer (TypeScript) @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443047669-505xu",
+    "timestamp": "2026-09-03T13:44:07.669Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Cosuno: Senior Full Stack Developer (TypeScript) @ ",
+    "details": {
+      "title": "Cosuno: Senior Full Stack Developer (TypeScript)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/cosuno-senior-full-stack-developer-typescript"
+    }
+  },
+  {
+    "id": "log-1788443042573-z061o",
+    "timestamp": "2026-09-03T13:44:02.573Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Cosuno: Senior Full Stack Developer (TypeScript) @  (78%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443042570-mob2n",
+    "timestamp": "2026-09-03T13:44:02.570Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (78%): Cosuno: Senior Full Stack Developer (TypeScript) @ ",
+    "details": {
+      "title": "Cosuno: Senior Full Stack Developer (TypeScript)",
+      "company": "",
+      "score": 78,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/cosuno-senior-full-stack-developer-typescript"
+    }
+  },
+  {
+    "id": "log-1788443040615-c9xpe",
+    "timestamp": "2026-09-03T13:44:00.615Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer - Remote",
+    "details": {}
+  },
+  {
+    "id": "log-1788443040593-01s6y",
+    "timestamp": "2026-09-03T13:44:00.593Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer - Remote @ ",
+    "details": {
+      "title": "WordPress Developer - Remote",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/sdf-systems/jobs/wordpress-developer-remote"
+    }
+  },
+  {
+    "id": "log-1788443040444-q3x9y",
+    "timestamp": "2026-09-03T13:44:00.444Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Valsoft Corporation: AI-Native Full Stack Product Engineer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443040441-xjpn9",
+    "timestamp": "2026-09-03T13:44:00.441Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Valsoft Corporation: AI-Native Full Stack Product Engineer @ ",
+    "details": {
+      "title": "Valsoft Corporation: AI-Native Full Stack Product Engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/valsoft-corporation-ai-native-full-stack-product-engineer"
+    }
+  },
+  {
+    "id": "log-1788443037853-clnzy",
+    "timestamp": "2026-09-03T13:43:57.853Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Wordpress Developer (Remote or NYC-Based)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443037803-knwui",
+    "timestamp": "2026-09-03T13:43:57.803Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wordpress Developer (Remote or NYC-Based) @ ",
+    "details": {
+      "title": "Wordpress Developer (Remote or NYC-Based)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/dignotion-digital-marketing/jobs/wordpress-developer-remote-or-nyc-based"
+    }
+  },
+  {
+    "id": "log-1788443035141-vyaaz",
+    "timestamp": "2026-09-03T13:43:55.141Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: (PH) Web Developer (WordPress)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443035107-tilb6",
+    "timestamp": "2026-09-03T13:43:55.107Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): (PH) Web Developer (WordPress) @ ",
+    "details": {
+      "title": "(PH) Web Developer (WordPress)",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/the-oe-agency/jobs/ph-web-developer-wordpress"
+    }
+  },
+  {
+    "id": "log-1788443034714-4fdtu",
+    "timestamp": "2026-09-03T13:43:54.714Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Valsoft Corporation: AI-Native Full Stack Product Engineer @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443034711-lcx8h",
+    "timestamp": "2026-09-03T13:43:54.711Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Valsoft Corporation: AI-Native Full Stack Product Engineer @ ",
+    "details": {
+      "title": "Valsoft Corporation: AI-Native Full Stack Product Engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/valsoft-corporation-ai-native-full-stack-product-engineer"
+    }
+  },
+  {
+    "id": "log-1788443032850-ujhjm",
+    "timestamp": "2026-09-03T13:43:52.850Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Web Developer / WordPress Developer / Marketing Web Specialist",
+    "details": {}
+  },
+  {
+    "id": "log-1788443032820-s26by",
+    "timestamp": "2026-09-03T13:43:52.820Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer / WordPress Developer / Marketing Web Specialist @ ",
+    "details": {
+      "title": "Web Developer / WordPress Developer / Marketing Web Specialist",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/perceptive-analytics/jobs/web-developer-wordpress-developer-marketing-web-specialist"
+    }
+  },
+  {
+    "id": "log-1788443032647-2zman",
+    "timestamp": "2026-09-03T13:43:52.647Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Newrich Network: Senior Full Stack Developer - PHP Laravel @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443032643-gccvp",
+    "timestamp": "2026-09-03T13:43:52.643Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Newrich Network: Senior Full Stack Developer - PHP Laravel @ ",
+    "details": {
+      "title": "Newrich Network: Senior Full Stack Developer - PHP Laravel",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/newrich-network-senior-full-stack-developer-php-laravel"
+    }
+  },
+  {
+    "id": "log-1788443027559-n3pd0",
+    "timestamp": "2026-09-03T13:43:47.559Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Trafilea: Design Specialist @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443027555-p8e6j",
+    "timestamp": "2026-09-03T13:43:47.555Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Trafilea: Design Specialist @ ",
+    "details": {
+      "title": "Trafilea: Design Specialist",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/trafilea-design-specialist"
+    }
+  },
+  {
+    "id": "log-1788443027018-x3ko6",
+    "timestamp": "2026-09-03T13:43:47.017Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Newrich Network: Senior Full Stack Developer - PHP Laravel @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788443027015-vik4o",
+    "timestamp": "2026-09-03T13:43:47.015Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Newrich Network: Senior Full Stack Developer - PHP Laravel @ ",
+    "details": {
+      "title": "Newrich Network: Senior Full Stack Developer - PHP Laravel",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/newrich-network-senior-full-stack-developer-php-laravel"
+    }
+  },
+  {
+    "id": "log-1788443025580-fu1zh",
+    "timestamp": "2026-09-03T13:43:45.580Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer - Remote",
+    "details": {}
+  },
+  {
+    "id": "log-1788443025559-1510b",
+    "timestamp": "2026-09-03T13:43:45.559Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer - Remote @ ",
+    "details": {
+      "title": "WordPress Developer - Remote",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/wati/jobs/wordpress-developer-remote"
+    }
+  },
+  {
+    "id": "log-1788443018102-fl6y9",
+    "timestamp": "2026-09-03T13:43:38.102Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Freelance WordPress Developer -US",
+    "details": {}
+  },
+  {
+    "id": "log-1788443016586-txejy",
+    "timestamp": "2026-09-03T13:43:36.586Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): Freelance WordPress Developer -US @ ",
+    "details": {
+      "title": "Freelance WordPress Developer -US",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/insight-therapy-solutions/jobs/freelance-wordpress-developer-us"
+    }
+  },
+  {
+    "id": "log-1788443007961-hf9of",
+    "timestamp": "2026-09-03T13:43:27.961Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: WordPress Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788443007935-se00s",
+    "timestamp": "2026-09-03T13:43:27.935Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/wow-remote-teams/jobs/wordpress-developer-5419828683"
+    }
+  },
+  {
+    "id": "log-1788442996694-18on1",
+    "timestamp": "2026-09-03T13:43:16.694Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Full Stack PHP Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442996663-9cfaq",
+    "timestamp": "2026-09-03T13:43:16.663Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full Stack PHP Developer @ ",
+    "details": {
+      "title": "Full Stack PHP Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/training-resources-group/jobs/full-stack-php-developer"
+    }
+  },
+  {
+    "id": "log-1788442992097-wwgv3",
+    "timestamp": "2026-09-03T13:43:12.097Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: PHP-developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442992076-a8ddm",
+    "timestamp": "2026-09-03T13:43:12.076Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): PHP-developer @ ",
+    "details": {
+      "title": "PHP-developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/friday-recruitment/jobs/php-developer"
+    }
+  },
+  {
+    "id": "log-1788442991315-kz01c",
+    "timestamp": "2026-09-03T13:43:11.315Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for 3D Modeling Service Website @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442991313-ideiu",
+    "timestamp": "2026-09-03T13:43:11.313Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1788442989728-23f0n",
+    "timestamp": "2026-09-03T13:43:09.728Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: SR. PHP DEVELOPER (LARAVEL OR SYMFONY)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442989697-lcegb",
+    "timestamp": "2026-09-03T13:43:09.697Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): SR. PHP DEVELOPER (LARAVEL OR SYMFONY) @ ",
+    "details": {
+      "title": "SR. PHP DEVELOPER (LARAVEL OR SYMFONY)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/reiz-tech-uab/jobs/sr-php-developer-laravel-or-symfony-2365293251"
+    }
+  },
+  {
+    "id": "log-1788442984469-37lq9",
+    "timestamp": "2026-09-03T13:43:04.469Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for 3D Modeling Service Website @  (85%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442984462-nzmyf",
+    "timestamp": "2026-09-03T13:43:04.462Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_approval",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1788442969520-esn7f",
+    "timestamp": "2026-09-03T13:42:49.520Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442969516-knivi",
+    "timestamp": "2026-09-03T13:42:49.516Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1788442967052-rjcs9",
+    "timestamp": "2026-09-03T13:42:47.052Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442967050-787p1",
+    "timestamp": "2026-09-03T13:42:47.050Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1788442964747-417uu",
+    "timestamp": "2026-09-03T13:42:44.747Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442964744-cvuoy",
+    "timestamp": "2026-09-03T13:42:44.744Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1788442962359-o5qge",
+    "timestamp": "2026-09-03T13:42:42.359Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442962354-bsynj",
+    "timestamp": "2026-09-03T13:42:42.354Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (92%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 92,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1788442959968-kskza",
+    "timestamp": "2026-09-03T13:42:39.968Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442959965-0w5hn",
+    "timestamp": "2026-09-03T13:42:39.965Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1788442958925-gjkce",
+    "timestamp": "2026-09-03T13:42:38.925Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442958845-9fdzr",
+    "timestamp": "2026-09-03T13:42:38.845Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442958837-hoozx",
+    "timestamp": "2026-09-03T13:42:38.837Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @ ",
+    "details": {
+      "title": "React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/pradeepit-consulting-services-pvt-ltd/jobs/react-js-ui-developer-remote-4-to-9-years-b2-or-b1-level-1214137335"
+    }
+  },
+  {
+    "id": "log-1788442958605-ehrfy",
+    "timestamp": "2026-09-03T13:42:38.605Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 3D Modeling Service Website @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442958603-7ypve",
+    "timestamp": "2026-09-03T13:42:38.603Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 3D Modeling Service Website @ ",
+    "details": {
+      "title": "3D Modeling Service Website",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/3d-modeling-service-website/"
+    }
+  },
+  {
+    "id": "log-1788442957437-rbg1d",
+    "timestamp": "2026-09-03T13:42:37.437Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442957433-iserl",
+    "timestamp": "2026-09-03T13:42:37.433Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1788442955729-042i7",
+    "timestamp": "2026-09-03T13:42:35.729Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442955726-p43wj",
+    "timestamp": "2026-09-03T13:42:35.726Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1788442949329-gvbyc",
+    "timestamp": "2026-09-03T13:42:29.329Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: React.js Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442949286-anghy",
+    "timestamp": "2026-09-03T13:42:29.286Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to React.js Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442949283-8pdt5",
+    "timestamp": "2026-09-03T13:42:29.283Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): React.js Developer @ ",
+    "details": {
+      "title": "React.js Developer",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/nexora/jobs/react-js-developer"
+    }
+  },
+  {
+    "id": "log-1788442948900-yg92i",
+    "timestamp": "2026-09-03T13:42:28.900Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442948898-nfh1f",
+    "timestamp": "2026-09-03T13:42:28.898Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-890/"
+    }
+  },
+  {
+    "id": "log-1788442946772-9fs6r",
+    "timestamp": "2026-09-03T13:42:26.772Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Senior React Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442946074-dhr7l",
+    "timestamp": "2026-09-03T13:42:26.074Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442946045-ia3dl",
+    "timestamp": "2026-09-03T13:42:26.045Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1788442944163-573y7",
+    "timestamp": "2026-09-03T13:42:24.163Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Senior React Developer @ ",
+    "details": {
+      "title": "Senior React Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/boosthire/jobs/senior-react-developer"
+    }
+  },
+  {
+    "id": "log-1788442938063-dp729",
+    "timestamp": "2026-09-03T13:42:18.063Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442938061-uesxw",
+    "timestamp": "2026-09-03T13:42:18.061Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer – Website Maintenance & Improvements @ ",
+    "details": {
+      "title": "WordPress Developer – Website Maintenance & Improvements",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-website-maintenance-improvements/"
+    }
+  },
+  {
+    "id": "log-1788442934882-166e6",
+    "timestamp": "2026-09-03T13:42:14.882Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442934878-u1axq",
+    "timestamp": "2026-09-03T13:42:14.878Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1788442911385-p6ob0",
+    "timestamp": "2026-09-03T13:41:51.385Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442911382-0szzq",
+    "timestamp": "2026-09-03T13:41:51.382Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1788442909194-4gqae",
+    "timestamp": "2026-09-03T13:41:49.194Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Fresher - Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442909007-9v9t6",
+    "timestamp": "2026-09-03T13:41:49.007Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Fresher - Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442908996-1o7mo",
+    "timestamp": "2026-09-03T13:41:48.996Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Fresher - Web Developer @ ",
+    "details": {
+      "title": "Fresher - Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/busigence-technologies/jobs/fresher-web-developer"
+    }
+  },
+  {
+    "id": "log-1788442905685-1kywq",
+    "timestamp": "2026-09-03T13:41:45.685Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: WordPress Web Developer (Elementor) - Freelance, Remote",
+    "details": {}
+  },
+  {
+    "id": "log-1788442905499-an8l3",
+    "timestamp": "2026-09-03T13:41:45.499Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Web Developer (Elementor) - Freelance, Remote @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442905497-225u5",
+    "timestamp": "2026-09-03T13:41:45.497Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): WordPress Web Developer (Elementor) - Freelance, Remote @ ",
+    "details": {
+      "title": "WordPress Web Developer (Elementor) - Freelance, Remote",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/getmagic/jobs/wordpress-web-developer-elementor-freelance-remote"
+    }
+  },
+  {
+    "id": "log-1788442904884-4itvs",
+    "timestamp": "2026-09-03T13:41:44.884Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 350 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788442892415-u382j",
+    "timestamp": "2026-09-03T13:41:32.414Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442892342-fdr08",
+    "timestamp": "2026-09-03T13:41:32.342Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442892292-fma4k",
+    "timestamp": "2026-09-03T13:41:32.291Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/stoppie/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788442886956-9ntq7",
+    "timestamp": "2026-09-03T13:41:26.956Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Enfold CSS help neeed @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442886953-qtxf3",
+    "timestamp": "2026-09-03T13:41:26.953Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (90%): Enfold CSS help neeed @ ",
+    "details": {
+      "title": "Enfold CSS help neeed",
+      "company": "",
+      "score": 90,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/enfold-css-help-neeed/"
+    }
+  },
+  {
+    "id": "log-1788442882385-zvmqc",
+    "timestamp": "2026-09-03T13:41:22.385Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442882344-re584",
+    "timestamp": "2026-09-03T13:41:22.344Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442882340-ngjw4",
+    "timestamp": "2026-09-03T13:41:22.340Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/worldpantry-com/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788442881832-2a9yb",
+    "timestamp": "2026-09-03T13:41:21.832Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia) @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442881829-a9kpt",
+    "timestamp": "2026-09-03T13:41:21.829Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia) @ ",
+    "details": {
+      "title": "OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia)",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia"
+    }
+  },
+  {
+    "id": "log-1788442881669-5fbuh",
+    "timestamp": "2026-09-03T13:41:21.669Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442881667-w7aq7",
+    "timestamp": "2026-09-03T13:41:21.667Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia) @ ",
+    "details": {
+      "title": "OfferUp: Software Development Engineer II Full Stack - Business (Remote @ Colombia)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-full-stack-business-remote-colombia"
+    }
+  },
+  {
+    "id": "log-1788442879941-51nmc",
+    "timestamp": "2026-09-03T13:41:19.941Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442879897-le0na",
+    "timestamp": "2026-09-03T13:41:19.897Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442879894-padak",
+    "timestamp": "2026-09-03T13:41:19.894Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/bookyourdata/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788442876105-5hmfn",
+    "timestamp": "2026-09-03T13:41:16.105Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior React Full-stack Developer @ Lemon.io (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442876102-y6kbt",
+    "timestamp": "2026-09-03T13:41:16.102Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Senior React Full-stack Developer @ Lemon.io",
+    "details": {
+      "title": "Senior React Full-stack Developer",
+      "company": "Lemon.io",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091101"
+    }
+  },
+  {
+    "id": "log-1788442875898-1y1bc",
+    "timestamp": "2026-09-03T13:41:15.898Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior React Full-stack Developer @ Lemon.io (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442875895-q8bsf",
+    "timestamp": "2026-09-03T13:41:15.895Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Senior React Full-stack Developer @ Lemon.io",
+    "details": {
+      "title": "Senior React Full-stack Developer",
+      "company": "Lemon.io",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091101"
+    }
+  },
+  {
+    "id": "log-1788442874504-se7ta",
+    "timestamp": "2026-09-03T13:41:14.504Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1788442874500-22xir",
+    "timestamp": "2026-09-03T13:41:14.500Z",
+    "level": "INFO",
+    "category": "SCAN",
+    "message": "One-time job scan started",
+    "details": {}
+  },
+  {
+    "id": "log-1788442874497-ocwaz",
+    "timestamp": "2026-09-03T13:41:14.497Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1788442874483-j44eg",
+    "timestamp": "2026-09-03T13:41:14.478Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1788442873271-ldliu",
+    "timestamp": "2026-09-03T13:41:13.271Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442873215-hlka3",
+    "timestamp": "2026-09-03T13:41:13.215Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442873169-fer89",
+    "timestamp": "2026-09-03T13:41:13.169Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/sil-international/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788442868170-3vunc",
+    "timestamp": "2026-09-03T13:41:08.170Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Web Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442868038-sj99m",
+    "timestamp": "2026-09-03T13:41:08.038Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442868023-hav87",
+    "timestamp": "2026-09-03T13:41:08.023Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/canonical/jobs/web-developer-2076681150"
+    }
+  },
+  {
+    "id": "log-1788442862079-8jmsa",
+    "timestamp": "2026-09-03T13:41:02.079Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Lemon.io: Senior React Full-stack Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442862075-nmzfh",
+    "timestamp": "2026-09-03T13:41:02.075Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Lemon.io: Senior React Full-stack Developer @ ",
+    "details": {
+      "title": "Lemon.io: Senior React Full-stack Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-6"
+    }
+  },
+  {
+    "id": "log-1788442861417-d44oh",
+    "timestamp": "2026-09-03T13:41:01.417Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Lemon.io: Senior React Full-stack Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442861414-qhv8m",
+    "timestamp": "2026-09-03T13:41:01.414Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Lemon.io: Senior React Full-stack Developer @ ",
+    "details": {
+      "title": "Lemon.io: Senior React Full-stack Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/lemon-io-senior-react-full-stack-developer-6"
+    }
+  },
+  {
+    "id": "log-1788442854497-qyqji",
+    "timestamp": "2026-09-03T13:40:54.497Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442854494-gzwt8",
+    "timestamp": "2026-09-03T13:40:54.494Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1788442854102-5ehro",
+    "timestamp": "2026-09-03T13:40:54.102Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442854099-142ju",
+    "timestamp": "2026-09-03T13:40:54.099Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (90%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 90,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1788442852393-zrb5f",
+    "timestamp": "2026-09-03T13:40:52.393Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram approval request for manual portal role: Frontend Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442851631-46ww0",
+    "timestamp": "2026-09-03T13:40:51.631Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442851625-j5a50",
+    "timestamp": "2026-09-03T13:40:51.625Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1788442850827-80qk5",
+    "timestamp": "2026-09-03T13:40:50.827Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Frontend Developer @ ",
+    "details": {
+      "title": "Frontend Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/mena-alliances/jobs/frontend-developer"
+    }
+  },
+  {
+    "id": "log-1788442845733-zjr86",
+    "timestamp": "2026-09-03T13:40:45.733Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Specialist and WordPress Manager @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442845731-nqxoo",
+    "timestamp": "2026-09-03T13:40:45.731Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Specialist and WordPress Manager @ ",
+    "details": {
+      "title": "Web Specialist and WordPress Manager",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/web-specialist-and-wordpress-manager/"
+    }
+  },
+  {
+    "id": "log-1788442845506-7ittt",
+    "timestamp": "2026-09-03T13:40:45.506Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Frontend Software Engineer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442845465-a8gg1",
+    "timestamp": "2026-09-03T13:40:45.465Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Frontend Software Engineer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442845461-rpahy",
+    "timestamp": "2026-09-03T13:40:45.461Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Frontend Software Engineer @ ",
+    "details": {
+      "title": "Frontend Software Engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/micro1/jobs/frontend-software-engineer-3853610194"
+    }
+  },
+  {
+    "id": "log-1788442843901-gjyf9",
+    "timestamp": "2026-09-03T13:40:43.901Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Senior Front-End Developer - React.js",
+    "details": {}
+  },
+  {
+    "id": "log-1788442843725-8ozlw",
+    "timestamp": "2026-09-03T13:40:43.725Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior Front-End Developer - React.js @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442843718-xr7np",
+    "timestamp": "2026-09-03T13:40:43.718Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior Front-End Developer - React.js @ ",
+    "details": {
+      "title": "Senior Front-End Developer - React.js",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/appmysite/jobs/senior-front-end-developer-react-js"
+    }
+  },
+  {
+    "id": "log-1788442828871-6yvgt",
+    "timestamp": "2026-09-03T13:40:28.871Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Frontend Software Engineer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442828834-s97p2",
+    "timestamp": "2026-09-03T13:40:28.834Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Frontend Software Engineer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442828829-fblks",
+    "timestamp": "2026-09-03T13:40:28.829Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (90%): Frontend Software Engineer @ ",
+    "details": {
+      "title": "Frontend Software Engineer",
+      "company": "",
+      "score": 90,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/micro1/jobs/frontend-software-engineer-3853610194"
+    }
+  },
+  {
+    "id": "log-1788442827661-bphr3",
+    "timestamp": "2026-09-03T13:40:27.661Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442827659-ztjuv",
+    "timestamp": "2026-09-03T13:40:27.659Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (90%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 90,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1788442825198-bvxf2",
+    "timestamp": "2026-09-03T13:40:25.198Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442825196-uacun",
+    "timestamp": "2026-09-03T13:40:25.196Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {
+      "title": "Full-Stack WordPress Developer (USA Pacific)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/full-stack-wordpress-developer-usa-pacific/"
+    }
+  },
+  {
+    "id": "log-1788442817191-vflfz",
+    "timestamp": "2026-09-03T13:40:17.191Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Full Stack Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442817103-vr3bw",
+    "timestamp": "2026-09-03T13:40:17.103Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full Stack Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442817079-oj44k",
+    "timestamp": "2026-09-03T13:40:17.079Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full Stack Developer @ ",
+    "details": {
+      "title": "Full Stack Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/one-hr-hub/jobs/full-stack-developer"
+    }
+  },
+  {
+    "id": "log-1788442815999-j7igi",
+    "timestamp": "2026-09-03T13:40:15.999Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Senior WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442815996-yfgb1",
+    "timestamp": "2026-09-03T13:40:15.996Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Senior WordPress Developer @ ",
+    "details": {
+      "title": "Senior WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/senior-wordpress-developer-114/"
+    }
+  },
+  {
+    "id": "log-1788442813553-x924e",
+    "timestamp": "2026-09-03T13:40:13.553Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442813551-lm25c",
+    "timestamp": "2026-09-03T13:40:13.551Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full-Stack WordPress Developer (USA Pacific) @ ",
+    "details": {
+      "title": "Full-Stack WordPress Developer (USA Pacific)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/full-stack-wordpress-developer-usa-pacific/"
+    }
+  },
+  {
+    "id": "log-1788442806368-cdhvb",
+    "timestamp": "2026-09-03T13:40:06.368Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Donât see your role Apply here @ Atreides (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442806365-yawpu",
+    "timestamp": "2026-09-03T13:40:06.365Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Donât see your role Apply here @ Atreides",
+    "details": {
+      "title": "Donât see your role Apply here",
+      "company": "Atreides",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-dont-see-your-role-apply-here-atreides-1137186"
+    }
+  },
+  {
+    "id": "log-1788442802671-9eknf",
+    "timestamp": "2026-09-03T13:40:02.671Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Full Stack Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442802632-onxvj",
+    "timestamp": "2026-09-03T13:40:02.632Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full Stack Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442802630-b2noq",
+    "timestamp": "2026-09-03T13:40:02.630Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full Stack Developer @ ",
+    "details": {
+      "title": "Full Stack Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/one-hr-hub/jobs/full-stack-developer"
+    }
+  },
+  {
+    "id": "log-1788442798329-ay0z2",
+    "timestamp": "2026-09-03T13:39:58.329Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Toggl: Senior Full Stack @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442798327-miu7i",
+    "timestamp": "2026-09-03T13:39:58.327Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Toggl: Senior Full Stack @ ",
+    "details": {
+      "title": "Toggl: Senior Full Stack",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/toggl-senior-full-stack"
+    }
+  },
+  {
+    "id": "log-1788442789521-dub6x",
+    "timestamp": "2026-09-03T13:39:49.521Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442789518-mtohp",
+    "timestamp": "2026-09-03T13:39:49.518Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-891/"
+    }
+  },
+  {
+    "id": "log-1788442789030-7f6vd",
+    "timestamp": "2026-09-03T13:39:49.030Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Toggl: Senior Full Stack @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442789028-h6uw1",
+    "timestamp": "2026-09-03T13:39:49.028Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Toggl: Senior Full Stack @ ",
+    "details": {
+      "title": "Toggl: Senior Full Stack",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://weworkremotely.com/remote-jobs/toggl-senior-full-stack"
+    }
+  },
+  {
+    "id": "log-1788442783834-a1mca",
+    "timestamp": "2026-09-03T13:39:43.834Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442783832-2i0oe",
+    "timestamp": "2026-09-03T13:39:43.832Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://jobs.wordpress.net/job/wordpress-developer-891/"
+    }
+  },
+  {
+    "id": "log-1788442748776-r658i",
+    "timestamp": "2026-09-03T13:39:08.776Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Application Security Engineer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442744195-903cf",
+    "timestamp": "2026-09-03T13:39:04.195Z",
+    "level": "ERROR",
+    "category": "SCORE",
+    "message": "Failed to score job himalayas-e9b14be3cb6f",
+    "details": {
+      "error": "isEmailApplyUrl is not defined"
+    }
+  },
+  {
+    "id": "log-1788442744187-ihkno",
+    "timestamp": "2026-09-03T13:39:04.187Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Remote Senior Fullstack JavaScript Developer @ ",
+    "details": {
+      "title": "Remote Senior Fullstack JavaScript Developer",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/scopic/jobs/remote-senior-fullstack-javascript-developer"
+    }
+  },
+  {
+    "id": "log-1788442743252-fsm4g",
+    "timestamp": "2026-09-03T13:39:03.252Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Application Security Engineer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442743250-3rzcb",
+    "timestamp": "2026-09-03T13:39:03.250Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Application Security Engineer @ ",
+    "details": {
+      "title": "Application Security Engineer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/decisionpoint-corporation/jobs/application-security-engineer"
+    }
+  },
+  {
+    "id": "log-1788442724261-x6efb",
+    "timestamp": "2026-09-03T13:38:44.261Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Remote Senior Fullstack JavaScript Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442724195-78ldl",
+    "timestamp": "2026-09-03T13:38:44.195Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Remote Senior Fullstack JavaScript Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442724193-zhobc",
+    "timestamp": "2026-09-03T13:38:44.193Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Remote Senior Fullstack JavaScript Developer @ ",
+    "details": {
+      "title": "Remote Senior Fullstack JavaScript Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/scopic/jobs/remote-senior-fullstack-javascript-developer"
+    }
+  },
+  {
+    "id": "log-1788442721607-q3iu4",
+    "timestamp": "2026-09-03T13:38:41.607Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Sr. JavaScript Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442721549-xtp9f",
+    "timestamp": "2026-09-03T13:38:41.549Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Sr. JavaScript Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442721546-qfqh5",
+    "timestamp": "2026-09-03T13:38:41.546Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Sr. JavaScript Developer @ ",
+    "details": {
+      "title": "Sr. JavaScript Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/rapinno-tech/jobs/sr-javascript-developer"
+    }
+  },
+  {
+    "id": "log-1788442715666-ozddi",
+    "timestamp": "2026-09-03T13:38:35.666Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 275 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788442694877-htjg9",
+    "timestamp": "2026-09-03T13:38:14.877Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Expression of Interest Canât see a role thatâs right for you @ C2 Group",
+    "details": {}
+  },
+  {
+    "id": "log-1788442694875-yys2r",
+    "timestamp": "2026-09-03T13:38:14.875Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Expression of Interest Canât see a role thatâs right for you @ C2 Group",
+    "details": {
+      "title": "Expression of Interest Canât see a role thatâs right for you",
+      "company": "C2 Group",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-expression-of-interest-cant-see-a-role-thats-right-for-you-c2-group-1137251"
+    }
+  },
+  {
+    "id": "log-1788442690275-sltce",
+    "timestamp": "2026-09-03T13:38:10.275Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1788442690246-68wc0",
+    "timestamp": "2026-09-03T13:38:10.246Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1788442690236-ktevy",
+    "timestamp": "2026-09-03T13:38:10.236Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1788442690172-umb9z",
+    "timestamp": "2026-09-03T13:38:10.171Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1788442689353-5vhex",
+    "timestamp": "2026-09-03T13:38:09.353Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Expression of Interest Canât see a role thatâs right for you @ C2 Group",
+    "details": {}
+  },
+  {
+    "id": "log-1788442689350-n9mku",
+    "timestamp": "2026-09-03T13:38:09.350Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Expression of Interest Canât see a role thatâs right for you @ C2 Group",
+    "details": {
+      "title": "Expression of Interest Canât see a role thatâs right for you",
+      "company": "C2 Group",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://remoteOK.com/remote-jobs/remote-expression-of-interest-cant-see-a-role-thats-right-for-you-c2-group-1137251"
+    }
+  },
+  {
+    "id": "log-1788442673362-5old6",
+    "timestamp": "2026-09-03T13:37:53.362Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: IT Instructor - Online",
+    "details": {}
+  },
+  {
+    "id": "log-1788442670733-gy0lv",
+    "timestamp": "2026-09-03T13:37:50.733Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to IT Instructor - Online @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442670731-z5sfb",
+    "timestamp": "2026-09-03T13:37:50.731Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): IT Instructor - Online @ ",
+    "details": {
+      "title": "IT Instructor - Online",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/cbt-nuggets/jobs/it-instructor-online"
+    }
+  },
+  {
+    "id": "log-1788442659332-i3ncc",
+    "timestamp": "2026-09-03T13:37:39.332Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Lead Instructor: GenAI (Copilot)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442657692-4nzhd",
+    "timestamp": "2026-09-03T13:37:37.692Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Lead Instructor: GenAI (Copilot) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442657689-mlu1z",
+    "timestamp": "2026-09-03T13:37:37.689Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Lead Instructor: GenAI (Copilot) @ ",
+    "details": {
+      "title": "Lead Instructor: GenAI (Copilot)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/correlation-one/jobs/lead-instructor-genai-copilot"
+    }
+  },
+  {
+    "id": "log-1788442620310-48wkc",
+    "timestamp": "2026-09-03T13:37:00.310Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 1125 - 359ACQ | WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442620306-7i0iy",
+    "timestamp": "2026-09-03T13:37:00.306Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 1125 - 359ACQ | WordPress Developer @ ",
+    "details": {
+      "title": "1125 - 359ACQ | WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/talentcross/jobs/1125-359acq-wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1788442616086-ngq5c",
+    "timestamp": "2026-09-03T13:36:56.086Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Suppressed Telegram alert for manual portal role: Wordpress Plugin & API Developer",
+    "details": {}
+  },
+  {
+    "id": "log-1788442613498-yfgtc",
+    "timestamp": "2026-09-03T13:36:53.498Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Wordpress Plugin & API Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442613472-mzky1",
+    "timestamp": "2026-09-03T13:36:53.472Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wordpress Plugin & API Developer @ ",
+    "details": {
+      "title": "Wordpress Plugin & API Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/appmysite/jobs/wordpress-plugin-api-developer"
+    }
+  },
+  {
+    "id": "log-1788442612517-yg1vd",
+    "timestamp": "2026-09-03T13:36:52.517Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to 1125 - 359ACQ | WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442612516-2aldz",
+    "timestamp": "2026-09-03T13:36:52.516Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): 1125 - 359ACQ | WordPress Developer @ ",
+    "details": {
+      "title": "1125 - 359ACQ | WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/talentcross/jobs/1125-359acq-wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1788442596391-0xur1",
+    "timestamp": "2026-09-03T13:36:36.391Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer - Remote @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442596390-ho98a",
+    "timestamp": "2026-09-03T13:36:36.390Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): WordPress Developer - Remote @ ",
+    "details": {
+      "title": "WordPress Developer - Remote",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/sdf-systems/jobs/wordpress-developer-remote"
+    }
+  },
+  {
+    "id": "log-1788442596159-5de9p",
+    "timestamp": "2026-09-03T13:36:36.159Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer - Remote @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442596157-1n63g",
+    "timestamp": "2026-09-03T13:36:36.157Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer - Remote @ ",
+    "details": {
+      "title": "WordPress Developer - Remote",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/sdf-systems/jobs/wordpress-developer-remote"
+    }
+  },
+  {
+    "id": "log-1788442588609-qkvtr",
+    "timestamp": "2026-09-03T13:36:28.609Z",
+    "level": "INFO",
+    "category": "SCORE",
+    "message": "Evaluating 351 new jobs...",
+    "details": {}
+  },
+  {
+    "id": "log-1788442578977-osuxb",
+    "timestamp": "2026-09-03T13:36:18.977Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Wordpress Developer (Remote or NYC-Based) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442578975-i3jdb",
+    "timestamp": "2026-09-03T13:36:18.975Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wordpress Developer (Remote or NYC-Based) @ ",
+    "details": {
+      "title": "Wordpress Developer (Remote or NYC-Based)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/dignotion-digital-marketing/jobs/wordpress-developer-remote-or-nyc-based"
+    }
+  },
+  {
+    "id": "log-1788442577973-815dd",
+    "timestamp": "2026-09-03T13:36:17.973Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Wordpress Developer (Remote or NYC-Based) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442577971-x1l1k",
+    "timestamp": "2026-09-03T13:36:17.971Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wordpress Developer (Remote or NYC-Based) @ ",
+    "details": {
+      "title": "Wordpress Developer (Remote or NYC-Based)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/dignotion-digital-marketing/jobs/wordpress-developer-remote-or-nyc-based"
+    }
+  },
+  {
+    "id": "log-1788442572815-rct72",
+    "timestamp": "2026-09-03T13:36:12.815Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to (PH) Web Developer (WordPress) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442572809-jk6fv",
+    "timestamp": "2026-09-03T13:36:12.809Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): (PH) Web Developer (WordPress) @ ",
+    "details": {
+      "title": "(PH) Web Developer (WordPress)",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/the-oe-agency/jobs/ph-web-developer-wordpress"
+    }
+  },
+  {
+    "id": "log-1788442572247-giryf",
+    "timestamp": "2026-09-03T13:36:12.247Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to (PH) Web Developer (WordPress) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442572244-2gwmt",
+    "timestamp": "2026-09-03T13:36:12.244Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): (PH) Web Developer (WordPress) @ ",
+    "details": {
+      "title": "(PH) Web Developer (WordPress)",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/the-oe-agency/jobs/ph-web-developer-wordpress"
+    }
+  },
+  {
+    "id": "log-1788442570327-z4vt1",
+    "timestamp": "2026-09-03T13:36:10.327Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Web Developer / WordPress Developer / Marketing Web Specialist @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442570326-qcgm5",
+    "timestamp": "2026-09-03T13:36:10.326Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): Web Developer / WordPress Developer / Marketing Web Specialist @ ",
+    "details": {
+      "title": "Web Developer / WordPress Developer / Marketing Web Specialist",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/perceptive-analytics/jobs/web-developer-wordpress-developer-marketing-web-specialist"
+    }
+  },
+  {
+    "id": "log-1788442567584-tw25v",
+    "timestamp": "2026-09-03T13:36:07.584Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442567582-nv6g9",
+    "timestamp": "2026-09-03T13:36:07.582Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/pavago/jobs/wordpress-developer-2165419791"
+    }
+  },
+  {
+    "id": "log-1788442563007-orptt",
+    "timestamp": "2026-09-03T13:36:03.007Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Executive Dashboard active on port 3000",
+    "details": {}
+  },
+  {
+    "id": "log-1788442563003-72xha",
+    "timestamp": "2026-09-03T13:36:03.003Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "Scheduler started in daemon mode",
+    "details": {}
+  },
+  {
+    "id": "log-1788442562999-cvba1",
+    "timestamp": "2026-09-03T13:36:02.999Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Telegram Bot connected",
+    "details": {}
+  },
+  {
+    "id": "log-1788442562990-6qgnp",
+    "timestamp": "2026-09-03T13:36:02.989Z",
+    "level": "INFO",
+    "category": "SYSTEM",
+    "message": "AI Auto Job Agent initializing...",
+    "details": {}
+  },
+  {
+    "id": "log-1788442558872-bfjck",
+    "timestamp": "2026-09-03T13:35:58.872Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer - Remote @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442558870-23qoi",
+    "timestamp": "2026-09-03T13:35:58.870Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer - Remote @ ",
+    "details": {
+      "title": "WordPress Developer - Remote",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/wati/jobs/wordpress-developer-remote"
+    }
+  },
+  {
+    "id": "log-1788442558033-nam86",
+    "timestamp": "2026-09-03T13:35:58.033Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer - Remote @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442558032-zhv67",
+    "timestamp": "2026-09-03T13:35:58.032Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer - Remote @ ",
+    "details": {
+      "title": "WordPress Developer - Remote",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/wati/jobs/wordpress-developer-remote"
+    }
+  },
+  {
+    "id": "log-1788442551937-cr6f6",
+    "timestamp": "2026-09-03T13:35:51.937Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Wordpress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442551934-nn3ml",
+    "timestamp": "2026-09-03T13:35:51.934Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Wordpress Developer @ ",
+    "details": {
+      "title": "Wordpress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/beyondlabs/jobs/wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1788442548440-ybwd5",
+    "timestamp": "2026-09-03T13:35:48.440Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442548439-l5a8h",
+    "timestamp": "2026-09-03T13:35:48.439Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (100%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 100,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/wing-assistant/jobs/wordpress-developer"
+    }
+  },
+  {
+    "id": "log-1788442542595-e87vj",
+    "timestamp": "2026-09-03T13:35:42.595Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to WordPress Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442542593-jtaox",
+    "timestamp": "2026-09-03T13:35:42.593Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): WordPress Developer @ ",
+    "details": {
+      "title": "WordPress Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/wow-remote-teams/jobs/wordpress-developer-5419828683"
+    }
+  },
+  {
+    "id": "log-1788442531117-vuwoe",
+    "timestamp": "2026-09-03T13:35:31.117Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full Stack PHP Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442531113-154cw",
+    "timestamp": "2026-09-03T13:35:31.113Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full Stack PHP Developer @ ",
+    "details": {
+      "title": "Full Stack PHP Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/training-resources-group/jobs/full-stack-php-developer"
+    }
+  },
+  {
+    "id": "log-1788442528119-3dk3m",
+    "timestamp": "2026-09-03T13:35:28.119Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Full Stack PHP Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442528117-4vgik",
+    "timestamp": "2026-09-03T13:35:28.117Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Full Stack PHP Developer @ ",
+    "details": {
+      "title": "Full Stack PHP Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/training-resources-group/jobs/full-stack-php-developer"
+    }
+  },
+  {
+    "id": "log-1788442526451-a31e7",
+    "timestamp": "2026-09-03T13:35:26.451Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to PHP-developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442526449-qf8of",
+    "timestamp": "2026-09-03T13:35:26.449Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): PHP-developer @ ",
+    "details": {
+      "title": "PHP-developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/friday-recruitment/jobs/php-developer"
+    }
+  },
+  {
+    "id": "log-1788442524064-aoo4f",
+    "timestamp": "2026-09-03T13:35:24.064Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for SR. PHP DEVELOPER (LARAVEL OR SYMFONY) @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442524062-66raj",
+    "timestamp": "2026-09-03T13:35:24.062Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): SR. PHP DEVELOPER (LARAVEL OR SYMFONY) @ ",
+    "details": {
+      "title": "SR. PHP DEVELOPER (LARAVEL OR SYMFONY)",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/reiz-tech-uab/jobs/sr-php-developer-laravel-or-symfony-2365293251"
+    }
+  },
+  {
+    "id": "log-1788442522611-zfg1a",
+    "timestamp": "2026-09-03T13:35:22.611Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to PHP-developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442522609-ck576",
+    "timestamp": "2026-09-03T13:35:22.609Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): PHP-developer @ ",
+    "details": {
+      "title": "PHP-developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/friday-recruitment/jobs/php-developer"
+    }
+  },
+  {
+    "id": "log-1788442518703-0pgmy",
+    "timestamp": "2026-09-03T13:35:18.703Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to SR. PHP DEVELOPER (LARAVEL OR SYMFONY) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442518701-1ay6b",
+    "timestamp": "2026-09-03T13:35:18.701Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): SR. PHP DEVELOPER (LARAVEL OR SYMFONY) @ ",
+    "details": {
+      "title": "SR. PHP DEVELOPER (LARAVEL OR SYMFONY)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/reiz-tech-uab/jobs/sr-php-developer-laravel-or-symfony-2365293251"
+    }
+  },
+  {
+    "id": "log-1788442508525-s5hq3",
+    "timestamp": "2026-09-03T13:35:08.525Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior PHP Developer @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442508523-brdi0",
+    "timestamp": "2026-09-03T13:35:08.523Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Senior PHP Developer @ ",
+    "details": {
+      "title": "Senior PHP Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/extratik/jobs/senior-php-developer"
+    }
+  },
+  {
+    "id": "log-1788442502616-q5d1y",
+    "timestamp": "2026-09-03T13:35:02.616Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior PHP Developer @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442502614-sb97w",
+    "timestamp": "2026-09-03T13:35:02.614Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Senior PHP Developer @ ",
+    "details": {
+      "title": "Senior PHP Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/extratik/jobs/senior-php-developer"
+    }
+  },
+  {
+    "id": "log-1788442494313-miyxo",
+    "timestamp": "2026-09-03T13:34:54.313Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @  (75%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442494311-8lrld",
+    "timestamp": "2026-09-03T13:34:54.311Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (75%): React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @ ",
+    "details": {
+      "title": "React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level)",
+      "company": "",
+      "score": 75,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/pradeepit-consulting-services-pvt-ltd/jobs/react-js-ui-developer-remote-4-to-9-years-b2-or-b1-level-1214137335"
+    }
+  },
+  {
+    "id": "log-1788442483710-sfdbp",
+    "timestamp": "2026-09-03T13:34:43.710Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior React Developer @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442483709-3up2y",
+    "timestamp": "2026-09-03T13:34:43.709Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Senior React Developer @ ",
+    "details": {
+      "title": "Senior React Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/boosthire/jobs/senior-react-developer"
+    }
+  },
+  {
+    "id": "log-1788442482662-sspcz",
+    "timestamp": "2026-09-03T13:34:42.662Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442482660-3ot2m",
+    "timestamp": "2026-09-03T13:34:42.660Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level) @ ",
+    "details": {
+      "title": "React JS (UI Developer) | Remote | 4 to 9 years (B2 or B1 level)",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/pradeepit-consulting-services-pvt-ltd/jobs/react-js-ui-developer-remote-4-to-9-years-b2-or-b1-level-1214137335"
+    }
+  },
+  {
+    "id": "log-1788442474171-ujmjh",
+    "timestamp": "2026-09-03T13:34:34.171Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to React.js Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442474170-pyy8p",
+    "timestamp": "2026-09-03T13:34:34.170Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): React.js Developer @ ",
+    "details": {
+      "title": "React.js Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/nexora/jobs/react-js-developer"
+    }
+  },
+  {
+    "id": "log-1788442471573-zn2is",
+    "timestamp": "2026-09-03T13:34:31.573Z",
+    "level": "INFO",
+    "category": "TELEGRAM",
+    "message": "Sent Telegram approval request for Senior React Developer @  (70%)",
+    "details": {}
+  },
+  {
+    "id": "log-1788442471571-0ac72",
+    "timestamp": "2026-09-03T13:34:31.571Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (70%): Senior React Developer @ ",
+    "details": {
+      "title": "Senior React Developer",
+      "company": "",
+      "score": 70,
+      "status": "queued_for_approval",
+      "applyUrl": "https://himalayas.app/companies/boosthire/jobs/senior-react-developer"
+    }
+  },
+  {
+    "id": "log-1788442455043-rne9n",
+    "timestamp": "2026-09-03T13:34:15.043Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442455042-si1a1",
+    "timestamp": "2026-09-03T13:34:15.042Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/bookyourdata/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788442447969-8etit",
+    "timestamp": "2026-09-03T13:34:07.969Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442447967-qizrq",
+    "timestamp": "2026-09-03T13:34:07.967Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (95%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 95,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/sil-international/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788442445989-lx0b2",
+    "timestamp": "2026-09-03T13:34:05.989Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer -Remote or Singapore @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442445987-cwsyh",
+    "timestamp": "2026-09-03T13:34:05.987Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer -Remote or Singapore @ ",
+    "details": {
+      "title": "Web Developer -Remote or Singapore",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/wiselywise/jobs/web-developer-remote-or-singapore"
+    }
+  },
+  {
+    "id": "log-1788442443548-gkiwz",
+    "timestamp": "2026-09-03T13:34:03.548Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442443547-adpdm",
+    "timestamp": "2026-09-03T13:34:03.547Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/worldpantry-com/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788442440982-43dr0",
+    "timestamp": "2026-09-03T13:34:00.982Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442440981-ig3gi",
+    "timestamp": "2026-09-03T13:34:00.981Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Web Developer @ ",
+    "details": {
+      "title": "Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/bookyourdata/jobs/web-developer"
+    }
+  },
+  {
+    "id": "log-1788442437823-g3qv9",
+    "timestamp": "2026-09-03T13:33:57.823Z",
+    "level": "INFO",
+    "category": "APPLY",
+    "message": "Auto-applying to Fresher - Web Developer @ ",
+    "details": {}
+  },
+  {
+    "id": "log-1788442437821-56vla",
+    "timestamp": "2026-09-03T13:33:57.821Z",
+    "level": "SUCCESS",
+    "category": "SCORE",
+    "message": "High Match (85%): Fresher - Web Developer @ ",
+    "details": {
+      "title": "Fresher - Web Developer",
+      "company": "",
+      "score": 85,
+      "status": "queued_for_auto_apply",
+      "applyUrl": "https://himalayas.app/companies/busigence-technologies/jobs/fresher-web-developer"
+    }
+  }
+]                                                                                                                                       
