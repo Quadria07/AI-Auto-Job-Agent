@@ -3,7 +3,16 @@
 
 # Runtime data — changes constantly, no value in committing
 data/jobs.json
+data/jobs.json.migrated.bak
 data/applied.json
+data/applied.json.migrated.bak
+data/logs.json
+data/logs.json.migrated.bak
+
+# Partitioned daily runtime data dirs
+data/jobs/
+data/applied/
+data/logs/
 
 # Application outputs — generated files, can be large
 applications/
@@ -17,3 +26,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Engine backup
+apply/engine.js.bak
