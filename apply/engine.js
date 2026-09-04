@@ -2,12 +2,15 @@
 // Apply engine — routes each job to the correct application method.
 // Security: validates URL format before Puppeteer navigates to it.
 
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 import { updateJob, recordApplication, getTodayApplyCount, readApplied } from '../data/store.js';
 import { tailorCV } from '../ai/cv-tailor.js';
 import { generateCoverLetter } from '../ai/cover-letter.js';
 import { sendEmailApplication, generateCvPdf } from './email.js';
 import { config } from '../config.js';
+
+puppeteer.use(StealthPlugin());
 import chalk from 'chalk';
 import path from 'path';
 import { readFileSync } from 'fs';
