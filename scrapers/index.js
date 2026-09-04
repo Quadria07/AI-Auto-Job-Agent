@@ -7,10 +7,12 @@ import { scrapeRemotive } from './remotive.js';
 import { scrapeWeWorkRemotely } from './weworkremotely.js';
 import { scrapeHimalayas } from './himalayas.js';
 import { scrapeWordPressJobs } from './wordpressjobs.js';
+import { scrapeGoogleJobs } from './googlejobs.js';
 import { readJobs, saveJobs } from '../data/store.js';
 import chalk from 'chalk';
 
 const SCRAPERS = [
+  { name: 'Google Jobs',          fn: scrapeGoogleJobs },
   { name: 'RemoteOK',             fn: scrapeRemoteOK },
   { name: 'Jobicy',               fn: scrapeJobicy },
   { name: 'Remotive',             fn: scrapeRemotive },

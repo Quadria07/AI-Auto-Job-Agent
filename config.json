@@ -8,6 +8,7 @@
     "morningDigest": "0 6 * * *"
   },
   "platforms": [
+    "googlejobs",
     "remoteok",
     "jobicy",
     "remotive",
