@@ -8,6 +8,9 @@
     "morningDigest": "0 6 * * *"
   },
   "platforms": [
+    "remote4africa",
+    "jobspresso",
+    "workingnomads",
     "googlejobs",
     "remoteok",
     "jobicy",

@@ -8,10 +8,16 @@ import { scrapeWeWorkRemotely } from './weworkremotely.js';
 import { scrapeHimalayas } from './himalayas.js';
 import { scrapeWordPressJobs } from './wordpressjobs.js';
 import { scrapeGoogleJobs } from './googlejobs.js';
+import { scrapeRemote4Africa } from './remote4africa.js';
+import { scrapeJobspresso } from './jobspresso.js';
+import { scrapeWorkingNomads } from './workingnomads.js';
 import { readJobs, saveJobs } from '../data/store.js';
 import chalk from 'chalk';
 
 const SCRAPERS = [
+  { name: 'Remote4Africa',        fn: scrapeRemote4Africa },
+  { name: 'Jobspresso',           fn: scrapeJobspresso },
+  { name: 'Working Nomads',       fn: scrapeWorkingNomads },
   { name: 'Google Jobs',          fn: scrapeGoogleJobs },
   { name: 'RemoteOK',             fn: scrapeRemoteOK },
   { name: 'Jobicy',               fn: scrapeJobicy },
