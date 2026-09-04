@@ -1,6 +1,11 @@
 // agent.js
 // Entry point. Validates environment, then starts the scheduler or runs a single command.
 
+import dns from 'dns';
+try {
+  dns.setDefaultResultOrder('ipv4first');
+} catch {}
+
 import { validateEnv, config } from './config.js';
 import { startScheduler, processPendingJobs } from './scheduler.js';
 import { runAllScrapers } from './scrapers/index.js';

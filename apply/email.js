@@ -2,11 +2,16 @@
 // Handles CV PDF generation and sending via Gmail SMTP.
 // PDF uses a clean single-column ATS-safe layout.
 
+import dns from 'dns';
 import nodemailer from 'nodemailer';
 import puppeteer from 'puppeteer';
 import { config } from '../config.js';
 import { mkdirSync } from 'fs';
 import path from 'path';
+
+try {
+  dns.setDefaultResultOrder('ipv4first');
+} catch {}
 
 // Converts plain-text CV into a structured, ATS-safe PDF.
 // Design: single column, accent border on section headings, Inter font.
@@ -214,6 +219,9 @@ export async function sendEmailApplication(job, cvText, coverLetterText, applyEm
       pass: config.gmail.appPassword,
     },
     family: 4, // Force IPv4 for Railway container compatibility
+    lookup: (hostname, options, callback) => {
+      dns.lookup(hostname, { family: 4, all: false }, callback);
+    },
     connectionTimeout: 15000,
     greetingTimeout: 15000,
     socketTimeout: 30000,
