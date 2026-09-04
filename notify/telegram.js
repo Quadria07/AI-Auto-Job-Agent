@@ -177,6 +177,40 @@ Status: Applied automatically via Email / ATS Web Form.
   }
 }
 
+export async function sendManualApplyAlert(job) {
+  const bot = getBot();
+  const score = job.matchScore || 0;
+
+  const message = `
+🎯 *High Match Found (${score}%)* — Manual Apply Required
+
+*${safe(job.title)}*
+Company: ${safe(job.company || 'Unknown')}
+Source: ${safe(job.source)}
+
+*Why you match:*
+${job.matchReason ? safe(job.matchReason) : '_AI scored high match_'}
+
+⚠️ _This platform requires direct application on their portal or is protected by bot verification._
+`.trim();
+
+  const opts = {
+    parse_mode: 'Markdown',
+  };
+
+  if (job.applyUrl && (job.applyUrl.startsWith('http://') || job.applyUrl.startsWith('https://'))) {
+    opts.reply_markup = {
+      inline_keyboard: [[{ text: '🔗 Open Job & Apply Now', url: job.applyUrl }]]
+    };
+  }
+
+  try {
+    await bot.sendMessage(config.telegramChatId, message, opts);
+  } catch (err) {
+    console.error('[Telegram] sendManualApplyAlert failed:', err.message);
+  }
+}
+
 export async function sendMorningDigest() {
   const bot = getBot();
   // Morning digest at 6 AM reports on YESTERDAY's activity, not today

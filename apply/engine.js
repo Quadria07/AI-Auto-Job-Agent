@@ -303,12 +303,17 @@ async function prepareApplicationMaterials(job) {
     // Generic Outbound Apply Link Resolution
     if (!targetApplyUrl) {
       const APPLY_LINK_SELECTORS = [
+        'a[href*="greenhouse.io"]',
+        'a[href*="lever.co"]',
+        'a[href*="workable.com"]',
+        'a[href*="ashbyhq.com"]',
+        'a[href*="breezy.hr"]',
         '#job-apply-button',
         'a.remotive-apply-button',
         'a.job-apply-btn',
         'a.apply-button',
         'a[href*="/l/"]',
-        'a[href*="apply"]',
+        'a[href*="apply" i]',
         'a[data-button-text*="Apply" i]',
         'a[title*="Apply" i]',
         '.application-btn a',
