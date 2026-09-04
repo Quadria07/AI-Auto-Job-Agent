@@ -51,10 +51,9 @@ export async function processPendingJobs() {
 
       // Check if agent can actually apply before trying
       if (!canAutoApplyJob(job)) {
-        console.log(chalk.yellow(`  ${job.title}: no direct apply method. Sending manual apply alert.`));
-        logEvent('INFO', 'APPLY', `No direct auto-apply method for ${job.title}. Sending manual apply Telegram alert.`);
-        await updateJob(job.id, { status: 'manual_apply_required' });
-        await sendManualApplyAlert({ ...job, matchScore: score });
+        console.log(chalk.yellow(`  ${job.title}: no direct apply method. Skipped silently.`));
+        logEvent('INFO', 'APPLY', `No direct auto-apply method for ${job.title}. Skipped.`);
+        await updateJob(job.id, { status: 'skipped_no_auto_apply' });
         await new Promise(r => setTimeout(r, 1000));
         continue;
       }
@@ -66,10 +65,9 @@ export async function processPendingJobs() {
         logEvent('SUCCESS', 'APPLY', `Applied to ${job.title} @ ${job.company} (${score}%)`);
         await sendAutoApplyNotification({ ...job, matchScore: score }, true);
       } else {
-        console.log(chalk.yellow(`  Auto-apply unachievable for ${job.title}. Sending manual apply alert.`));
-        logEvent('WARN', 'APPLY', `Auto-apply failed for ${job.title} @ ${job.company}. Sending manual alert.`);
-        await updateJob(job.id, { status: 'manual_apply_required' });
-        await sendManualApplyAlert({ ...job, matchScore: score });
+        console.log(chalk.yellow(`  Auto-apply unachievable for ${job.title}. Skipped silently.`));
+        logEvent('WARN', 'APPLY', `Auto-apply failed for ${job.title} @ ${job.company}. Skipped.`);
+        await updateJob(job.id, { status: 'skipped_no_auto_apply' });
       }
 
       // Brief pause to respect DeepSeek & SMTP rate limits
