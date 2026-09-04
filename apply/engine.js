@@ -405,10 +405,26 @@ async function prepareApplicationMaterials(job) {
 }
 
 async function hasFillableForm(page) {
+  // Wait up to 5s for dynamic React ATS components to hydrate (Ashby / Greenhouse / Lever / Workable)
+  await page.waitForSelector('input, textarea, form, button', { timeout: 5000 }).catch(() => {});
+
+  // On pages like Ashby/Lever, try clicking an "Apply for this job" button to expand form if hidden
+  try {
+    const applyButtons = await page.$$('a, button');
+    for (const btn of applyButtons) {
+      const text = await page.evaluate(el => el.innerText || '', btn);
+      if (/apply for this job|apply now|start application/i.test(text) && text.length < 30) {
+        await btn.click().catch(() => {});
+        await new Promise(r => setTimeout(r, 1500));
+        break;
+      }
+    }
+  } catch {}
+
   const allSelectors = [
     'input[name*="name" i]', 'input[id*="name" i]', 'input[placeholder*="name" i]',
-    'input[type="email"]', 'input[name*="email" i]',
-    'input[type="file"]'
+    'input[name="your-name"]', 'input[type="email"]', 'input[name*="email" i]',
+    'input[name="your-email"]', 'input[type="file"]', 'textarea', 'form input'
   ];
   for (const sel of allSelectors) {
     try {
@@ -450,13 +466,13 @@ async function fillApplicationForm(page, cvText, coverLetterText) {
   const fields = [
     { selectors: ['input[name*="first_name" i]', 'input[name*="first" i]', 'input[id*="first" i]'], value: firstName },
     { selectors: ['input[name*="last_name" i]', 'input[name*="last" i]', 'input[id*="last" i]'], value: lastName },
-    { selectors: ['input[name*="name" i]', 'input[id*="name" i]', 'input[placeholder*="name" i]'], value: profile.personal.name },
-    { selectors: ['input[type="email"]', 'input[name*="email" i]', 'input[id*="email" i]'], value: profile.personal.email },
-    { selectors: ['input[type="tel"]', 'input[name*="phone" i]', 'input[id*="phone" i]'], value: profile.personal.phone || '' },
+    { selectors: ['input[name*="name" i]', 'input[id*="name" i]', 'input[placeholder*="name" i]', 'input[name="your-name"]'], value: profile.personal.name },
+    { selectors: ['input[type="email"]', 'input[name*="email" i]', 'input[id*="email" i]', 'input[name="your-email"]'], value: profile.personal.email },
+    { selectors: ['input[type="tel"]', 'input[name*="phone" i]', 'input[id*="phone" i]', 'input[name="your-phone"]'], value: profile.personal.phone || '' },
     { selectors: ['input[name*="website" i]', 'input[name*="portfolio" i]', 'input[name*="urls" i]', 'input[placeholder*="website" i]'], value: profile.personal.portfolio },
     { selectors: ['input[name*="linkedin" i]', 'input[placeholder*="linkedin" i]'], value: profile.personal.linkedin || '' },
     { selectors: ['input[name*="github" i]', 'input[placeholder*="github" i]'], value: profile.personal.github },
-    { selectors: ['textarea[name*="cover" i]', 'textarea[id*="cover" i]', 'textarea[placeholder*="cover" i]', 'textarea[placeholder*="letter" i]'], value: coverLetterText },
+    { selectors: ['textarea[name*="cover" i]', 'textarea[id*="cover" i]', 'textarea[placeholder*="cover" i]', 'textarea[name="your-message"]', 'textarea[placeholder*="letter" i]'], value: coverLetterText },
   ];
 
   let filled = 0;
