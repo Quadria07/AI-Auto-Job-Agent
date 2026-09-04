@@ -206,13 +206,17 @@ export async function sendEmailApplication(job, cvText, coverLetterText, applyEm
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    port: 587,
+    secure: false,
+    requireTLS: true,
     auth: {
       user: config.gmail.user,
       pass: config.gmail.appPassword,
     },
-    family: 4, // Force IPv4 to prevent Railway container IPv6 ENETUNREACH timeouts
+    family: 4, // Force IPv4 for Railway container compatibility
+    connectionTimeout: 15000,
+    greetingTimeout: 15000,
+    socketTimeout: 30000,
   });
 
   console.log(`    Generating PDF for ${applyEmail}...`);

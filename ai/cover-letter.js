@@ -111,7 +111,23 @@ Start with "Dear Hiring Team," - output only the cover letter text, nothing else
 
     return { text: coverLetter, path: coverPath };
   } catch (err) {
-    console.error(`[CoverLetter] Failed for job ${job.id}:`, err.message);
-    return null;
+    console.warn(`[CoverLetter] DeepSeek API failed (${err.message}). Using fallback cover letter template.`);
+    const fallbackLetter = `Dear Hiring Team,
+
+Your need for a ${sanitiseText(job.title, 60)} matching performance and quality aligns directly with my engineering background. Over the past 3 years, I have engineered and deployed 20+ live full-stack web applications and WordPress platforms for clients across Australia, the UK, Canada, and Nigeria.
+
+My core stack includes PHP, JavaScript, React, Node.js, and custom WordPress development. I specialize in building secure, fast, and scalable web applications tailored to business requirements.
+
+I am available immediately for remote work. You can view my portfolio and live projects at ${profile.personal.portfolio} or reach me directly at ${profile.personal.email}.
+
+Best regards,
+${profile.personal.name}`;
+
+    const safeId = job.id.replace(/[^a-z0-9-]/gi, '-').slice(0, 50);
+    const appDir = await ensureApplicationsDir(safeId);
+    const coverPath = path.join(appDir, 'cover-letter.txt');
+    writeFileSync(coverPath, fallbackLetter, 'utf8');
+
+    return { text: fallbackLetter, path: coverPath };
   }
 }
