@@ -40,29 +40,52 @@ function isEmailApplyUrl(url = '') {
 
 export function canAutoApplyJob(job) {
   const url = (job.applyUrl || '').toLowerCase().trim();
+  const method = (job.applyMethod || '').toLowerCase();
+  const source = (job.source || '').toLowerCase();
 
-  // Email application — always directly appliable
-  if (isEmailApplyUrl(url) || job.applyMethod === 'email') return true;
+  // 1. Email application — always directly appliable
+  if (isEmailApplyUrl(url) || method === 'email') return true;
 
-  // Known ATS platforms that accept guest form submissions
+  // 2. Trust the scraper's applyMethod if it says webForm
+  //    (WordPress Jobs scraper sets this only when it finds a real external URL)
+  if (method === 'webform' || method === 'web_form' || method === 'webForm') return true;
+
+  // 3. Known ATS platforms that accept direct form submissions
   const DIRECT_ATS = [
     'greenhouse.io', 'lever.co', 'workable.com', 'ashbyhq.com',
     'breezy.hr', 'recruitee.com', 'teamtailor.com', 'smartrecruiters.com',
-    'bamboohr.com', 'jobs.wordpress.net',
+    'bamboohr.com', 'jobs.wordpress.net', 'jobvite.com', 'icims.com',
+    'myworkdayjobs.com', 'taleo.net', 'successfactors.com',
   ];
   if (DIRECT_ATS.some(pat => url.includes(pat))) return true;
 
-  // WordPress Jobs with email or known ATS URL — always appliable
-  if (job.source && job.source.toLowerCase().includes('wordpress jobs')) {
-    // Only auto-appliable if we extracted an email or direct ATS link
-    if (job.applyMethod === 'email' || DIRECT_ATS.some(pat => url.includes(pat))) return true;
-    return false; // External URLs on WordPress Jobs need manual checking
+  // 4. Platform-specific apply URLs — these scrapers set applicationLink (employer's own URL)
+  //    Himalayas: job.applicationLink is the employer's real apply URL
+  //    WWR, RemoteOK, Remotive, Jobicy: their listings link to employer apply pages
+  const TRUSTED_PLATFORMS = [
+    'himalayas', 'remoteok', 'remotive', 'jobicy', 'weworkremotely',
+    'we work remotely', 'wordpress jobs',
+  ];
+  if (TRUSTED_PLATFORMS.some(p => source.includes(p))) {
+    // Only block if URL is clearly just a platform listing page (not an apply link)
+    const isPlatformListingOnly =
+      (url.includes('himalayas.app/jobs/') && !url.includes('/apply')) ||
+      (url.includes('remoteok.com/remote-jobs/') && !url.includes('apply')) ||
+      (url.includes('remotive.com/remote-jobs/') && !url.includes('apply')) ||
+      (url.includes('jobicy.com/jobs/') && !url.includes('apply'));
+
+    // If it has a real external URL (not just the platform's own listing), allow it
+    if (!isPlatformListingOnly) return true;
+    // If it's just a platform listing page, still allow — Puppeteer will find the apply button
+    return true;
   }
 
-  // For all other sources (Himalayas, WWR, RemoteOK, Remotive, Jobicy):
-  // Only mark as appliable if URL points directly to a known ATS
-  return DIRECT_ATS.some(pat => url.includes(pat));
+  // 5. Any valid HTTP URL is worth attempting — Puppeteer can try to find an apply form
+  if (url.startsWith('http://') || url.startsWith('https://')) return true;
+
+  return false;
 }
+
 
 function extractEmail(url = '') {
   return url.replace('mailto:', '').split('?')[0].trim();

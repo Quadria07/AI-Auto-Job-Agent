@@ -103,12 +103,34 @@ export async function scoreJobMatch(job) {
     /\bgardener\b/i, /\bcleaner\b/i, /\bbutcher\b/i, /\bmail sorter\b/i, /\bkitchen porter\b/i,
     /\bramp attendant\b/i, /\bbaker\b/i, /\bbarista\b/i, /\bwaiter\b/i, /\bwaitress\b/i,
     /\bcashier\b/i, /\bplumber\b/i, /\bdriver\b/i, /\breceptionist\b/i, /\bhousekeeper\b/i,
-    /\bcook\b/i, /\bcourier\b/i, /\btrimmer\b/i, /\bequipment maintenance\b/i
+    /\bcook\b/i, /\bcourier\b/i, /\btrimmer\b/i, /\bequipment maintenance\b/i,
+    /\bjanitor\b/i, /\bcarpenter\b/i, /\bhandyman\b/i, /\bhandywoman\b/i, /\bmot tester\b/i,
+    /\bvehicle technician\b/i, /\bvehicle detailer\b/i, /\bplant fitter\b/i, /\bshunter\b/i,
+    /\bwireperson\b/i, /\bfire officer\b/i, /\bparts person\b/i, /\bproduce clerk\b/i,
+    /\bmail carrier\b/i, /\bvisual merchandiser\b/i, /\bpayroll clerk\b/i,
+  ];
+
+  // Fast pre-filter for spam, scam, and generic non-job listings
+  const SPAM_TITLE_PATTERNS = [
+    /apply now.*send.*resume/i,
+    /send.*resume.*don.?t close/i,
+    /expression of interest.*can.?t see/i,
+    /veritas.*resume/i,
+    /don.?t close website/i,
+    /\bmapping test\b/i,
+    /\bexpression of interest\b/i,
+    /\bopen application\b/i,
+    /\btable[- ]mapper\b/i,
   ];
 
   if (NON_TECH_TITLE_PATTERNS.some(pattern => pattern.test(jobTitle))) {
     return { score: 0, reason: 'Non-technical role filtered locally', keyMatches: [], gaps: [] };
   }
+
+  if (SPAM_TITLE_PATTERNS.some(pattern => pattern.test(jobTitle))) {
+    return { score: 0, reason: 'Spam/scam/generic listing filtered locally', keyMatches: [], gaps: [] };
+  }
+
 
   // Check Location & Work Type eligibility (Remote or Òsogbo Osun State only)
   const locCheck = checkLocationEligibility(job);
