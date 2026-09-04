@@ -245,31 +245,43 @@ export async function getTodayApplyCount(method) {
   ).length;
 }
 
-export async function getTodayStats() {
+export async function getStatsForDate(targetDate) {
   const applied = await readApplied();
   const jobs = await readJobs();
-  const today = new Date().toDateString();
+  const dateStr = targetDate.toDateString();
 
-  const todayApplied = applied.filter(a => a.appliedAt && !isNaN(new Date(a.appliedAt).getTime()) && new Date(a.appliedAt).toDateString() === today);
-  const queued = jobs.filter(j => j.status === 'queued_for_approval');
-  
-  const todayJobs = jobs.filter(j => j.scrapedAt && !isNaN(new Date(j.scrapedAt).getTime()) && new Date(j.scrapedAt).toDateString() === today);
-  const totalScannedCount = todayJobs.length > 0 ? todayJobs.length : jobs.length;
+  const dayApplied = applied.filter(a =>
+    a.appliedAt && !isNaN(new Date(a.appliedAt).getTime()) &&
+    new Date(a.appliedAt).toDateString() === dateStr
+  );
 
-  const todayHighMatches = jobs.filter(j => j.matchScore >= 70 && j.scrapedAt && !isNaN(new Date(j.scrapedAt).getTime()) && new Date(j.scrapedAt).toDateString() === today);
-  const allHighMatches = jobs.filter(j => j.matchScore >= 70);
-  const highMatchList = todayHighMatches.length > 0 ? todayHighMatches : allHighMatches;
+  const dayJobs = jobs.filter(j =>
+    j.scrapedAt && !isNaN(new Date(j.scrapedAt).getTime()) &&
+    new Date(j.scrapedAt).toDateString() === dateStr
+  );
 
-  const emailCount = await getTodayApplyCount('email');
-  const webFormCount = await getTodayApplyCount('webForm');
+  const dayHighMatches = dayJobs.filter(j => (j.matchScore || 0) >= 70);
+
+  const emailApplied = dayApplied.filter(a => a.method === 'email').length;
+  const webFormApplied = dayApplied.filter(a => a.method === 'webForm').length;
 
   return {
-    totalScanned: totalScannedCount,
-    autoApplied: todayApplied.filter(a => a.autoApplied).length,
-    emailApplied: emailCount,
-    webFormApplied: webFormCount,
-    queued: queued.length,
-    highMatch: highMatchList.length,
-    topMatches: highMatchList.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0)).slice(0, 5),
+    totalScanned: dayJobs.length,
+    autoApplied: dayApplied.length,
+    emailApplied,
+    webFormApplied,
+    queued: 0,
+    highMatch: dayHighMatches.length,
+    topMatches: dayHighMatches.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0)).slice(0, 5),
   };
+}
+
+export async function getTodayStats() {
+  return getStatsForDate(new Date());
+}
+
+export async function getYesterdayStats() {
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  return getStatsForDate(yesterday);
 }

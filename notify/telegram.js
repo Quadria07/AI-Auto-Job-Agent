@@ -4,7 +4,7 @@
 
 import TelegramBot from 'node-telegram-bot-api';
 import { config } from '../config.js';
-import { updateJob, getTodayStats } from '../data/store.js';
+import { updateJob, getTodayStats, getYesterdayStats } from '../data/store.js';
 
 let _bot = null;
 
@@ -179,8 +179,11 @@ Status: Applied automatically via Email / ATS Web Form.
 
 export async function sendMorningDigest() {
   const bot = getBot();
-  const stats = await getTodayStats();
-  const dateStr = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' });
+  // Morning digest at 6 AM reports on YESTERDAY's activity, not today
+  const stats = await getYesterdayStats();
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const dateStr = yesterday.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' });
 
   // Read limits from config
   const emailLimit = config.maxApplicationsPerDay?.email ?? 100;
