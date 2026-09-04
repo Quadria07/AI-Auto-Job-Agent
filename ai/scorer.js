@@ -92,6 +92,41 @@ function checkLocationEligibility(job) {
 
   // Reject on-site/physical roles in Lagos, Abuja, Port Harcourt, or outside Osogbo/Osun State
   return { eligible: false, reason: 'On-site/physical role located outside candidate city (Òsogbo, Osun State)' };
+}function calculateLocalFallbackScore(jobTitle, jobDescription, jobTags) {
+  const combined = `${jobTitle} ${jobDescription} ${jobTags}`.toLowerCase();
+  
+  const STACK_KEYWORDS = [
+    'wordpress', 'php', 'fullstack', 'full-stack', 'web developer', 'web development',
+    'frontend', 'front-end', 'backend', 'back-end', 'react', 'javascript', 'typescript',
+    'node', 'css', 'html', 'security', 'elementor', 'woocommerce'
+  ];
+
+  const matched = STACK_KEYWORDS.filter(kw => combined.includes(kw));
+
+  if (matched.length >= 2 || combined.includes('wordpress') || combined.includes('full-stack') || combined.includes('fullstack')) {
+    return {
+      score: matched.includes('wordpress') ? 95 : 85,
+      reason: 'Matched target stack (local rule-based fallback engine)',
+      keyMatches: matched.slice(0, 4),
+      gaps: []
+    };
+  }
+
+  if (matched.length === 1) {
+    return {
+      score: 75,
+      reason: 'Partial target stack match (local rule-based fallback engine)',
+      keyMatches: matched,
+      gaps: ['Requires full technical stack validation']
+    };
+  }
+
+  return {
+    score: 0,
+    reason: 'Insufficient stack keyword alignment',
+    keyMatches: [],
+    gaps: ['Missing primary tech stack requirements']
+  };
 }
 
 export async function scoreJobMatch(job) {
@@ -144,7 +179,6 @@ export async function scoreJobMatch(job) {
   if (!isDevRole || isExplicitIrrelevant) {
     return { score: 0, reason: 'Job title is outside core target roles (Software / Web Developer)', keyMatches: [], gaps: [] };
   }
-
 
   // Check Location & Work Type eligibility (Remote or Òsogbo Osun State only)
   const locCheck = checkLocationEligibility(job);
@@ -212,7 +246,7 @@ Return ONLY valid JSON:
       gaps: (result.gaps || []).map(g => sanitiseText(g, 50)),
     };
   } catch (err) {
-    console.error(`[Scorer] Failed for job ${job.id}:`, err.message);
-    return { score: 0, reason: 'Scoring failed', keyMatches: [], gaps: [] };
+    console.warn(`[Scorer] DeepSeek API unavailable (${err.message}). Using local rule-based fallback.`);
+    return calculateLocalFallbackScore(jobTitle, jobDescription, jobTags);
   }
 }
