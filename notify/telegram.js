@@ -213,7 +213,7 @@ export async function sendMorningDigest() {
   }
 
   const appliedNote = (stats.emailApplied + stats.webFormApplied) === 0
-    ? '\n⚠️ _No applications sent today \\— agent may have found no directly\\-appliable jobs\\._'
+    ? '\n⚠️ _No applications were sent yesterday \\— agent found no directly\\-appliable jobs\\._'
     : '';
 
   const message = `

@@ -262,8 +262,8 @@ export async function getStatsForDate(targetDate) {
 
   const dayHighMatches = dayJobs.filter(j => (j.matchScore || 0) >= 70);
 
-  const emailApplied = dayApplied.filter(a => a.method === 'email').length;
-  const webFormApplied = dayApplied.filter(a => a.method === 'webForm').length;
+  const emailApplied = dayApplied.filter(a => a.applyMethod === 'email').length;
+  const webFormApplied = dayApplied.filter(a => a.applyMethod === 'webForm').length;
 
   return {
     totalScanned: dayJobs.length,

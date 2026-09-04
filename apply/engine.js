@@ -67,16 +67,7 @@ export function canAutoApplyJob(job) {
     'we work remotely', 'wordpress jobs',
   ];
   if (TRUSTED_PLATFORMS.some(p => source.includes(p))) {
-    // Only block if URL is clearly just a platform listing page (not an apply link)
-    const isPlatformListingOnly =
-      (url.includes('himalayas.app/jobs/') && !url.includes('/apply')) ||
-      (url.includes('remoteok.com/remote-jobs/') && !url.includes('apply')) ||
-      (url.includes('remotive.com/remote-jobs/') && !url.includes('apply')) ||
-      (url.includes('jobicy.com/jobs/') && !url.includes('apply'));
-
-    // If it has a real external URL (not just the platform's own listing), allow it
-    if (!isPlatformListingOnly) return true;
-    // If it's just a platform listing page, still allow — Puppeteer will find the apply button
+    // All trusted platform job sources are worth attempting — Puppeteer can navigate apply buttons
     return true;
   }
 
