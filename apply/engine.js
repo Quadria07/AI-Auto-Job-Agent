@@ -62,15 +62,17 @@ export function canAutoApplyJob(job) {
   ];
   if (DIRECT_ATS.some(pat => url.includes(pat))) return true;
 
-  // 4. Platform-specific apply URLs — these scrapers set applicationLink (employer's own URL)
-  //    Himalayas: job.applicationLink is the employer's real apply URL
-  //    WWR, RemoteOK, Remotive, Jobicy: their listings link to employer apply pages
+  // 4. Exclude Cloudflare-guarded Himalayas internal aggregator URLs
+  if (url.includes('himalayas.app/companies/') || url.includes('himalayas.app/jobs/')) {
+    return false;
+  }
+
+  // 5. Platform-specific apply URLs
   const TRUSTED_PLATFORMS = [
-    'himalayas', 'remoteok', 'remotive', 'jobicy', 'weworkremotely',
+    'remoteok', 'remotive', 'jobicy', 'weworkremotely',
     'we work remotely', 'wordpress jobs',
   ];
   if (TRUSTED_PLATFORMS.some(p => source.includes(p))) {
-    // All trusted platform job sources are worth attempting — Puppeteer can navigate apply buttons
     return true;
   }
 

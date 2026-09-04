@@ -13,12 +13,44 @@ import { applyToJob, canAutoApplyJob } from './apply/engine.js';
 
 import { logEvent } from './logger.js';
 
-export async function processPendingJobs() {
-  const pendingJobs = await getPendingJobs();
-  if (pendingJobs.length === 0) return;
+function interleaveJobsBySource(jobs) {
+  const bySource = {};
+  for (const job of jobs) {
+    const src = job.source || 'Other';
+    if (!bySource[src]) bySource[src] = [];
+    bySource[src].push(job);
+  }
+  const result = [];
+  const keys = Object.keys(bySource);
+  let index = 0;
+  let added = true;
+  while (added) {
+    added = false;
+    for (const key of keys) {
+      if (index < bySource[key].length) {
+        result.push(bySource[key][index]);
+        added = true;
+      }
+    }
+    index++;
+  }
+  return result;
+}
 
-  console.log(chalk.cyan(`\nEvaluating ${pendingJobs.length} new jobs...`));
+export async function processPendingJobs() {
+  const rawPending = await getPendingJobs();
+  if (rawPending.length === 0) return;
+
+  const pendingJobs = interleaveJobsBySource(rawPending);
+
+  console.log(chalk.cyan(`\nEvaluating ${pendingJobs.length} new jobs across ${Object.keys(bySourceGroup(rawPending)).join(', ')}...`));
   logEvent('INFO', 'SCORE', `Evaluating ${pendingJobs.length} new jobs...`);
+
+function bySourceGroup(jobs) {
+  const map = {};
+  for (const j of jobs) map[j.source || 'Other'] = true;
+  return map;
+}
 
   for (const job of pendingJobs) {
     try {
