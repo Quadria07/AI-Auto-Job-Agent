@@ -182,27 +182,48 @@ export async function sendMorningDigest() {
   const stats = await getTodayStats();
   const dateStr = new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'short' });
 
+  // Read limits from config
+  const emailLimit = config.maxApplicationsPerDay?.email ?? 100;
+  const webLimit = config.maxApplicationsPerDay?.webForm ?? 60;
+
+  // Calculate next scan time from cron pattern (0 */2 * * * = every 2 hours on the hour)
+  const now = new Date();
+  const scanInterval = config.schedule?.scanInterval || '0 */2 * * *';
+  const intervalMatch = scanInterval.match(/\*\/(\d+)/);
+  const intervalHours = intervalMatch ? parseInt(intervalMatch[1]) : 2;
+  const nextHour = (Math.floor(now.getUTCHours() / intervalHours) + 1) * intervalHours;
+  const nextScan = new Date(now);
+  nextScan.setUTCHours(nextHour % 24, 0, 0, 0);
+  if (nextHour >= 24) nextScan.setUTCDate(nextScan.getUTCDate() + 1);
+  const minsToNext = Math.round((nextScan - now) / 60000);
+  const nextScanText = minsToNext < 60
+    ? `${minsToNext} minutes`
+    : `${Math.round(minsToNext / 60)} hour${Math.round(minsToNext / 60) !== 1 ? 's' : ''}`;
+
   let topMatchText = '';
   if (stats.topMatches.length > 0) {
     topMatchText = '\n\n*Top Matches Today:*\n';
     topMatchText += stats.topMatches.map((job, i) => {
-      const status = job.applied ? '[Applied]' : job.status === 'queued_for_approval' ? '[Pending]' : '[Found]';
+      const status = job.applied ? '✅ Applied' : '[Found]';
       return `${i + 1}\\. ${status} *${esc(job.title)}* @ ${esc(job.company)} \\(${job.matchScore}%\\)`;
     }).join('\n');
   }
+
+  const appliedNote = (stats.emailApplied + stats.webFormApplied) === 0
+    ? '\n⚠️ _No applications sent today \\— agent may have found no directly\\-appliable jobs\\._'
+    : '';
 
   const message = `
 *Quadri Job Agent — ${esc(dateStr)}*
 \\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-
 
-Email applied:     ${stats.emailApplied}/15
-Web form applied:  ${stats.webFormApplied}/15
-Awaiting approval: ${stats.queued} jobs
+Email applied:     ${stats.emailApplied}/${emailLimit}
+Web form applied:  ${stats.webFormApplied}/${webLimit}
 Total scanned:     ${stats.totalScanned} jobs
 Good matches:      ${stats.highMatch} jobs \\(70%\\+\\)
-${topMatchText}
+${topMatchText}${appliedNote}
 
-_Next scan in 30 minutes\\._
+_Next scan in ${esc(nextScanText)}\\._
 `.trim();
 
   try {
@@ -212,6 +233,7 @@ _Next scan in 30 minutes\\._
     console.error('[Telegram] sendMorningDigest failed:', err.message);
   }
 }
+
 
 export async function sendTestMessage() {
   const bot = getBot();
