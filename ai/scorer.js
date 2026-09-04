@@ -123,12 +123,26 @@ export async function scoreJobMatch(job) {
     /\btable[- ]mapper\b/i,
   ];
 
-  if (NON_TECH_TITLE_PATTERNS.some(pattern => pattern.test(jobTitle))) {
-    return { score: 0, reason: 'Non-technical role filtered locally', keyMatches: [], gaps: [] };
-  }
+  // Filter out irrelevant non-developer titles (e.g. nurse, officer, maid, sales, solutions architect, support)
+  const CORE_DEV_KEYWORDS = [
+    /\bdeveloper\b/i, /\bengineer\b/i, /\bprogrammer\b/i, /\bweb\b/i,
+    /\bwordpress\b/i, /\bfull[- ]?stack\b/i, /\bfront[- ]?end\b/i, /\bback[- ]?end\b/i,
+    /\bphp\b/i, /\breact\b/i, /\bjavascript\b/i, /\btypescript\b/i, /\bnode\b/i,
+    /\bsoftware\b/i, /\bcss\b/i, /\bhtml\b/i, /\bcode\b/i, /\bcoder\b/i
+  ];
 
-  if (SPAM_TITLE_PATTERNS.some(pattern => pattern.test(jobTitle))) {
-    return { score: 0, reason: 'Spam/scam/generic listing filtered locally', keyMatches: [], gaps: [] };
+  const IRRELEVANT_ROLE_PATTERNS = [
+    /\bnurse\b/i, /\bofficer\b/i, /\bmaid\b/i, /\battendant\b/i, /\barchitect\b/i,
+    /\bsupport engineer\b/i, /\bhelpdesk\b/i, /\banalyst\b/i, /\bexecutive\b/i,
+    /\btechnician\b/i, /\btherapist\b/i, /\bclerk\b/i, /\bbuyer\b/i, /\bcopywriter\b/i,
+    /\bdriver\b/i, /\brecruiter\b/i, /\bsales\b/i, /\bacountant\b/i
+  ];
+
+  const isDevRole = CORE_DEV_KEYWORDS.some(kw => kw.test(jobTitle));
+  const isExplicitIrrelevant = IRRELEVANT_ROLE_PATTERNS.some(pat => pat.test(jobTitle));
+
+  if (!isDevRole || isExplicitIrrelevant) {
+    return { score: 0, reason: 'Job title is outside core target roles (Software / Web Developer)', keyMatches: [], gaps: [] };
   }
 
 

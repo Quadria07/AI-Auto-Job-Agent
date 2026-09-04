@@ -302,7 +302,16 @@ async function prepareApplicationMaterials(job) {
       }).catch(() => null);
     }
 
-    // Generic Outbound Apply Link Resolution
+    const SPAM_AD_DOMAINS = [
+      'cvhack.com', 'google.com', 'facebook.com', 'twitter.com', 'x.com',
+      'instagram.com', 't.me', 'telegram.me', 'whatsapp.com', 'bit.ly',
+      'tinyurl.com', 'amazon.com', 'youtube.com'
+    ];
+
+    if (targetApplyUrl && SPAM_AD_DOMAINS.some(domain => targetApplyUrl.toLowerCase().includes(domain))) {
+      targetApplyUrl = null;
+    }
+
     if (!targetApplyUrl) {
       const APPLY_LINK_SELECTORS = [
         'a[href*="greenhouse.io"]',
@@ -330,8 +339,10 @@ async function prepareApplicationMaterials(job) {
         try {
           const applyLink = await page.$eval(sel, el => el.href || el.getAttribute('href') || '');
           if (applyLink && applyLink.startsWith('http') && applyLink !== landedUrl && !applyLink.includes('javascript:')) {
-            targetApplyUrl = applyLink;
-            break;
+            if (!SPAM_AD_DOMAINS.some(d => applyLink.toLowerCase().includes(d))) {
+              targetApplyUrl = applyLink;
+              break;
+            }
           }
         } catch { }
       }
