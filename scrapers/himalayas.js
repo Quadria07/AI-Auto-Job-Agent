@@ -67,5 +67,6 @@ export async function scrapeHimalayas() {
     }
   }
 
-  return allJobs;
+  // Return top 25 newest jobs to prevent queue oversaturation
+  return allJobs.slice(0, 25);
 }

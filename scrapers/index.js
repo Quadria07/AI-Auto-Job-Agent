@@ -73,8 +73,30 @@ export async function runAllScrapers(enabledPlatforms = null) {
     }
   }
 
+  // Interleave new jobs round-robin by source so no single platform dominates
+  const bySource = {};
+  for (const j of newJobs) {
+    const src = j.source || 'Other';
+    if (!bySource[src]) bySource[src] = [];
+    bySource[src].push(j);
+  }
+  const interleavedNewJobs = [];
+  const keys = Object.keys(bySource);
+  let idx = 0;
+  let added = true;
+  while (added) {
+    added = false;
+    for (const key of keys) {
+      if (idx < bySource[key].length) {
+        interleavedNewJobs.push(bySource[key][idx]);
+        added = true;
+      }
+    }
+    idx++;
+  }
+
   // Mark new jobs as pending scoring
-  const newJobsWithStatus = newJobs.map(job => ({
+  const newJobsWithStatus = interleavedNewJobs.map(job => ({
     ...job,
     status: 'pending_score',
     matchScore: null,
@@ -91,7 +113,7 @@ export async function runAllScrapers(enabledPlatforms = null) {
   await saveJobs(allJobs);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(chalk.cyan(`\n✅ Scan complete in ${elapsed}s — ${newJobs.length} new jobs found`));
+  console.log(chalk.cyan(`\n✅ Scan complete in ${elapsed}s — ${newJobs.length} new jobs found across ${keys.length} platforms`));
 
   return newJobsWithStatus;
 }
