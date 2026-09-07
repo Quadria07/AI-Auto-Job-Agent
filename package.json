@@ -8,7 +8,8 @@
     "start": "node agent.js",
     "dev": "node --watch agent.js",
     "scan": "node agent.js --scan-once",
-    "test-telegram": "node agent.js --test-telegram"
+    "test-telegram": "node agent.js --test-telegram",
+    "test": "node --test test_apply_adapters.js"
   },
   "dependencies": {
     "axios": "^1.7.7",

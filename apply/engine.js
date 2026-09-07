@@ -16,6 +16,13 @@ import path from 'path';
 import { readFileSync } from 'fs';
 import { ensureApplicationsDir } from '../data/store.js';
 import { fileURLToPath } from 'url';
+import {
+  getApplicationAdapter,
+  getFieldSelectors,
+  getUploadSelectors,
+  isConfirmationText,
+  isConfirmationUrl,
+} from './adapters.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -138,6 +145,7 @@ export async function applyToJob(job, ignoreLimits = false) {
 
   try {
     let applied = false;
+    let applicationStatus = 'skipped_no_auto_apply';
     let finalCvPath = '';
     let finalCoverLetterPath = '';
     
@@ -156,6 +164,7 @@ export async function applyToJob(job, ignoreLimits = false) {
       console.log(chalk.gray('  Checking web form...'));
       const result = await attemptAutoApply(job);
       applied = result.applied;
+      applicationStatus = result.status || applicationStatus;
       finalCvPath = result.cvPath || '';
       finalCoverLetterPath = result.coverLetterPath || '';
     }
@@ -171,7 +180,7 @@ export async function applyToJob(job, ignoreLimits = false) {
     }
 
     await updateJob(job.id, {
-      status: applied ? 'applied' : 'skipped_no_auto_apply',
+      status: applied ? 'applied' : applicationStatus,
       applyMethod: method,
       applied,
       appliedAt: applied ? new Date().toISOString() : null,
@@ -211,7 +220,7 @@ async function prepareApplicationMaterials(job) {
   return { cv, coverLetter, pdfPath, appDir };
 }async function attemptAutoApply(job) {
   let browser = null;
-  const result = { applied: false, cvPath: '', coverLetterPath: '' };
+  const result = { applied: false, status: 'skipped_no_auto_apply', cvPath: '', coverLetterPath: '', adapter: 'generic' };
   
   try {
     const safeId = job.id.replace(/[^a-z0-9-]/gi, '-').slice(0, 50);
@@ -236,6 +245,8 @@ async function prepareApplicationMaterials(job) {
     }
 
     const landedUrl = page.url();
+    let adapter = getApplicationAdapter(landedUrl || job.applyUrl);
+    result.adapter = adapter.id;
     console.log(chalk.gray(`  Landed on: ${landedUrl}`));
     await page.screenshot({ path: path.join(appDir, 'apply-before.png') }).catch(() => {});
 
@@ -356,6 +367,8 @@ async function prepareApplicationMaterials(job) {
       } catch (err) {
         console.warn(`[AutoApply] Outbound navigation warning:`, err.message);
       }
+      adapter = getApplicationAdapter(page.url());
+      result.adapter = adapter.id;
     }
 
     // Step 3: Check mailto again on destination page
@@ -383,8 +396,8 @@ async function prepareApplicationMaterials(job) {
     result.cvPath = mats.cv.path;
     result.coverLetterPath = mats.coverLetter?.path || '';
 
-    const filled = await fillApplicationForm(page, mats.cv.text, mats.coverLetter?.text || '');
-    await uploadPdfToForm(page, mats.pdfPath);
+    const filled = await fillApplicationForm(page, mats.cv.text, mats.coverLetter?.text || '', adapter);
+    await uploadPdfToForm(page, mats.pdfPath, adapter);
 
     if (filled) {
       console.log(chalk.green(`  Form filled successfully on: ${page.url()}`));
@@ -394,7 +407,21 @@ async function prepareApplicationMaterials(job) {
       await page.screenshot({ path: path.join(appDir, 'apply-failed.png') });
     }
 
-    result.applied = filled;
+    if (!filled) {
+      result.status = 'manual_apply_required';
+      return result;
+    }
+
+    const submission = await submitApplicationForm(page, adapter);
+    result.applied = submission.verified;
+    result.status = submission.verified ? 'applied' : 'form_filled_unverified';
+    if (submission.verified) {
+      await page.screenshot({ path: path.join(appDir, 'apply-confirmed.png') }).catch(() => {});
+      console.log(chalk.green(`  Submission verified (${submission.evidence})`));
+    } else {
+      await page.screenshot({ path: path.join(appDir, 'apply-unverified.png') }).catch(() => {});
+      console.log(chalk.yellow(`  Form was filled, but submission was not verified: ${submission.reason}`));
+    }
     return result;
   } catch (err) {
     console.error('[AutoApply] Form fill failed:', err.message);
@@ -434,16 +461,8 @@ async function hasFillableForm(page) {
   return false;
 }
 
-async function uploadPdfToForm(page, pdfPath) {
-  const selectors = [
-    'input[type="file"][accept*="pdf"]',
-    'input[type="file"][name*="resume" i]',
-    'input[type="file"][name*="cv" i]',
-    'input[type="file"][id*="resume" i]',
-    'input[type="file"][id*="cv" i]',
-    'input[type="file"]',
-  ];
-
+async function uploadPdfToForm(page, pdfPath, adapter) {
+  const selectors = getUploadSelectors(adapter);
   for (const selector of selectors) {
     try {
       const el = await page.$(selector);
@@ -457,28 +476,28 @@ async function uploadPdfToForm(page, pdfPath) {
   return false;
 }
 
-async function fillApplicationForm(page, cvText, coverLetterText) {
+async function fillApplicationForm(page, cvText, coverLetterText, adapter) {
   const profile = getProfile();
   const nameParts = (profile.personal.name || 'Applicant').split(' ');
   const firstName = nameParts[0] || '';
   const lastName = nameParts.slice(1).join(' ') || '';
 
   const fields = [
-    { selectors: ['input[name*="first_name" i]', 'input[name*="first" i]', 'input[id*="first" i]'], value: firstName },
-    { selectors: ['input[name*="last_name" i]', 'input[name*="last" i]', 'input[id*="last" i]'], value: lastName },
-    { selectors: ['input[name*="name" i]', 'input[id*="name" i]', 'input[placeholder*="name" i]', 'input[name="your-name"]'], value: profile.personal.name },
-    { selectors: ['input[type="email"]', 'input[name*="email" i]', 'input[id*="email" i]', 'input[name="your-email"]'], value: profile.personal.email },
-    { selectors: ['input[type="tel"]', 'input[name*="phone" i]', 'input[id*="phone" i]', 'input[name="your-phone"]'], value: profile.personal.phone || '' },
-    { selectors: ['input[name*="website" i]', 'input[name*="portfolio" i]', 'input[name*="urls" i]', 'input[placeholder*="website" i]'], value: profile.personal.portfolio },
-    { selectors: ['input[name*="linkedin" i]', 'input[placeholder*="linkedin" i]'], value: profile.personal.linkedin || '' },
-    { selectors: ['input[name*="github" i]', 'input[placeholder*="github" i]'], value: profile.personal.github },
-    { selectors: ['textarea[name*="cover" i]', 'textarea[id*="cover" i]', 'textarea[placeholder*="cover" i]', 'textarea[name="your-message"]', 'textarea[placeholder*="letter" i]'], value: coverLetterText },
+    { field: 'firstName', value: firstName },
+    { field: 'lastName', value: lastName },
+    { field: 'name', value: profile.personal.name },
+    { field: 'email', value: profile.personal.email },
+    { field: 'phone', value: profile.personal.phone || '' },
+    { field: 'portfolio', value: profile.personal.portfolio },
+    { field: 'linkedin', value: profile.personal.linkedin || '' },
+    { field: 'github', value: profile.personal.github },
+    { field: 'coverLetter', value: coverLetterText },
   ];
 
   let filled = 0;
   for (const field of fields) {
     if (!field.value) continue;
-    for (const selector of field.selectors) {
+    for (const selector of getFieldSelectors(adapter, field.field)) {
       try {
         const el = await page.$(selector);
         if (el) {
@@ -492,4 +511,53 @@ async function fillApplicationForm(page, cvText, coverLetterText) {
   }
 
   return filled > 0;
+}
+
+async function submitApplicationForm(page, adapter) {
+  const submitButton = await findSubmitButton(page, adapter);
+  if (!submitButton) {
+    return { verified: false, reason: 'No supported submit button found' };
+  }
+
+  const previousUrl = page.url();
+  const navigation = page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 15000 }).catch(() => null);
+  try {
+    await submitButton.click();
+    await navigation;
+    await new Promise(resolve => setTimeout(resolve, 1200));
+  } catch (err) {
+    return { verified: false, reason: `Submit click failed: ${err.message}` };
+  }
+
+  const currentUrl = page.url();
+  const bodyText = await page.evaluate(() => document.body?.innerText || '').catch(() => '');
+  const selectorMatch = await (async () => {
+    for (const selector of adapter.confirmationSelectors || []) {
+      if (await page.$(selector).catch(() => null)) return true;
+    }
+    return false;
+  })();
+
+  if (selectorMatch) return { verified: true, evidence: 'confirmation selector' };
+  if (isConfirmationText(bodyText, adapter)) return { verified: true, evidence: 'confirmation text' };
+  if (currentUrl !== previousUrl && isConfirmationUrl(currentUrl)) {
+    return { verified: true, evidence: 'confirmation URL' };
+  }
+
+  return { verified: false, reason: 'No confirmation text, element, or confirmation URL detected' };
+}
+
+async function findSubmitButton(page, adapter) {
+  for (const selector of adapter.submitSelectors || []) {
+    const element = await page.$(selector).catch(() => null);
+    if (element) return element;
+  }
+
+  const buttons = await page.$$('button, input[type="submit"]');
+  for (const button of buttons) {
+    const label = await page.evaluate(element => element.innerText || element.value || '', button).catch(() => '');
+    if ((adapter.submitText || []).some(pattern => pattern.test(label.trim()))) return button;
+  }
+
+  return null;
 }

@@ -370,7 +370,7 @@ const DASHBOARD_HTML = `
 
       const tbody = document.getElementById('logsTableBody');
       if (filtered.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:30px; color:var(--muted); font-family:\'JetBrains Mono\'">No log records found.</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="4" style="text-align:center; padding:30px; color:var(--muted); font-family:JetBrains Mono">No log records found.</td></tr>';
       } else {
         tbody.innerHTML = filtered.map(l => {
           const time = l.timestamp ? l.timestamp.slice(11, 19) : '--:--:--';
